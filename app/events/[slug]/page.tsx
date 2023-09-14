@@ -22,7 +22,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <p className="text-neutral-800">{event.description}</p>
           <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 2xl:columns-5 mt-4">
             {event.images.map((image, imgIndex) => (
-              <div className="w-full p-2">
+              <div key={imgIndex} className="w-full p-2">
                 <div className="bg-white shadow-md rounded-lg overflow-hidden">
                   <Image
                     src={image}
