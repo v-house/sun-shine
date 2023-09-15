@@ -40,7 +40,7 @@ const NewsletterPage = () => {
   const totalPages = magazineLinks.length;
 
   return (
-    <div className="text-center bg-white p-4 lg:p-16">
+    <div className="text-center bg-white p-4 lg:p-16 rounded-lg m-1">
       <span className="text-xl lg:text-3xl font-bold text-slate-950 border-b-4 border-gray-900 p-1 text-left">
         Sunshine Newsletters
       </span>
