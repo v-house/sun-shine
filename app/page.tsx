@@ -108,7 +108,7 @@ export default function Home() {
               </p>
               <p className="text-base text-gray-700 mb-4">
                 So if you are experiencing any difficulties or have any doubts
-                or just have an urge to talk with someone, why don't you just
+                or just have an urge to talk with someone, why do not you just
                 come over and meet one of us. Let us sit back, relax, and have a
                 chat about what is on your mind.
               </p>
@@ -124,7 +124,7 @@ export default function Home() {
                   Sunshine is happy to present you the Buddy Program. In this
                   program, we invite volunteers from the student body to be a
                   Buddy to support their batch/peers of their Department.There
-                  can be multiple buddies from a single batch's department.
+                  can be multiple buddies from a single batch department.
                 </p>
                 <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
                   Buddy Programme
