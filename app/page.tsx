@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Loading from "./loading";
 import Image from "next/image";
 import ExperienceBar from "./ExperienceBar";
+import PeopleCards from "./Card";
+import MyComponent from "./Team";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -112,6 +114,8 @@ export default function Home() {
                 come over and meet one of us. Let us sit back, relax, and have a
                 chat about what is on your mind.
               </p>
+
+              <PeopleCards />
             </div>
 
             {/* Cards for mentor and buddy program */}
@@ -147,6 +151,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
+            <MyComponent />
             <ExperienceBar />
           </div>
         )}
