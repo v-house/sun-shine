@@ -9,6 +9,7 @@ interface TeamMemberProps {
   email: string;
   phone: string;
   about: string;
+  department: string;
 }
 
 interface EachTeamProps {

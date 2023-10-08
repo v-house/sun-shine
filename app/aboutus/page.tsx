@@ -58,7 +58,7 @@ const AboutUsPage = () => {
 
       <p className="text-indigo-600 font-semibold mt-8">
         Have some queries?{" "}
-        <a href="/faq" className="underline hover:text-indigo-800">
+        <a href="/faqs" className="underline hover:text-indigo-800">
           Visit our FAQ page.
         </a>
       </p>

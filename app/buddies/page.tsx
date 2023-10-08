@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import EachTeam from "./Eachteam";
 
-import teams from "./management-team";
+import teams from "./buddies";
 
 const Page: React.FC = () => {
   useEffect(() => {
@@ -46,7 +46,7 @@ const Page: React.FC = () => {
           <div key={team.id} className="m-4">
             <a
               id={`button-${team.id}`}
-              className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 active:scale-95"
+              className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 active:scale-95 hover:cursor-pointer"
             >
               {team.teamName}
             </a>

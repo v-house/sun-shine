@@ -27,16 +27,16 @@ export default function Teams() {
             Management Team
           </button>
           <button
-            onClick={() => router.push("/ug-mentors-and-buddies")}
+            onClick={() => router.push("/mentors")}
             className="flex-1 bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
           >
-            UG Mentors and Buddies
+            Mentors
           </button>
           <button
-            onClick={() => router.push("/pg-mentors-and-buddies")}
+            onClick={() => router.push("/buddies")}
             className="flex-1 bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
           >
-            PG Mentors and Buddies
+            Buddies
           </button>
         </div>
       </div>
