@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiPhoneCall, FiMail } from "react-icons/fi";
 
 interface TeamMemberProps {
@@ -18,8 +18,22 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   about,
   department,
 }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <div className="w-full p-2">
+    <div
+      className="w-full p-4"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="bg-white shadow-md rounded-lg overflow-hidden relative">
         <img
           src={photoUrl}
@@ -47,9 +61,16 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           <div className="mt-2">
             <p className="text-gray-600 text-sm">{department}</p>
           </div>
-        </div>
-        <div className="about-overlay overflow-hidden opacity-0 absolute left-0 bottom-0 w-full p-4 bg-white text-gray-950 transition-opacity duration-1000 hover:opacity-100">
-          <div className="max-h-36 overflow-y-auto">{about}</div>
+          <div
+            className={`text-sm overflow-hidden ${
+              isHovered
+                ? "opacity-100 max-h-full transition-opacity duration-1000"
+                : "opacity-0 max-h-0 duration-0"
+            }`}
+          >
+            <p className="text-gray-950 mt-1">About me:</p>
+            <p className="text-gray-700">{about}</p>
+          </div>
         </div>
       </div>
     </div>
