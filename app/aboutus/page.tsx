@@ -1,5 +1,6 @@
 import React from "react";
 import GalleryCarousel from "./Gallery";
+import Count from "./Count";
 
 const AboutUsPage = () => {
   return (
@@ -9,6 +10,7 @@ const AboutUsPage = () => {
       </h1>
       <hr className="h-px my-8 mt-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
       <GalleryCarousel />
+      <Count />
       <p className="text-gray-600 mb-6">
         Since its inception on January 12, 2012, Sunshine - the counseling cell
         at IIT-H, has been committed to helping the student community. The

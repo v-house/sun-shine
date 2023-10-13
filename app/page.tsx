@@ -6,6 +6,7 @@ import Image from "next/image";
 import ExperienceBar from "./ExperienceBar";
 import PeopleCards from "./Card";
 import MyComponent from "./Team";
+import { FaUserFriends, FaChalkboardTeacher } from "react-icons/fa";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -120,37 +121,75 @@ export default function Home() {
 
             {/* Cards for mentor and buddy program */}
             <div className="lg:flex lg:px-2 my-2 lg:my-4">
-              <div className="bg-gray-200 shadow-lg rounded-lg p-4 mx-2 flex-1">
-                <h2 className="text-2xl text-blue-500 font-bold mb-2">
-                  Sunshine Buddy Program
-                </h2>
-                <p className="text-gray-600 mb-4 line-clamp-3">
-                  Sunshine is happy to present you the Buddy Program. In this
-                  program, we invite volunteers from the student body to be a
-                  Buddy to support their batch/peers of their Department.There
-                  can be multiple buddies from a single batch department.
-                </p>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
-                  Buddy Programme
-                </button>
+              <div className="p-1 lg:p-2 lg:w-1/2 md:w-full">
+                <div className="flex border-2 rounded-lg border-blue-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                  <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 flex-shrink-0">
+                    <FaUserFriends size={40} />
+                  </div>
+                  <div className="flex-grow">
+                    <h2 className="text-blue-500 text-lg title-font font-medium mb-3">
+                      Sunshine Buddy Program
+                    </h2>
+                    <p className="leading-relaxed text-base line-clamp-3 text-black">
+                      Sunshine is happy to present you the Buddy Program. In
+                      this program, we invite volunteers from the student body
+                      to be a Buddy to support their batch/peers of their
+                      Department. There can be multiple buddies from a single
+                      batch department.
+                    </p>
+                    <button className="mt-3 text-blue-500 inline-flex items-center">
+                      Learn More
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div className="bg-gray-200 shadow-lg rounded-lg p-4 mx-2 flex-1">
-                <h2 className="text-2xl text-blue-500 font-bold mb-2">
-                  Sunshine Mentor Program
-                </h2>
-                <p className="text-gray-600 mb-4 line-clamp-3">
-                  Sunshine Mentors help the students to make an easy and
-                  fun-filled transition from school life to the IITH way of
-                  life. In this program, we invite students from all departments
-                  to apply for mentorship since having student mentors from all
-                  departments makes it easier for the students to find a person
-                  to adapt to their department.
-                </p>
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
-                  Mentor Programme
-                </button>
+              <div className="p-1 lg:p-2 lg:w-1/2 md:w-full">
+                <div className="flex border-2 rounded-lg border-blue-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                  <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 flex-shrink-0">
+                    <FaChalkboardTeacher size={40} />
+                  </div>
+                  <div className="flex-grow">
+                    <h2 className="text-blue-500 text-lg title-font font-medium mb-3">
+                      Sunshine Mentor Program
+                    </h2>
+                    <p className="leading-relaxed text-base line-clamp-3 text-black">
+                      Sunshine Mentors help the students to make an easy and
+                      fun-filled transition from school life to the IITH way of
+                      life. In this program, we invite students from all
+                      departments to apply for mentorship since having student
+                      mentors from all departments makes it easier for the
+                      students to find a person to adapt to their department.
+                    </p>
+                    <button className="mt-3 text-blue-500 inline-flex items-center">
+                      Learn More
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        className="w-4 h-4 ml-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
+
             <MyComponent />
             <ExperienceBar />
           </div>

@@ -1,95 +1,69 @@
 import { useRouter } from "next/navigation";
-import { FC, useState } from "react";
+import { FC } from "react";
 
 interface Event {
   slug: string;
   date: string;
   title: string;
   summary: string;
+  images: string[];
 }
 
 interface EventsPageProps {
   posts: Event[];
-  maxDisplay: number;
 }
 
-const EventsPage: FC<EventsPageProps> = ({ posts, maxDisplay }) => {
-  const [showAll, setShowAll] = useState(false);
+const EventsPage: FC<EventsPageProps> = ({ posts }) => {
   const router = useRouter();
-  const toggleShowAll = () => {
-    setShowAll(!showAll);
-  };
 
   return (
-    <div className="divide-y divide-gray-300 p-6">
-      <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
-          Latest
-        </h1>
-        <p className="text-lg leading-7 text-gray-600">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro
-          quibusdam sunt harum nobis libero placeat temporibus obcaecati vel
-          accusamus error nisi repudiandae aspernatur, voluptatem, sed totam.
-          Voluptatem error ducimus repellat facilis provident quo eligendi velit
-          dolorem. Velit quas, dignissimos perferendis neque in culpa harum
-          molestias perspiciatis exercitationem temporibus libero ut
-          consequatur, autem ex ea ullam ipsam debitis architecto placeat
-          nesciunt porro amet dolorum facilis. Sequi, ipsum.
-        </p>
-      </div>
-      <ul className="divide-y divide-gray-300">
-        {!posts.length && "No past events"}
-        {(showAll ? posts : posts.slice(0, maxDisplay)).map((post) => {
-          const { slug, date, title, summary } = post;
-          return (
-            <li key={slug} className="py-12">
-              <article>
-                <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                  <dl>
-                    <dt className="sr-only">Happened on</dt>
-                    <dd className="text-base font-medium leading-6 text-gray-500">
-                      <time dateTime={date}>{date}</time>
-                    </dd>
-                  </dl>
-                  <div className="space-y-5 xl:col-span-3">
-                    <div className="space-y-6">
-                      <div>
-                        <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                          <a href={`/events/${slug}`} className="text-gray-900">
-                            {title}
-                          </a>
-                        </h2>
+    <section className="text-gray-600 body-font">
+      <div className="container px-1 lg:px-5 py-4 lg:py-16 mx-auto flex flex-wrap">
+        {posts.map((post, index) => (
+          <div
+            className="relative lg:pb-8 sm:items-center md:w-2/3 mx-auto"
+            key={post.slug}
+          >
+            <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div className="flex-shrink-0 h-6 rounded-full mt-10 p-4 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
+              {post.date}
+            </div>
+            <div className="flex-grow md:pl-4 pl-2 flex sm:items-center items-start flex-col sm:flex-row">
+              <div className="flex-grow sm:pl-6 sm:mt-0">
+                <div className="p-4">
+                  <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img
+                      className="w-full aspect-video object-cover object-center"
+                      src={post.images[0]}
+                      alt={post.title}
+                    />
+                    <div className="p-6">
+                      <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                        {post.date}
+                      </h2>
+                      <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                        {post.title}
+                      </h1>
+                      <p className="leading-relaxed mb-3">{post.summary}</p>
+                      <div className="flex items-center flex-wrap">
+                        <a
+                          className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0 cursor-pointer"
+                          onClick={() => router.push(`/events/${post.slug}`)}
+                        >
+                          View Gallery &rarr;
+                        </a>
                       </div>
-                      <div className="prose max-w-none text-gray-600">
-                        {summary}
-                      </div>
-                    </div>
-                    <div className="text-base font-medium leading-6">
-                      <button
-                        className="text-blue-500 hover:text-blue-600"
-                        onClick={() => router.push(`/events/${slug}`)}
-                      >
-                        View Gallery &rarr;
-                      </button>
                     </div>
                   </div>
                 </div>
-              </article>
-            </li>
-          );
-        })}
-      </ul>
-      {!showAll && (
-        <div className="flex justify-center mt-4">
-          <button
-            onClick={toggleShowAll}
-            className="bg-blue-500 text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-600 border border-spacing-1 mt-4"
-          >
-            View Past Events
-          </button>
-        </div>
-      )}
-    </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
