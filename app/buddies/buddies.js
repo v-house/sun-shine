@@ -101,8 +101,8 @@ const teams = [
         name: "Nancy Jewel Mcdonie",
         photoUrl:
           "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0m85H9C_53VQ25U7wwCCZaTNq21-wlzJD4ZiyBKf78ytCfaZn",
-        email: "nancymomoland.com",
-        phone: "00000000000",
+        email: "cs21btech11026@iith.ac.in",
+        phone: "0000000000",
         department: "Computer Science and Engineering",
         about:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
