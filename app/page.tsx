@@ -35,7 +35,7 @@ export default function Home() {
                   Sunshine
                 </h1>
                 <h3 className="text-sm lg:text-lg text-gray-600">
-                  The Councelling Cell of IIT Hyderabad
+                  The Counselling Cell of IIT Hyderabad
                 </h3>
               </div>
             </div>
