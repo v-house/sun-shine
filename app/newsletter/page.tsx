@@ -41,23 +41,25 @@ const NewsletterPage = () => {
 
   return (
     <div className="text-center bg-white p-4 lg:p-16 rounded-lg m-1">
-      <span className="text-xl lg:text-3xl font-bold text-slate-950 border-b-4 border-gray-900 p-1 text-left">
+      <span className="text-xl lg:text-3xl font-bold text-slate-950 p-1 text-left">
         Sunshine Newsletters
       </span>
       <hr className="h-px my-8 mt-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-      {magazineLinks.map((_, index) => (
-        <button
-          key={index}
-          onClick={() => setCurrentMagazine(index)}
-          className={`relative inline-flex items-center px-4 py-2 m-2 text-sm font-semibold ${
-            currentMagazine === index
-              ? "bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              : "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0"
-          }`}
-        >
-          Volume {index + 1}
-        </button>
-      ))}
+      <div className="hidden lg:block">
+        {magazineLinks.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentMagazine(index)}
+            className={`relative inline-flex items-center px-4 py-2 m-2 text-sm font-semibold ${
+              currentMagazine === index
+                ? "bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                : "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0"
+            }`}
+          >
+            Volume {index + 1}
+          </button>
+        ))}
+      </div>
       <div className="text-left my-4">
         <h2 className="text-xl font-semibold text-slate-800">
           {magazineLinks[currentMagazine].title}
@@ -66,12 +68,28 @@ const NewsletterPage = () => {
           {magazineLinks[currentMagazine].minidescription}
         </p>
       </div>
-      <iframe
-        src={magazineLinks[currentMagazine].link}
-        width="100%"
-        height="900px"
-        title={`Magazine Volume ${currentMagazine + 1}`}
-      ></iframe>
+      <div className="hidden lg:block">
+        <iframe
+          src={magazineLinks[currentMagazine].link}
+          width="100%"
+          height="900px"
+          title={`Magazine Volume ${currentMagazine + 1}`}
+        ></iframe>
+      </div>
+      <div className="h-72 text-center my-4 lg:hidden flex flex-col justify-center rounded-md">
+        <p className="text-red-800 text-xl font-extrabold mb-4">
+          Preview Unavailable
+        </p>
+        <a
+          href={magazineLinks[currentMagazine].link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-500 text-white py-3 px-6 text-lg hover:bg-blue-600 transform hover:scale-105 transition-transform duration-300"
+        >
+          Download Now
+        </a>
+      </div>
+
       <div className="mt-8">
         <nav
           className="isolate inline-flex -space-x-px rounded-md shadow-sm"

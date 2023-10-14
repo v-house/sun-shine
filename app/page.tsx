@@ -8,6 +8,8 @@ import PeopleCards from "./Card";
 import MyComponent from "./Team";
 import { FaUserFriends, FaChalkboardTeacher, FaWhatsapp } from "react-icons/fa";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { AiOutlineUser, AiOutlineMobile } from "react-icons/ai";
+import ComingSoon from "./ComingSoon";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -69,12 +71,29 @@ export default function Home() {
                   />
                 </div>
                 <div className="ml-4">
-                  <h1 className="text-4xl lg:text-8xl font-bold text-blue-900 heading">
+                  <h1 className="text-4xl lg:text-8xl font-bold text-blue-900 heading transform transition-transform duration-1000">
                     Sunshine
                   </h1>
-                  <h3 className="text-sm lg:text-lg text-gray-600 subheading">
+                  <h3 className="text-sm lg:text-lg text-gray-600 subheading transform transition-transform duration-1000">
                     The Counselling Cell of IIT Hyderabad
                   </h3>
+                </div>
+                <div className="flex items-end space-x-4 lg:space-x-4 p-2 absolute top-0 right-0">
+                  <a
+                    href="/about-app"
+                    target="_blank"
+                    className="text-blue-500 hover:bg-white p-2 rounded-lg hover:text-blue-700"
+                  >
+                    <AiOutlineMobile size={24} />
+                    <p className="text-sm font-medium mt-2">About App</p>
+                  </a>
+                  <button
+                    onClick={() => {}}
+                    className="text-blue-500 hover:bg-white p-2 rounded-lg hover:text-blue-700"
+                  >
+                    <AiOutlineUser size={24} />
+                    <p className="text-sm font-medium mt-2">Booking Portal</p>
+                  </button>
                 </div>
               </div>
               <div className="social-icons absolute bottom-4 rounded-lg p-1 md:p-2 lg:p-4 right-4 flex gap-2 lg:gap-4 bg-white">
@@ -90,7 +109,7 @@ export default function Home() {
                     className="text-blue-500 hover:scale-110"
                   />
                 </a>
-                <a href="https://twitter.com" target="_blank">
+                <a href="https://whatsapp.com" target="_blank">
                   <FaWhatsapp
                     size={24}
                     className="text-blue-500 hover:scale-110"
