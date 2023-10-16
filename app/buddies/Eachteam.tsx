@@ -28,34 +28,36 @@ const EachTeam: React.FC<EachTeamProps> = ({
   teamMembers,
 }) => {
   return (
-    <section id={id} className="pt-8 bg-blue-400">
-      <div className="mb-8">
-        <div className="mb-2 flex items-center">
-          <hr className="border-t-2 border-white flex-grow" />
-          <h2 className="text-3xl font-semibold text-blue-600 mx-4">
-            {teamName}
-          </h2>
-          <hr className="border-t-2 border-white flex-grow" />
-        </div>
-        <div className="flex flex-col md:flex-row p-4">
-          <div className="w-full md:w-1/2 mb-4 md:mb-0">
-            <img
-              src={teamPhotoUrl}
-              alt={teamName}
-              className="w-full h-auto rounded-lg object-cover"
-            />
+    <div className="bg-blue-400 mb-8">
+      <section id={id} className="py-2 lg:py-4">
+        <div className="mb-8 px-4 rounded-lg">
+          <div className="mb-4 text-center">
+            <div className="relative inline-flex items-center">
+              <h2 className="text-4xl font-extrabold text-white">{teamName}</h2>
+            </div>
           </div>
-          <div className="w-full md:w-1/2 md:pl-8">
-            <div className="">{teamDescription}</div>
+
+          <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0">
+            <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
+              <img
+                src={teamPhotoUrl}
+                alt={teamName}
+                className="w-full h-auto rounded-lg object-cover shadow-lg"
+              />
+            </div>
+            <div className="w-full lg:w-1/2 lg:pl-8 text-white">
+              <p className="text-sm lg:text-lg">{teamDescription}</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 2xl:columns-5">
-        {teamMembers.map((member, index) => (
-          <TeamMember key={index} {...member} />
-        ))}
-      </div>
-    </section>
+
+        <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 2xl:columns-5">
+          {teamMembers.map((member, index) => (
+            <TeamMember key={index} {...member} />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

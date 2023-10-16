@@ -40,19 +40,36 @@ const Page: React.FC = () => {
   }, []);
 
   return (
-    <div className="m-1 bg-white rounded-lg">
-      <div className="flex flex-wrap space-x-4 justify-evenly">
+    <div className="bg-white p-1 md:p-2">
+      <div className="flex flex-wrap justify-center">
         {teams.map((team) => (
-          <div key={team.id} className="m-4">
+          <div key={team.id} className="my-2 mx-4 lg:m-4">
             <a
               id={`button-${team.id}`}
-              className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 active:scale-95 hover:cursor-pointer"
+              className="pr-4 text-blue-500 font-extrabold rounded-full active:scale-95 hover:cursor-pointer transition-transform duration-300 ease-in-out relative"
             >
               {team.teamName}
+              <span className="absolute right-0 top-1/2 transform -translate-y-1/2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 inline-block ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </span>
             </a>
           </div>
         ))}
       </div>
+
       {teams.map((team, index) => (
         <div key={team.id} id={team.id}>
           <EachTeam key={index} {...team} />

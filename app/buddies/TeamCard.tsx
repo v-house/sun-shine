@@ -30,7 +30,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   };
 
   return (
-    <div className="w-full p-4 relative">
+    <div className="w-full p-2 relative">
       <div className="bg-white shadow-md rounded-lg overflow-hidden">
         <div className="relative">
           <img
@@ -38,27 +38,31 @@ const TeamMember: React.FC<TeamMemberProps> = ({
             alt={name}
             className="w-full object-cover rounded-t-lg"
           />
-          <button
-            onClick={openModal}
-            className="absolute top-2 right-2 text-white bg-gray-600 p-2 rounded-full"
-          >
-            <FiInfo size={20} />
-          </button>
         </div>
         <div className="p-4 relative">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col justify-between items-center">
             <h3 className="text-md font-semibold text-gray-950">{name}</h3>
-            <div className="flex space-x-2">
+            <span className="text-blue-500 bg-blue-100 py-1 px-2 rounded-full text-sm">
+              {department}
+            </span>
+            <div className="flex space-x-2 mt-2">
               <button className="bg-blue-500 text-white p-2 rounded-full">
                 <FiPhoneCall />
               </button>
               <button className="bg-green-500 text-white p-2 rounded-full">
                 <FiMail />
               </button>
+              <button
+                onClick={openModal}
+                className="text-white bg-gray-600 p-2 rounded-full"
+              >
+                <FiInfo />
+              </button>
             </div>
           </div>
         </div>
       </div>
+
       <TeamMemberModal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
