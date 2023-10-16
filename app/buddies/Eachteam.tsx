@@ -51,7 +51,7 @@ const EachTeam: React.FC<EachTeamProps> = ({
           </div>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 2xl:columns-5">
+        <div className="flex flex-wrap justify-center">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} {...member} />
           ))}

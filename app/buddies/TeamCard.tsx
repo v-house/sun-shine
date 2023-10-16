@@ -30,13 +30,13 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   };
 
   return (
-    <div className="w-full p-2 relative">
+    <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 relative">
       <div className="bg-white shadow-md rounded-lg overflow-hidden">
         <div className="relative">
           <img
             src={photoUrl}
             alt={name}
-            className="w-full object-cover rounded-t-lg"
+            className="w-full md:h-80 object-cover rounded-t-lg"
           />
         </div>
         <div className="p-4 relative">
