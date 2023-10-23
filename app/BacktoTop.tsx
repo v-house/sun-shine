@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { FiArrowUp } from "react-icons/fi";
+import BookAportalButton from "./BookAPortal";
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,6 +16,7 @@ const BackToTopButton = () => {
     };
 
     window.addEventListener("scroll", checkScrollTop);
+
     return () => {
       window.removeEventListener("scroll", checkScrollTop);
     };
@@ -26,17 +27,32 @@ const BackToTopButton = () => {
   };
 
   return (
-    isVisible && (
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-16 right-6 bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full shadow-md transition duration-1000"
-        style={{
-          animation: "fadeInUp 10s",
-        }}
-      >
-        <FiArrowUp className="h-6 w-6" />
-      </button>
-    )
+    <div>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-20 right-4 text-blue-500 bg-sky-300 p-2 rounded-full shadow-md transition duration-1000"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </button>
+      )}
+      <div className="fixed bottom-2 right-4">
+        <BookAportalButton />
+      </div>
+    </div>
   );
 };
 

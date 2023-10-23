@@ -9,7 +9,8 @@ import MyComponent from "./Team";
 import { FaUserFriends, FaChalkboardTeacher, FaWhatsapp } from "react-icons/fa";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { AiOutlineUser, AiOutlineMobile } from "react-icons/ai";
-import ComingSoon from "./ComingSoon";
+import Gallery from "./Gallery";
+import AboutApp from "./AboutApp";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -114,47 +115,8 @@ export default function Home() {
               {/* Welcome note */}
               <div className="bg-blue-100 p-6 shadow-lg">
                 {/* Image gallery */}
-                <div className="max-w-2xl lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8">
-                  <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
-                    <Image
-                      src="/training_10.jpg"
-                      alt="Two each of gray, white, and black shirts laying flat."
-                      className="h-full w-full object-cover object-center"
-                      width={108}
-                      height={108}
-                    />
-                  </div>
-                  <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
-                    <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-                      <Image
-                        src="/training_11.jpg"
-                        alt="Model wearing plain black basic tee."
-                        className="h-full w-full object-cover object-center"
-                        width={108}
-                        height={108}
-                      />
-                    </div>
-                    <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-                      <Image
-                        src="/training_12.jpg"
-                        alt="Model wearing plain gray basic tee."
-                        className="h-full w-full object-cover object-center"
-                        width={108}
-                        height={108}
-                      />
-                    </div>
-                  </div>
-                  <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-                    <Image
-                      src="/training_13.jpg"
-                      alt="Model wearing plain white basic tee."
-                      className="h-full w-full object-cover object-center"
-                      width={108}
-                      height={108}
-                    />
-                  </div>
-                </div>
-                <h1 className="text-3xl font-bold text-blue-900 my-4">
+                <Gallery />
+                {/* <h1 className="text-3xl font-bold text-blue-900 my-4">
                   Hello!
                 </h1>
                 <p className="text-lg text-gray-800 mb-4">
@@ -185,8 +147,8 @@ export default function Home() {
                   or just have an urge to talk with someone, why do not you just
                   come over and meet one of us. Let us sit back, relax, and have
                   a chat about what is on your mind.
-                </p>
-
+                </p> */}
+                <div className="h-6"></div>
                 <PeopleCards />
               </div>
             </div>
@@ -263,6 +225,7 @@ export default function Home() {
             </div>
 
             <MyComponent />
+            <AboutApp />
             <ExperienceBar />
           </div>
         )}

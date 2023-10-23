@@ -45,25 +45,24 @@ const peopleData: Person[] = [
 
 const PeopleCards: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {peopleData.map((person) => (
-        <div
-          key={person.id}
-          className="bg-white rounded-lg overflow-hidden shadow-md"
-        >
+        <div key={person.id} className="relative">
           <img
             src={person.imageUrl}
             alt={person.name}
-            className="mx-auto h-60 object-cover rounded-lg my-2"
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
-          <div className="p-4">
-            <h2 className="text-xl text-blue-600 font-semibold mb-2">
-              {person.name}
+          <div className="px-8 py-20 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+              {person.designation}
             </h2>
-            <p className="text-gray-600">{person.designation}</p>
-            <p className="text-gray-600">{person.email}</p>
-            <p className="text-gray-600">{person.phone}</p>
-            <p className="text-gray-600">Address: {person.address}</p>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+              {person.name}
+            </h1>
+            <p className="leading-relaxed text-black">Email: {person.email}</p>
+            <p className="leading-relaxed text-black">Phone: {person.phone}</p>
+            <p className="leading-relaxed text-black">Address: {person.address}</p>
           </div>
         </div>
       ))}
