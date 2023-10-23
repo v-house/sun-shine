@@ -34,7 +34,7 @@ const BackToTopButton = () => {
           animation: "fadeInUp 10s",
         }}
       >
-        <FiArrowUp className="h-4 w-4 lg:h-6 lg:w-6" />
+        <FiArrowUp className="h-6 w-6" />
       </button>
     )
   );
