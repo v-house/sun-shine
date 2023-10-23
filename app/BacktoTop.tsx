@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { FiArrowUp } from "react-icons/fi";
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,25 +29,12 @@ const BackToTopButton = () => {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-6 bg-blue-500 hover:bg-blue-600 text-white p-2 lg:p-4 rounded-full shadow-md transition duration-300"
+        className="fixed bottom-16 right-6 bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full shadow-md transition duration-1000"
         style={{
           animation: "fadeInUp 10s",
         }}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M5 10l7-7m0 0l7 7m-7-7v18"
-          />
-        </svg>
+        <FiArrowUp className="h-4 w-4 lg:h-6 lg:w-6" />
       </button>
     )
   );

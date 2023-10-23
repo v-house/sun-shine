@@ -23,25 +23,11 @@ export default function Home() {
   const handleScroll = () => {
     const scrollY = window.scrollY;
     const logoScrollFactor = 0.1;
-    const headingScrollFactor = 0.2;
-    const subheadingScrollFactor = 0.3;
 
     const logo = document.querySelector(".logo") as HTMLElement;
-    const heading = document.querySelector(".heading") as HTMLElement;
-    const subheading = document.querySelector(".subheading") as HTMLElement;
 
     if (logo) {
       logo.style.transform = `translateY(${scrollY * logoScrollFactor}px)`;
-    }
-    if (heading) {
-      heading.style.transform = `translateY(${
-        scrollY * headingScrollFactor
-      }px)`;
-    }
-    if (subheading) {
-      subheading.style.transform = `translateY(${
-        scrollY * subheadingScrollFactor
-      }px)`;
     }
   };
 
@@ -71,10 +57,10 @@ export default function Home() {
                   />
                 </div>
                 <div className="ml-4">
-                  <h1 className="text-4xl lg:text-8xl font-bold text-blue-900 heading transform transition-transform duration-1000">
+                  <h1 className="text-4xl lg:text-8xl font-bold text-blue-900 heading animate-fade-right animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-forwards">
                     Sunshine
                   </h1>
-                  <h3 className="text-sm lg:text-lg text-gray-600 subheading transform transition-transform duration-1000">
+                  <h3 className="text-sm lg:text-lg text-gray-600 subheading animate-fade-left animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
                     The Counselling Cell of IIT Hyderabad
                   </h3>
                 </div>

@@ -9,7 +9,7 @@ const MyComponent = () => {
   }, [controls]);
 
   return (
-    <div className="relative m-2 lg:m-4">
+    <div className="relative m-2 lg:m-4 animate-fade-left animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-forwards">
       <img
         src="https://i.pinimg.com/736x/28/52/52/285252b2c89a7aaa86c77d629754ab0a.jpg"
         alt="Team 2023"
@@ -26,7 +26,7 @@ const MyComponent = () => {
       </motion.div>
 
       {/* Button container */}
-      <div className="absolute bottom-0 left-0 w-full hidden lg:flex flex-wrap justify-evenly p-4">
+      {/* <div className="absolute bottom-0 left-0 w-full hidden lg:flex flex-wrap justify-evenly p-4">
         <button className="mx-2 mb-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
           Faculty Team
         </button>
@@ -39,7 +39,7 @@ const MyComponent = () => {
         <button className="mx-2 mb-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
           PG Team
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
