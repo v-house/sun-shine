@@ -65,92 +65,11 @@ export default function Home() {
                     The Counselling Cell of IIT Hyderabad
                   </h3>
                 </div>
-                <div className="flex items-end space-x-4 lg:space-x-4 p-2 absolute top-0 right-0">
-                  <a
-                    href="/about-app"
-                    target="_blank"
-                    className="text-blue-500 hover:bg-white p-2 rounded-lg hover:text-blue-700"
-                  >
-                    <AiOutlineMobile size={24} />
-                    <p className="text-sm font-medium mt-2">About App</p>
-                  </a>
-                  <button
-                    onClick={() => {}}
-                    className="text-blue-500 hover:bg-white p-2 rounded-lg hover:text-blue-700"
-                  >
-                    <AiOutlineUser size={24} />
-                    <p className="text-sm font-medium mt-2">Booking Portal</p>
-                  </button>
-                </div>
-              </div>
-              <div className="social-icons absolute bottom-4 rounded-lg p-1 md:p-2 lg:p-4 right-4 flex gap-2 lg:gap-4 bg-white">
-                <a href="https://facebook.com" target="_blank">
-                  <FaFacebook
-                    size={24}
-                    className="text-blue-500 hover:scale-110"
-                  />
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                  <FaTwitter
-                    size={24}
-                    className="text-blue-500 hover:scale-110"
-                  />
-                </a>
-                <a href="https://whatsapp.com" target="_blank">
-                  <FaWhatsapp
-                    size={24}
-                    className="text-blue-500 hover:scale-110"
-                  />
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                  <FaInstagram
-                    size={24}
-                    className="text-blue-500 hover:scale-110"
-                  />
-                </a>
               </div>
             </div>
 
-            <div className="bg-white">
-              {/* Welcome note */}
-              <div className="bg-blue-100 p-6 shadow-lg">
-                {/* Image gallery */}
-                <Gallery />
-                {/* <h1 className="text-3xl font-bold text-blue-900 my-4">
-                  Hello!
-                </h1>
-                <p className="text-lg text-gray-800 mb-4">
-                  We are Sunshine, your buddies to talk with.
-                </p>
-                <p className="text-base text-gray-700 mb-4">
-                  College and hostel are exciting places. But at times they tend
-                  to get a bit overwhelming and stressful. It is in those times
-                  that talking with someone who has already been a part of the
-                  system helps a great deal. Be it anything from homesickness,
-                  language issues, academic pressure, career guidance, emotional
-                  instability, time management, unexplainable laziness, lack of
-                  concentration, to losing interest in life, losing confidence,
-                  addiction of any sorts, etc. we are always here to hear you
-                  out and help you make the right choices.
-                </p>
-                <p className="text-base text-gray-700 mb-4">
-                  Counselling is often misinterpreted to be an advisory one.
-                  However, we at Sunshine believe in helping you to help
-                  yourself. Talking with a member of Sunshine does not imply a
-                  failure to solve your problem. Instead, it implies your
-                  motivation to take your challenges head on and get it solved
-                  by looking at it from different perspectives. This is what
-                  Sunshine believes in and helps you achieve.
-                </p>
-                <p className="text-base text-gray-700 mb-4">
-                  So if you are experiencing any difficulties or have any doubts
-                  or just have an urge to talk with someone, why do not you just
-                  come over and meet one of us. Let us sit back, relax, and have
-                  a chat about what is on your mind.
-                </p> */}
-                <div className="h-6"></div>
-                <PeopleCards />
-              </div>
+            <div className="bg-blue-100 p-1 lg:p-2">
+              <Gallery />
             </div>
 
             {/* Cards for mentor and buddy program */}
