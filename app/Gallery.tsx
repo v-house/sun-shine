@@ -15,28 +15,31 @@ const HomePage = () => {
 
       <div className="flex flex-col justify-evenly items-center z-10 relative">
         <h1 className="text-2xl lg:text-4xl font-extrabold text-center text-gray-900 mb-10 animate-fade-up">
-          Sunshine Welcomes You !!
+          <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-sky-500 relative inline-block">
+            <span className="relative text-white">Sunshine</span>
+          </span>{" "}
+          Welcomes You !!
         </h1>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 lg:gap-4 p-2 lg:p-4">
           <img
             src="./homepage/1.jpg"
             alt="Image 1"
-            className="w-48 h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
           />
           <img
             src="./homepage/2.jpg"
             alt="Image 1"
-            className="w-48 h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
           />
           <img
             src="./homepage/3.jpg"
             alt="Image 1"
-            className="w-48 h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
           />
           <img
             src="./homepage/4.jpg"
             alt="Image 1"
-            className="w-48 h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
           />
         </div>
         <p className="text-sm lg:text-lg text-center text-gray-600 mt-8 px-4">
