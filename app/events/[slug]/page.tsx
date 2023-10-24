@@ -22,7 +22,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         <div className="p-2 lg:p-6">
           <p className="text-gray-800">{event.description}</p>
           <hr className="my-6 border-t-2 border-gray-300 dark:border-gray-700" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {event.images.map((image, imgIndex) => (
               <div
                 key={imgIndex}

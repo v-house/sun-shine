@@ -14,29 +14,29 @@ const HomePage = () => {
       </div>
 
       <div className="flex flex-col justify-evenly items-center z-10 relative">
-        <h1 className="text-xl lg:text-4xl font-extrabold text-center text-gray-900 mb-10">
-          Welcome to Sunshine!
+        <h1 className="text-2xl lg:text-4xl font-extrabold text-center text-gray-900 mb-10 animate-fade-up">
+          Sunshine Welcomes You !!
         </h1>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 lg:gap-4 p-2 lg:p-4">
           <img
-            src="https://www.uniquenewsonline.com/wp-content/uploads/2022/08/87-872897_nancy-korean-singer-wallpaper-hd-nancy-momoland.jpg"
+            src="./homepage/1.jpg"
             alt="Image 1"
-            className="w-48 h-48 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            className="w-48 h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
           />
           <img
-            src="http://t3.gstatic.com/images?q=tbn:ANd9GcQ-Fo0HQZI4oKxV7FZia_e1zXEm-qk9QqhUMfNMy9cunNLRBHLnB9ZzFyitJ6EFJVfgXzjRLg"
-            alt="Image 2"
-            className="w-48 h-48 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            src="./homepage/2.jpg"
+            alt="Image 1"
+            className="w-48 h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
           />
           <img
-            src="http://t3.gstatic.com/images?q=tbn:ANd9GcQ-Fo0HQZI4oKxV7FZia_e1zXEm-qk9QqhUMfNMy9cunNLRBHLnB9ZzFyitJ6EFJVfgXzjRLg"
-            alt="Image 3"
-            className="w-48 h-48 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            src="./homepage/3.jpg"
+            alt="Image 1"
+            className="w-48 h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
           />
           <img
-            src="http://t3.gstatic.com/images?q=tbn:ANd9GcQ-Fo0HQZI4oKxV7FZia_e1zXEm-qk9QqhUMfNMy9cunNLRBHLnB9ZzFyitJ6EFJVfgXzjRLg"
-            alt="Image 4"
-            className="w-48 h-48 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            src="./homepage/4.jpg"
+            alt="Image 1"
+            className="w-48 h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
           />
         </div>
         <p className="text-sm lg:text-lg text-center text-gray-600 mt-8 px-4">

@@ -9,6 +9,7 @@ import MyComponent from "./Team";
 import { FaUserFriends, FaChalkboardTeacher, FaWhatsapp } from "react-icons/fa";
 import Gallery from "./Gallery";
 import AboutApp from "./AboutApp";
+import FeaturesBlocks from "./Card";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -140,6 +141,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <FeaturesBlocks />
 
             <MyComponent />
             <AboutApp />

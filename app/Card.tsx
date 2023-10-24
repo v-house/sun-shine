@@ -1,73 +1,80 @@
-import React from "react";
-
-interface Person {
-  id: number;
-  name: string;
-  email: string;
-  phone: string;
-  designation: string;
-  address: string;
-  imageUrl: string;
-}
-
-const peopleData: Person[] = [
-  {
-    id: 1,
-    name: "Maria Morris",
-    email: "maria.morris@admin.iith.ac.in",
-    phone: "+91-8331036081",
-    designation: "Sr. Psychological Counsellor",
-    address: "A4 - Aryabhatta Block",
-    imageUrl:
-      "https://sunshine.iith.ac.in/images/faculty/20210803_113018%20-%20Maria%20Morris.jpg",
-  },
-  {
-    id: 2,
-    name: "Maria Morris",
-    email: "maria.morris@admin.iith.ac.in",
-    phone: "+91-8331036081",
-    designation: "Sr. Psychological Counsellor",
-    address: "A4 - Aryabhatta Block",
-    imageUrl:
-      "https://sunshine.iith.ac.in/images/faculty/20210803_113018%20-%20Maria%20Morris.jpg",
-  },
-  {
-    id: 3,
-    name: "Maria Morris",
-    email: "maria.morris@admin.iith.ac.in",
-    phone: "+91-8331036081",
-    designation: "Sr. Psychological Counsellor",
-    address: "A4 - Aryabhatta Block",
-    imageUrl:
-      "https://sunshine.iith.ac.in/images/faculty/20210803_113018%20-%20Maria%20Morris.jpg",
-  },
-];
-
-const PeopleCards: React.FC = () => {
+export default function FeaturesBlocks() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {peopleData.map((person) => (
-        <div key={person.id} className="relative">
-          <img
-            src={person.imageUrl}
-            alt={person.name}
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          />
-          <div className="px-8 py-20 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-            <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-              {person.designation}
+    <section className="relative">
+      <div
+        className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-sky-300 pointer-events-none"
+        aria-hidden="true"
+      ></div>
+
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="py-12 md:py-20">
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pb-12">
+            <h2 className="text-xl lg:text-4xl font-extrabold text-black mb-4">
+              Counsellors Team
             </h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-              {person.name}
-            </h1>
-            <p className="leading-relaxed text-black">Email: {person.email}</p>
-            <p className="leading-relaxed text-black">Phone: {person.phone}</p>
-            <p className="leading-relaxed text-black">Address: {person.address}</p>
+            <p className="text-xl text-gray-600">
+              Sunshine has an experienced faculties leading the whole club.
+              Among them are these three psychological counsellors always
+              ready-to-serve sunshine.
+            </p>
+          </div>
+
+          {/* Items */}
+          <div className="max-w-sm mx-auto grid gap-12 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-4xl">
+            {/* 1st item */}
+            <div className="relative flex flex-col items-center bg-white rounded shadow-xl border border-gray-300">
+              <div className="relative overflow-hidden group">
+                <img
+                  src="https://sunshine.iith.ac.in/images/faculty/20210803_113018%20-%20Maria%20Morris.jpg"
+                  alt="Image 2"
+                  className="h-108 object-cover transition-transform duration-300 transform scale-100 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 text-white p-4 text-opacity-100 text-center">
+                  <h4 className="text-xl font-semibold leading-snug tracking-tight mb-1">
+                    Name
+                  </h4>
+                  <p className="text-gray-200 text-sm">Email</p>
+                </div>
+              </div>
+            </div>
+
+            {/* 2nd item */}
+            <div className="relative flex flex-col items-center bg-white rounded shadow-xl border border-gray-300">
+              <div className="relative overflow-hidden group">
+                <img
+                  src="https://sunshine.iith.ac.in/images/faculty/20210803_113018%20-%20Maria%20Morris.jpg"
+                  alt="Image 2"
+                  className="h-108 object-cover transition-transform duration-300 transform scale-100 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 text-white p-4 text-opacity-100 text-center">
+                  <h4 className="text-xl font-semibold leading-snug tracking-tight mb-1">
+                    Name
+                  </h4>
+                  <p className="text-gray-200 text-sm">Email</p>
+                </div>
+              </div>
+            </div>
+
+            {/* 3rd item */}
+            <div className="relative flex flex-col items-center bg-white rounded shadow-xl border border-gray-300">
+              <div className="relative overflow-hidden group">
+                <img
+                  src="https://sunshine.iith.ac.in/images/faculty/20210803_113018%20-%20Maria%20Morris.jpg"
+                  alt="Image 2"
+                  className="h-108 object-cover transition-transform duration-300 transform scale-100 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 left-0 right-0 text-white p-4 text-opacity-100 text-center">
+                  <h4 className="text-xl font-semibold leading-snug tracking-tight mb-1">
+                    Name
+                  </h4>
+                  <p className="text-gray-200 text-sm">Email</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      ))}
-    </div>
+      </div>
+    </section>
   );
-};
-
-export default PeopleCards;
+}
