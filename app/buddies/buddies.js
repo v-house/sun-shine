@@ -1,3 +1,4 @@
+import teamMembers from "../non_management";
 const teams = [
   {
     id: "ug-buddies",
