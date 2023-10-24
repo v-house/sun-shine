@@ -7,8 +7,6 @@ import ExperienceBar from "./ExperienceBar";
 import PeopleCards from "./Card";
 import MyComponent from "./Team";
 import { FaUserFriends, FaChalkboardTeacher, FaWhatsapp } from "react-icons/fa";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-import { AiOutlineUser, AiOutlineMobile } from "react-icons/ai";
 import Gallery from "./Gallery";
 import AboutApp from "./AboutApp";
 
@@ -45,9 +43,9 @@ export default function Home() {
         {isLoading ? (
           <Loading />
         ) : (
-          <div className="bg-white">
+          <div className="bg-white overflow-x-hidden">
             <div className="outer-container relative">
-              <div className="flex items-center h-96 bg-gradient-to-br from-sky-400 via-orange-200 to-slate-500">
+              <div className="flex items-center h-96 bg-gradient-to-br from-sky-400 via-orange-200 to-slate-500 bg-fixed">
                 <div className="logo relative transform transition-transform duration-1000">
                   <Image
                     src="/logo.png"

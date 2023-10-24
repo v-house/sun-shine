@@ -1,57 +1,38 @@
-// components/Gallery.tsx
 import React from "react";
 
-const Gallery: React.FC = () => {
+const HomePage = () => {
   return (
-    <div className="flex flex-wrap md:-m-2 -m-1">
-      <div className="flex flex-wrap w-1/2">
-        <div className="md:p-2 p-1 w-1/2">
-          <img
-            alt="gallery"
-            className="w-full object-cover h-full object-center block"
-            src="https://dummyimage.com/500x300"
-          />
-        </div>
-        <div className="md:p-2 p-1 w-1/2">
-          <img
-            alt="gallery"
-            className="w-full object-cover h-full object-center block"
-            src="https://dummyimage.com/501x301"
-          />
-        </div>
-        <div className="md:p-2 p-1 w-full">
-          <img
-            alt="gallery"
-            className="w-full h-full object-cover object-center block"
-            src="https://dummyimage.com/600x360"
-          />
-        </div>
+    <div className="min-h-screen flex flex-col justify-evenly items-center p-4">
+      <h1 className="text-4xl font-extrabold text-center text-gray-900 mb-8">
+        Grid Layout with Tailwind CSS
+      </h1>
+      <div className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <img
+          src="https://www.uniquenewsonline.com/wp-content/uploads/2022/08/87-872897_nancy-korean-singer-wallpaper-hd-nancy-momoland.jpg"
+          alt="Image 1"
+          className="w-48 h-48 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+        />
+        <img
+          src="http://t3.gstatic.com/images?q=tbn:ANd9GcQ-Fo0HQZI4oKxV7FZia_e1zXEm-qk9QqhUMfNMy9cunNLRBHLnB9ZzFyitJ6EFJVfgXzjRLg"
+          alt="Image 2"
+          className="w-48 h-48 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+        />
+        <img
+          src="http://t3.gstatic.com/images?q=tbn:ANd9GcQ-Fo0HQZI4oKxV7FZia_e1zXEm-qk9QqhUMfNMy9cunNLRBHLnB9ZzFyitJ6EFJVfgXzjRLg"
+          alt="Image 3"
+          className="w-48 h-48 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+        />
+        <img
+          src="http://t3.gstatic.com/images?q=tbn:ANd9GcQ-Fo0HQZI4oKxV7FZia_e1zXEm-qk9QqhUMfNMy9cunNLRBHLnB9ZzFyitJ6EFJVfgXzjRLg"
+          alt="Image 4"
+          className="w-48 h-48 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+        />
       </div>
-      <div className="flex flex-wrap w-1/2">
-        <div className="md:p-2 p-1 w-full">
-          <img
-            alt="gallery"
-            className="w-full h-full object-cover object-center block"
-            src="https://dummyimage.com/601x361"
-          />
-        </div>
-        <div className="md:p-2 p-1 w-1/2">
-          <img
-            alt="gallery"
-            className="w-full object-cover h-full object-center block"
-            src="https://dummyimage.com/502x302"
-          />
-        </div>
-        <div className="md:p-2 p-1 w-1/2">
-          <img
-            alt="gallery"
-            className="w-full object-cover h-full object-center block"
-            src="https://dummyimage.com/503x303"
-          />
-        </div>
-      </div>
+      <p className="text-lg text-center text-gray-600 mt-8">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, and some more.
+      </p>
     </div>
   );
 };
 
-export default Gallery;
+export default HomePage;
