@@ -3,10 +3,10 @@ import React from "react";
 const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col justify-evenly items-center p-4">
-      <h1 className="text-4xl font-extrabold text-center text-gray-900 mb-8">
+      <h1 className="text-4xl font-extrabold text-center text-gray-900">
         Grid Layout with Tailwind CSS
       </h1>
-      <div className="grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <img
           src="https://www.uniquenewsonline.com/wp-content/uploads/2022/08/87-872897_nancy-korean-singer-wallpaper-hd-nancy-momoland.jpg"
           alt="Image 1"
