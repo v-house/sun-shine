@@ -3,22 +3,42 @@ import { Dialog, Transition } from "@headlessui/react";
 
 export default function BookAportalButton() {
   const [open, setOpen] = useState(false);
+  const [selectedCounselor, setSelectedCounselor] = useState("");
+  const [bookingDetails, setBookingDetails] = useState({
+    name: "",
+    email: "",
+    date: "",
+    time: "",
+  });
+
+  // Function to send an email to the selected counselor
+  const sendEmail = () => {
+    if (selectedCounselor) {
+      const { name, email, date, time } = bookingDetails;
+      const subject = `Appointment Booking Request with ${selectedCounselor}`;
+      const body = `Dear ${selectedCounselor}, I would like to book an appointment with you on ${date} at ${time}. Name: ${name} Email: ${email} Thank you`;
+      const emailLink = `mailto:${selectedCounselor}?subject=${subject}&body=${body}`;
+
+      // Open the email link in a new tab
+      window.open(emailLink, "_blank");
+    }
+  };
 
   return (
     <>
       <button onClick={() => setOpen(true)} className="">
-        <div className="bg-blue-500 hover-bg-blue-600 text-white p-2 rounded-lg shadow-md">
+        <div className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg shadow-md">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="w-6 h-6"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
             />
           </svg>
@@ -29,7 +49,10 @@ export default function BookAportalButton() {
         <Dialog
           as="div"
           className="fixed inset-0 z-10 overflow-y-auto"
-          onClose={setOpen}
+          onClose={() => {
+            setOpen(false);
+            setSelectedCounselor("");
+          }}
         >
           <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
             <Transition.Child
@@ -72,9 +95,88 @@ export default function BookAportalButton() {
                         Book an appointment
                       </Dialog.Title>
                       <div className="mt-2">
-                        <p className="text-sm text-gray-500 dark:text-gray-400">
-                          Your portal booking content goes here.
-                        </p>
+                        <label className="block text-sm text-gray-500 dark:text-gray-400">
+                          Select a Counselor:
+                        </label>
+                        <select
+                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          onChange={(e) => setSelectedCounselor(e.target.value)}
+                        >
+                          <option value="" disabled selected>
+                            Choose a Counselor
+                          </option>
+                          <option value="counselor1@example.com">
+                            Counselor 1
+                          </option>
+                          <option value="counselor2@example.com">
+                            Counselor 2
+                          </option>
+                          <option value="counselor3@example.com">
+                            Counselor 3
+                          </option>
+                        </select>
+                      </div>
+                      <div className="mt-2">
+                        <label className="block text-sm text-gray-500 dark:text-gray-400">
+                          Your Name:
+                        </label>
+                        <input
+                          type="text"
+                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          placeholder="Your Name"
+                          onChange={(e) =>
+                            setBookingDetails({
+                              ...bookingDetails,
+                              name: e.target.value,
+                            })
+                          }
+                        />
+                      </div>
+                      <div className="mt-2">
+                        <label className="block text-sm text-gray-500 dark:text-gray-400">
+                          Your Email:
+                        </label>
+                        <input
+                          type="email"
+                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          placeholder="Your Email"
+                          onChange={(e) =>
+                            setBookingDetails({
+                              ...bookingDetails,
+                              email: e.target.value,
+                            })
+                          }
+                        />
+                      </div>
+                      <div className="mt-2">
+                        <label className="block text-sm text-gray-500 dark:text-gray-400">
+                          Date:
+                        </label>
+                        <input
+                          type="date"
+                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          onChange={(e) =>
+                            setBookingDetails({
+                              ...bookingDetails,
+                              date: e.target.value,
+                            })
+                          }
+                        />
+                      </div>
+                      <div className="mt-2">
+                        <label className="block text-sm text-gray-500 dark:text-gray-400">
+                          Time:
+                        </label>
+                        <input
+                          type="time"
+                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          onChange={(e) =>
+                            setBookingDetails({
+                              ...bookingDetails,
+                              time: e.target.value,
+                            })
+                          }
+                        />
                       </div>
                     </div>
                   </div>
@@ -82,10 +184,17 @@ export default function BookAportalButton() {
                 <div className="bg-gray-50 dark:bg-gray-900 sm:dark:bg-gray-800 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                   <button
                     type="button"
-                    onClick={() => setOpen(false)}
+                    onClick={sendEmail}
                     className="mt-3 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
                   >
-                    Close
+                    Book via Email
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setOpen(false)}
+                    className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0 sm:mr-3 sm:w-auto sm:text-sm"
+                  >
+                    Cancel
                   </button>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen relative overflow-hidden flex flex-col justify-evenly items-center">
+    <div className="relative overflow-hidden flex flex-col justify-evenly items-center py-10 lg:py-12">
       <div className="absolute bottom-0 w-full z-0">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -39,7 +39,7 @@ const HomePage = () => {
             className="w-48 h-48 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
           />
         </div>
-        <p className="text-sm lg:text-lg text-center text-gray-600 mt-8">
+        <p className="text-sm lg:text-lg text-center text-gray-600 mt-8 px-4">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, and some
           more.
         </p>
