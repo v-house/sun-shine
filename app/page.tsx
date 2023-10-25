@@ -67,7 +67,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-blue-100 p-1 lg:p-2">
+            <div className="bg-sky-300 p-1 lg:p-2">
               <Gallery />
             </div>
 
@@ -77,7 +77,10 @@ export default function Home() {
             <FeaturesBlocks />
 
             <MyComponent />
-            <AboutApp />
+            <div className="bg-gradient-to-b from-sky-300 to-blue-600 p-2 lg:p-4">
+              <AboutApp />
+            </div>
+
             <Testimonial />
             <Experiences />
           </div>

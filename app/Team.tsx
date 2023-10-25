@@ -13,10 +13,10 @@ const MyComponent = () => {
   }, []);
 
   return (
-    <div className="relative m-2 lg:m-4">
+    <div className="relative p-2 lg:p-4 bg-sky-300">
       <div className="relative overflow-hidden rounded-lg">
         <img
-          src="https://i.pinimg.com/736x/28/52/52/285252b2c89a7aaa86c77d629754ab0a.jpg"
+          src="./homepage/5.jpg"
           alt="Team 2023"
           className="w-full h-auto transition-transform duration-500 transform hover:scale-105"
         />

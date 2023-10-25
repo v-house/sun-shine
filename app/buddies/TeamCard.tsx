@@ -42,7 +42,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
         <div className="p-4 relative">
           <div className="flex flex-col justify-between items-center">
             <h3 className="text-md font-semibold text-gray-950">{name}</h3>
-            <span className="text-blue-500 bg-blue-100 py-1 px-2 rounded-full text-sm">
+            <span className="text-blue-500 bg-blue-100 py-1 px-2 rounded-full text-sm line-clamp-1">
               {department}
             </span>
             <div className="flex space-x-2 mt-2">

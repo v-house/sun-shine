@@ -1,7 +1,7 @@
 import React from "react";
 
 const FeatureCard = () => (
-  <div className="relative overflow-hidden bg-gray-900 pt-16 pb-32 space-y-24">
+  <div className="relative overflow-hidden bg-sky-300 pt-16 pb-32 space-y-24">
     {/* Feature 1: Image on the left, text on the right */}
     <div className="relative">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
@@ -29,19 +29,20 @@ const FeatureCard = () => (
 
             <div className="mt-6">
               <h2 className="text-3xl font-bold tracking-tight text-white">
-                Natural Language Processing (NLP):
+                Sunshine Buddies
               </h2>
               <p className="mt-4 text-lg text-gray-300">
-                The AI product utilizes advanced NLP algorithms to understand
-                and interpret human language, enabling it to accurately process
-                and analyze text-based inputs.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores officia dolore earum nihil laudantium repellendus
+                velit sint quisquam, placeat laborum voluptatibus maiores quos
+                obcaecati atque minima nostrum? Rerum, officia cumque.
               </p>
               <div className="mt-6">
                 <a
                   className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
-                  href="/login"
+                  href="/buddies"
                 >
-                  Learn More
+                  Our Buddies
                 </a>
               </div>
             </div>
@@ -55,7 +56,7 @@ const FeatureCard = () => (
               height="486"
               className="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
               style={{ color: "transparent" }}
-              src="https://images.unsplash.com/photo-1569144157591-c60f3f82f137"
+              src="./homepage/6.jpg"
               alt="NLP Image"
             />
           </div>
@@ -89,19 +90,20 @@ const FeatureCard = () => (
             </div>
             <div className="mt-6">
               <h2 className="text-3xl font-bold tracking-tight text-white">
-                Sentiment Analysis:
+                Sunshine Mentors
               </h2>
               <p className="mt-4 text-lg text-gray-300">
-                The product has built-in sentiment analysis capabilities,
-                allowing it to determine the sentiment (positive, negative, or
-                neutral) expressed in text or customer feedback.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium porro dolorum praesentium provident id ab dolore, non
+                vitae ea, modi alias necessitatibus aliquid sapiente! Incidunt
+                distinctio officia eveniet quia veniam!
               </p>
               <div className="mt-6">
                 <a
                   className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
-                  href="/login"
+                  href="/mentors"
                 >
-                  Learn More
+                  Our Mentors
                 </a>
               </div>
             </div>
@@ -116,7 +118,7 @@ const FeatureCard = () => (
               height="486"
               className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
               style={{ color: "transparent" }}
-              src="https://images.unsplash.com/photo-1599134842279-fe807d23316e"
+              src="./homepage/7.jpg"
             />
           </div>
         </div>

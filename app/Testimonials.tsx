@@ -36,7 +36,7 @@ const TestimonialCarousel = () => {
   const currentTestimonial = testimonials[currentTestimonialIndex];
 
   return (
-    <div className="relative pt-10">
+    <div className="relative">
       {/* SVG Background */}
       <div className="absolute z-0 w-full h-full">
         <svg
@@ -120,7 +120,7 @@ const TestimonialCarousel = () => {
         </svg>
       </div>
 
-      <div className="container my-24 mx-auto px-3 md:px-6 relative z-10">
+      <div className="container mx-auto px-3 md:px-6 pt-16 relative z-10">
         <section className="mb-32 text-center">
           <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
 

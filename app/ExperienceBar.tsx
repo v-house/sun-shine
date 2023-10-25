@@ -18,49 +18,49 @@ export default function App() {
         <Card className="col-span-12 sm:col-span-4 h-[300px] hidden md:block">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">
-              What to watch
+              Regular
             </p>
             <h4 className="text-white font-medium text-large">
-              Stream the Acme event
+              Departmental Meets
             </h4>
           </CardHeader>
           <Image
             removeWrapper
             alt="Card background"
             className="z-0 w-full h-full object-cover"
-            src="/images/card-example-4.jpeg"
+            src="./homepage/8.jpg"
           />
         </Card>
         <Card className="col-span-12 sm:col-span-4 h-[300px] hidden md:block">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-            <p className="text-tiny text-white/60 uppercase font-bold">
-              Plant a tree
+            <p className="text-tiny text-slate-900 uppercase font-bold">
+              Special
             </p>
-            <h4 className="text-white font-medium text-large">
-              Contribute to the planet
+            <h4 className="text-blue-900 font-medium text-large">
+              Creative Events
             </h4>
           </CardHeader>
           <Image
             removeWrapper
             alt="Card background"
             className="z-0 w-full h-full object-cover"
-            src="/images/card-example-3.jpeg"
+            src="./homepage/9.jpg"
           />
         </Card>
         <Card className="col-span-12 sm:col-span-4 h-[300px] hidden md:block">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-            <p className="text-tiny text-white/60 uppercase font-bold">
-              Supercharged
+            <p className="text-tiny text-blue-700 uppercase font-bold">
+              Necessary
             </p>
-            <h4 className="text-white font-medium text-large">
-              Creates beauty like a beast
+            <h4 className="text-slate-950 font-medium text-large">
+              Counselling Sessions
             </h4>
           </CardHeader>
           <Image
             removeWrapper
             alt="Card background"
             className="z-0 w-full h-full object-cover"
-            src="/images/card-example-2.jpeg"
+            src="./homepage/10.jpg"
           />
         </Card>
         <Card
@@ -68,14 +68,16 @@ export default function App() {
           className="w-full h-[300px] col-span-12 sm:col-span-5"
         >
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
-            <p className="text-tiny text-white/60 uppercase font-bold">New</p>
-            <h4 className="text-black font-medium text-2xl">Acme camera</h4>
+            <p className="text-tiny text-black uppercase font-bold">Reveals</p>
+            <h4 className="text-white/90 font-medium text-2xl">
+              Untold Stories
+            </h4>
           </CardHeader>
           <Image
             removeWrapper
             alt="Card example background"
             className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-            src="/images/card-example-6.jpeg"
+            src="./homepage/11.jpg"
           />
         </Card>
         <Card
@@ -83,35 +85,31 @@ export default function App() {
           className="w-full h-[300px] col-span-12 sm:col-span-7"
         >
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
-            <p className="text-tiny text-white/60 uppercase font-bold">
-              Your day your way
-            </p>
-            <h4 className="text-white/90 font-medium text-xl">
-              Your checklist for better sleep
-            </h4>
+            <p className="text-tiny text-blue-800 uppercase font-bold">Fun</p>
+            <h4 className="text-black font-medium text-xl">Work Together</h4>
           </CardHeader>
           <Image
             removeWrapper
             alt="Relaxing app background"
             className="z-0 w-full h-full object-cover"
-            src="/images/card-example-5.jpeg"
+            src="./homepage/12.jpg"
           />
           <CardFooter className="absolute bg-black/40 bottom-0 z-9 border-t-1 border-default-600 dark:border-default-100">
             <div className="flex flex-grow gap-2 items-center">
               <Image
                 alt="Breathing app icon"
-                className="rounded-full w-10 h-11 bg-black"
-                src="/images/breathing-app-icon.jpeg"
+                className="rounded-full h-10"
+                src="./logo.png"
               />
               <div className="flex flex-col">
-                <p className="text-tiny text-white/60">Breathing App</p>
                 <p className="text-tiny text-white/60">
-                  Get a good night sleep.
+                  Every part of the year
                 </p>
+                <p className="text-tiny text-white/60">So Many Events</p>
               </div>
             </div>
             <Button radius="full" size="sm">
-              Get App
+              View Events
             </Button>
           </CardFooter>
         </Card>

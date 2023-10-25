@@ -24,22 +24,22 @@ const HomePage = () => {
           <img
             src="./homepage/1.jpg"
             alt="Image 1"
-            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover"
           />
           <img
             src="./homepage/2.jpg"
             alt="Image 1"
-            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover"
           />
           <img
             src="./homepage/3.jpg"
             alt="Image 1"
-            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover"
           />
           <img
             src="./homepage/4.jpg"
             alt="Image 1"
-            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover hover:scale-110 transition-transform duration-1000"
+            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover"
           />
         </div>
         <p className="text-sm lg:text-lg text-center text-gray-600 mt-8 px-4">
