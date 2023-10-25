@@ -104,7 +104,7 @@ export default function Home() {
               >
                 <span
                   id="blackOverlay"
-                  className="w-full h-full absolute opacity-75 bg-black"
+                  className="w-full h-full absolute opacity-60 bg-black"
                 ></span>
               </div>
               <div className="container relative mx-auto">

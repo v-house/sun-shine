@@ -42,7 +42,7 @@ const Navbar: FC = () => {
   ];
 
   return (
-    <nav className="bg-gray-800 animate-fade-down animate-once animate-duration-200 animate-ease-linear animate-normal animate-fill-forwards">
+    <nav className="bg-gray-800 animate-fade-down animate-once animate-duration-200 animate-ease-linear animate-normal animate-fill-forwards h-[11vh]">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">

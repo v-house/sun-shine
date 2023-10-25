@@ -13,7 +13,7 @@ const HomePage = () => {
         </svg>
       </div>
 
-      <div className="flex flex-col justify-evenly items-center z-10 relative">
+      <div className="flex flex-col justify-evenly items-center z-9 relative">
         <h1 className="text-2xl lg:text-4xl font-extrabold text-center text-gray-900 mb-10 animate-fade-up">
           <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-sky-500 relative inline-block">
             <span className="relative text-white">Sunshine</span>
