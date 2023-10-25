@@ -49,31 +49,33 @@ const AboutApp = () => {
     <RevealOnScroll direction="left">
       <section className="text-gray-600 body-font bg-white">
         <div className="container mx-auto flex px-5 pt-12 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center bg-white">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center bg-white p-6 rounded-md shadow-md">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">
-              Introducing Sunshine App
+              Welcome to the Sunshine App
             </h1>
-            <p className="mb-8 leading-relaxed">
-              Chillwave portland ugh, knausgaard fam polaroid iPhone. Man braid
-              swag typewriter affogato, hella selvage wolf narwhal dreamcatcher.
+            <p className="mb-8 leading-relaxed text-gray-700">
+              Discover the extraordinary in every day. Sunshine is your portal
+              to a world of inspiration and happiness. Explore and experience
+              life in a whole new way.
             </p>
             <a
               href="#_"
-              className="relative inline-flex items-center justify-start px-6 py-3 mt-2 overflow-hidden font-medium transition-all rounded hover:bg-white group"
+              className="relative inline-flex items-center justify-start px-6 py-3 mt-2 overflow-hidden font-medium transition-all bg-sky-300 text-black rounded hover:bg-blue-600 group shadow-md"
             >
-              <span className="w-48 h-48 rounded rotate-[-40deg] bg-blue-500 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-              <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                View About App
+              <span className="w-48 h-48 rounded rotate-[-40deg] bg-blue-700 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+              <span className="relative w-full text-left transition-colors duration-300 ease-in-out group-hover:text-white">
+                Learn More
               </span>
             </a>
           </div>
+
           <RevealOnScroll direction="right">
             <div
               className="lg:max-w-lg lg:w-full md:w-1/2 w-3/4 mx-auto"
               data-taos-offset="400"
             >
               <img
-                className="object-cover object-center rounded-lg shadow-lg"
+                className="object-cover object-center"
                 alt="hero"
                 src="./app2.png"
               />
