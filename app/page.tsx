@@ -30,7 +30,7 @@ export default function Home() {
   const handleScroll = () => {
     const scrollY = window.scrollY;
     const logoScrollFactor = 0.3;
-    const headingScrollFactor = 0.2;
+    const headingScrollFactor = 0.3;
     const subheadingScrollFactor = 0.3;
 
     const logo = document.querySelector(".logo") as HTMLElement;
@@ -77,7 +77,16 @@ export default function Home() {
     <>
       <div>
         {isLoading ? (
-          <Loading />
+          <>
+            <Loading />
+            <div
+              className="hidden h-0"
+              style={{
+                backgroundImage: backgroundImages[currentBackgroundIndex],
+                transition: "background-image 2s",
+              }}
+            ></div>
+          </>
         ) : (
           <div className="bg-white overflow-x-hidden">
             <div
