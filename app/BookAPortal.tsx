@@ -10,17 +10,59 @@ export default function BookAportalButton() {
     date: "",
     time: "",
   });
+  const [selectedMode, setSelectedMode] = useState("offline");
+  const [dateError, setDateError] = useState("");
+  const [timeError, setTimeError] = useState("");
+  const [counselorError, setCounselorError] = useState("");
 
   // Function to send an email to the selected counselor
   const sendEmail = () => {
+    console.log(selectedCounselor);
     if (selectedCounselor) {
-      const { name, email, date, time } = bookingDetails;
-      const subject = `Appointment Booking Request with ${selectedCounselor}`;
-      const body = `Dear ${selectedCounselor}, I would like to book an appointment with you on ${date} at ${time}. Name: ${name} Email: ${email} Thank you`;
-      const emailLink = `mailto:${selectedCounselor}?subject=${subject}&body=${body}`;
+      
+      //cause time and date is required
+      if (!bookingDetails.date) {
+        setDateError("Please select a date");
+      } else{
+        setDateError("");
 
-      // Open the email link in a new tab
-      window.open(emailLink, "_blank");
+      }
+      if (!bookingDetails.time) {
+        setTimeError("Please enter time");
+      } else{
+        setTimeError("");
+      }
+      
+      if(bookingDetails.date && bookingDetails.time){
+        setDateError("");
+        setTimeError("");
+        var greeting = 'madam';
+
+        if (selectedCounselor == "phani.bhushan@admin.iith.ac.in") {
+          greeting = 'sir';
+        }
+
+        const { name, email, date, time } = bookingDetails;
+        // const subject = `Appointment Booking Request with ${selectedCounselor}`;
+        const subject = "Regarding Slot for a Session"//same as app
+        const body = `Dear ${greeting}, I was wondering if I could meet you for an ${selectedMode} session on ${date} at ${time}. %0D%0AName: ${name} %0D%0AEmail: ${email} %0D%0AThank you`
+        // const body = `Dear ${selectedCounselor}, I would like to book an appointment with you on ${date} at ${time}.\nName: ${name} \nEmail: ${email} \nMode: ${selectedMode} \nThank you`;
+        const emailLink = `mailto:${selectedCounselor}?subject=${subject}&body=${body}`;
+
+        // Open the email link in a new tab
+        window.open(emailLink, "_blank");
+
+        setBookingDetails({
+          name: "",
+          email: "",
+          date: "",
+          time: "",
+        });
+        setOpen(false);
+        setCounselorError("");
+      }
+    }else{
+      setCounselorError("Please select a counselor");
     }
   };
 
@@ -52,6 +94,16 @@ export default function BookAportalButton() {
           onClose={() => {
             setOpen(false);
             setSelectedCounselor("");
+            setSelectedMode("offline");
+            setDateError("");
+            setTimeError("");
+            setCounselorError("");
+            setBookingDetails({
+              name: "",
+              email: "",
+              date: "",
+              time: "",
+            });
           }}
         >
           <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -92,7 +144,7 @@ export default function BookAportalButton() {
                         as="h3"
                         className="text-lg font-medium leading-6 text-gray-900 dark:text-gray-200"
                       >
-                        Book an appointment
+                        Book a Session with our Counselor
                       </Dialog.Title>
                       <div className="mt-2">
                         <label className="block text-sm text-gray-500 dark:text-gray-400">
@@ -105,15 +157,38 @@ export default function BookAportalButton() {
                           <option value="" disabled selected>
                             Choose a Counselor
                           </option>
-                          <option value="counselor1@example.com">
-                            Counselor 1
+                          <option value="maria.morris@admin.iith.ac.in">
+                            Maria Morris
                           </option>
-                          <option value="counselor2@example.com">
-                            Counselor 2
+                          <option value="yukti.rastogi@admin.iith.ac.in">
+                            Yukti Rastogi
                           </option>
-                          <option value="counselor3@example.com">
-                            Counselor 3
+                          <option value="phani.bhushan@admin.iith.ac.in">
+                            D. Phani Bhushan
                           </option>
+                        </select>
+                        {counselorError && (
+                          <p className="text-red-600 text-sm mt-2">{counselorError}</p>
+                        )}
+                      </div>
+                      <div className="mt-2">
+                        <label className="block text-sm text-gray-500 dark:text-gray-400">
+                          Mode of Session:
+                        </label>
+                        <select
+                          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          onChange={(e) => setSelectedMode(e.target.value)}
+                        >
+                          {/* <option value="" disabled selected>
+                            Select mode of session
+                          </option> */}
+                          <option value="offline">
+                            Offline
+                          </option>
+                          <option value="online">
+                            Online
+                          </option>
+                          
                         </select>
                       </div>
                       <div className="mt-2">
@@ -150,7 +225,7 @@ export default function BookAportalButton() {
                       </div>
                       <div className="mt-2">
                         <label className="block text-sm text-gray-500 dark:text-gray-400">
-                          Date:
+                          Date:*
                         </label>
                         <input
                           type="date"
@@ -162,10 +237,13 @@ export default function BookAportalButton() {
                             })
                           }
                         />
+                        {dateError && (
+                          <p className="text-red-600 text-sm mt-2">{dateError}</p>
+                        )}
                       </div>
                       <div className="mt-2">
                         <label className="block text-sm text-gray-500 dark:text-gray-400">
-                          Time:
+                          Time:*
                         </label>
                         <input
                           type="time"
@@ -177,6 +255,9 @@ export default function BookAportalButton() {
                             })
                           }
                         />
+                        {timeError && (
+                          <p className="text-red-600 text-sm mt-2">{timeError}</p>
+                        )}
                       </div>
                     </div>
                   </div>
