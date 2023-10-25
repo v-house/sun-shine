@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Loading from "./loading";
 import Image from "next/image";
@@ -13,6 +12,14 @@ import Testimonial from "./Testimonials";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
+
+  const backgroundImages = [
+    "url('https://bl-i.thgim.com/public/news/fsearh/article67036452.ece/alternates/FREE_1200/MEMAU_30_6_2022_19_0_3_2_1011.jpg')",
+    "url('https://www.iith.ac.in/assets/images/towers/tower1.jpg')",
+    "url('https://qph.cf2.quoracdn.net/main-qimg-ebd12cac0e67d86a5ab98004a491ba7c-lq')",
+    "url('https://arcop.co.in/images/product-options/enlarge-image/20160928032703_primage.jpg')",
+  ];
 
   useEffect(() => {
     setTimeout(() => {
@@ -22,12 +29,26 @@ export default function Home() {
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    const logoScrollFactor = 0.1;
+    const logoScrollFactor = 0.3;
+    const headingScrollFactor = 0.2;
+    const subheadingScrollFactor = 0.3;
 
     const logo = document.querySelector(".logo") as HTMLElement;
+    const heading = document.querySelector(".heading") as HTMLElement;
+    const subheading = document.querySelector(".subheading") as HTMLElement;
 
     if (logo) {
       logo.style.transform = `translateY(${scrollY * logoScrollFactor}px)`;
+    }
+    if (heading) {
+      heading.style.transform = `translateY(${
+        scrollY * headingScrollFactor
+      }px)`;
+    }
+    if (subheading) {
+      subheading.style.transform = `translateY(${
+        scrollY * subheadingScrollFactor
+      }px)`;
     }
   };
 
@@ -37,6 +58,20 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (currentBackgroundIndex < backgroundImages.length - 1) {
+        setCurrentBackgroundIndex(currentBackgroundIndex + 1);
+      } else {
+        setCurrentBackgroundIndex(0);
+      }
+    }, 4000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentBackgroundIndex]);
 
   return (
     <>
@@ -48,14 +83,14 @@ export default function Home() {
             <div
               className="relative pt-16 pb-32 flex content-center items-center justify-center"
               style={{
-                minHeight: "75vh",
+                minHeight: "89vh",
               }}
             >
               <div
-                className="absolute top-0 w-full h-full bg-center bg-cover bg-fixed"
+                className="absolute top-0 w-full h-full bg-center bg-cover bg-fixed bg-slide-animation"
                 style={{
-                  backgroundImage:
-                    "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+                  backgroundImage: backgroundImages[currentBackgroundIndex],
+                  transition: "background-image 2s",
                 }}
               >
                 <span
@@ -69,14 +104,14 @@ export default function Home() {
                     <div className="logo relative transform transition-transform duration-1000">
                       <Image
                         src="/logo.png"
-                        alt="Logo"
+                        alt="Sunshine IITH logo"
                         className="w-24 md:w-32 lg:w-56"
                         height={108}
                         width={108}
                       />
                     </div>
                     <div className="ml-4">
-                      <h1 className="text-4xl lg:text-8xl font-bold text-white heading animate-fade-right animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-forwards">
+                      <h1 className="text-4xl lg:text-8xl font-bold text-white heading animate-fade-right animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
                         Sunshine
                       </h1>
                       <h3 className="text-sm lg:text-lg text-gray-200 subheading animate-fade-left animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
