@@ -135,7 +135,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">
+              <ModalHeader className="flex flex-col gap-1 text-white">
                 About Me
               </ModalHeader>
               <ModalBody>
@@ -161,13 +161,13 @@ const TeamMember: React.FC<TeamMemberProps> = ({
                   <CardBody className="px-3 py-0 text-small text-default-400 h-32">
                     <p>{about}</p>
                     <span className="pt-2">
-                      {email}
+                      {email}{" "}
                       <span className="py-2" aria-label="email" role="img">
                         📧
                       </span>
                     </span>
                     <span className="pt-2">
-                      {phone}
+                      {phone}{" "}
                       <span className="py-2" aria-label="phone" role="img">
                         📞
                       </span>
