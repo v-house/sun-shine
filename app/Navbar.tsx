@@ -42,7 +42,7 @@ const Navbar: FC = () => {
   ];
 
   return (
-    <nav className="bg-gray-800 animate-fade-down animate-once animate-duration-200 animate-ease-linear animate-normal animate-fill-forwards h-[11vh]">
+    <nav className="bg-gray-800 animate-fade-down animate-once animate-duration-200 animate-ease-linear animate-normal animate-fill-forwards">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -189,7 +189,9 @@ const Navbar: FC = () => {
         </div>
       </div>
       <div
-        className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}
+        className={`md:hidden ${
+          isMenuOpen ? "block" : "hidden"
+        } transform transition duration-700 ease-in-out`}
         id="mobile-menu"
       >
         <div className="space-y-1 px-2 pb-3 pt-2">

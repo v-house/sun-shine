@@ -24,51 +24,57 @@ export default function FeaturesBlocks() {
           <div className="max-w-sm mx-auto grid gap-12 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-4xl">
             {/* 1st item */}
             <div className="relative flex flex-col items-center bg-white rounded shadow-xl border border-gray-300">
-              <div className="relative overflow-hidden group">
+              <div className="w-108 h-108 relative overflow-hidden group">
                 <img
-                  src="https://sunshine.iith.ac.in/images/faculty/20210803_113018%20-%20Maria%20Morris.jpg"
+                  src="./homepage/mariaMorris.jpg"
                   alt="Image 2"
-                  className="h-108 object-cover transition-transform duration-300 transform scale-100 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 transform scale-100 group-hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 text-white p-4 text-opacity-100 text-center">
                   <h4 className="text-xl font-semibold leading-snug tracking-tight mb-1">
-                    Name
+                    Maria Morris
                   </h4>
-                  <p className="text-gray-200 text-sm">Email</p>
+                  <p className="text-gray-200 text-sm">
+                    maria.morris@admin.iith.ac.in
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* 2nd item */}
             <div className="relative flex flex-col items-center bg-white rounded shadow-xl border border-gray-300">
-              <div className="relative overflow-hidden group">
+              <div className="w-108 h-108 relative overflow-hidden group">
                 <img
-                  src="https://sunshine.iith.ac.in/images/faculty/20210803_113018%20-%20Maria%20Morris.jpg"
+                  src="https://sunshine.iith.ac.in/images/faculty/IMG_1257%20-%20Yukti%20Rastogi.JPG"
                   alt="Image 2"
-                  className="h-108 object-cover transition-transform duration-300 transform scale-100 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 transform scale-100 group-hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 text-white p-4 text-opacity-100 text-center">
                   <h4 className="text-xl font-semibold leading-snug tracking-tight mb-1">
-                    Name
+                    Yukti Rastogi
                   </h4>
-                  <p className="text-gray-200 text-sm">Email</p>
+                  <p className="text-gray-200 text-sm">
+                    yukti.rastogi@admin.iith.ac.in
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* 3rd item */}
             <div className="relative flex flex-col items-center bg-white rounded shadow-xl border border-gray-300">
-              <div className="relative overflow-hidden group">
+              <div className="w-108 h-108 relative overflow-hidden group">
                 <img
-                  src="https://sunshine.iith.ac.in/images/faculty/20210803_113018%20-%20Maria%20Morris.jpg"
+                  src="https://sunshine.iith.ac.in/images/faculty/phani.jpeg"
                   alt="Image 2"
-                  className="h-108 object-cover transition-transform duration-300 transform scale-100 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-300 transform scale-100 group-hover:scale-105"
                 />
                 <div className="absolute bottom-0 left-0 right-0 text-white p-4 text-opacity-100 text-center">
                   <h4 className="text-xl font-semibold leading-snug tracking-tight mb-1">
-                    Name
+                    D. Phani Bhushan
                   </h4>
-                  <p className="text-gray-200 text-sm">Email</p>
+                  <p className="text-gray-200 text-sm">
+                    phani.bhushan@admin.iith.ac.in
+                  </p>
                 </div>
               </div>
             </div>

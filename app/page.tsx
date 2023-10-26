@@ -92,11 +92,11 @@ export default function Home() {
             <div
               className="relative pt-16 pb-32 flex content-center items-center justify-center"
               style={{
-                minHeight: "89vh",
+                minHeight: "92vh",
               }}
             >
               <div
-                className="absolute top-0 w-full h-full bg-center bg-cover bg-fixed bg-slide-animation"
+                className="absolute top-0 w-full h-full bg-center bg-cover bg-fixed bg-slide-animation z-0"
                 style={{
                   backgroundImage: backgroundImages[currentBackgroundIndex],
                   transition: "background-image 2s",
