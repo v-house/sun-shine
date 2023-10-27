@@ -48,7 +48,7 @@ export default function Teams() {
       </div>
 
       <div className="mt-8">
-        <h2 className="text-2xl font-bold text-slate-800">
+        <h2 className="text-2xl font-extrabold text-slate-800">
           Faculty Coordinators
         </h2>
         <div className={`flex flex-wrap justify-center mt-4`}>
