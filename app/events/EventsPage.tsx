@@ -89,16 +89,9 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
       return smallScreen;
     }
   }
-  function displayEntry(post:any,index:number){
-    const [isHovered, setHovered] = useState(false); 
-    const handleMouseEnter = () => {
-      setHovered(true);
-    };
-  
-    const handleMouseLeave = () => {
-      setHovered(false);
-    };
-    if(index%2==0 || SmallScreensize()){
+  function DisplayEntry(post:any,index:number){
+    const isSmallScreen=SmallScreensize();
+    if(index%2==0 || isSmallScreen){
         return (
           <RevealOnScroll key={post.slug}>
             <AppearOnHover>
@@ -189,7 +182,7 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
 }
   return (
     <div className="antialiased bg-blue-400 text-gray-800">      
-      {posts.map((post, index) => displayEntry(post, index))}    
+      {posts.map((post, index) => DisplayEntry(post, index))}    
       </div>
   );
 };
