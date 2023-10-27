@@ -7,7 +7,6 @@ import Banner from "./Head";
 const GalleryPage = ({ params }: { params: { slug: string } }) => {
   const event = events.find((e) => e.slug === params.slug);
 
-  // Check if the event is found before trying to access its properties
   if (!event) {
     return (
       <div className="bg-gray-100 min-h-screen flex items-center justify-center">
@@ -33,13 +32,13 @@ const GalleryPage = ({ params }: { params: { slug: string } }) => {
   const currentImage = event.images[currentImageIndex];
 
   return (
-    <div className="bg-white pb-4">
+    <div className="bg-white rounded-lg shadow-md">
       <Banner date={event.date} title={event.title} source={currentImage} />
 
-      <div className="container mx-auto px-3 md:px-6 pt-16 relative z-10">
+      <div className="container mx-auto p-3 md:p-6 relative">
         <p className="text-black">{event.description}</p>
         <hr className="my-6 border-t-2 border-gray-300 dark:border-gray-700" />
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-4xl h-96">
           <div className="bg-blue-900 p-4 rounded-lg text-white">
             <img
               className="mx-auto h-96 object-cover"
@@ -49,7 +48,7 @@ const GalleryPage = ({ params }: { params: { slug: string } }) => {
           </div>
           <div className="mt-4 flex justify-between">
             <button
-              className="text-blue-500 text-4xl hover:text-blue-900 focus:outline-none border border-blue-500 rounded-full p-4 shadow-md"
+              className="text-blue-500 text-4xl hover-text-blue-900 focus-outline-none border border-blue-500 rounded-full p-4 shadow-md"
               onClick={handlePrev}
             >
               <svg
@@ -68,7 +67,7 @@ const GalleryPage = ({ params }: { params: { slug: string } }) => {
               </svg>
             </button>
             <button
-              className="text-blue-500 text-4xl hover:text-blue-900 focus:outline-none border border-blue-500 rounded-full p-4 shadow-md"
+              className="text-blue-500 text-4xl hover-text-blue-900 focus-outline-none border border-blue-500 rounded-full p-4 shadow-md"
               onClick={handleNext}
             >
               <svg
