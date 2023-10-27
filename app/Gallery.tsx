@@ -3,7 +3,7 @@ import React from "react";
 const HomePage = () => {
   return (
     <div className="relative overflow-hidden flex flex-col justify-evenly items-center py-10 lg:py-12 h-screen">
-      <div className="absolute bottom-0 w-full z-0">
+      <div className="absolute -bottom-1 w-full z-0">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#ffffff"
@@ -13,7 +13,7 @@ const HomePage = () => {
         </svg>
       </div>
 
-      <div className="flex flex-col justify-evenly items-center z-9 relative">
+      <div className="flex flex-col justify-evenly items-center z-9 relative m-1 lg:m-2">
         <h1 className="text-2xl lg:text-4xl font-extrabold text-center text-gray-900 mb-10 animate-fade-up">
           <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-sky-500 relative inline-block">
             <span className="relative text-white">Sunshine</span>
@@ -24,22 +24,22 @@ const HomePage = () => {
           <img
             src="./homepage/1.jpg"
             alt="Image 1"
-            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover"
+            className="w-full h-44 lg:w-96 lg:h-60 rounded-lg object-cover"
           />
           <img
             src="./homepage/2.jpg"
             alt="Image 1"
-            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover"
+            className="w-full h-44 lg:w-96 lg:h-60 rounded-lg object-cover"
           />
           <img
             src="./homepage/3.jpg"
             alt="Image 1"
-            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover"
+            className="w-full h-44 lg:w-96 lg:h-60 rounded-lg object-cover"
           />
           <img
             src="./homepage/4.jpg"
             alt="Image 1"
-            className="w-full h-48 lg:w-96 lg:h-60 rounded-lg object-cover"
+            className="w-full h-44 lg:w-96 lg:h-60 rounded-lg object-cover"
           />
         </div>
         <p className="text-sm lg:text-lg text-center text-gray-600 mt-8 px-4">

@@ -4,7 +4,7 @@ import Count from "./Count";
 
 const AboutUsPage = () => {
   return (
-    <div className="py-8 px-4 bg-white rounded-lg m-1">
+    <div className="py-8 px-4 bg-white">
       <h1 className="text-3xl font-bold text-gray-800 mb-4">
         About Sunshine Counselling Cell
       </h1>

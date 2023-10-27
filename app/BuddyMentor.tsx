@@ -1,14 +1,14 @@
 import React from "react";
 
 const FeatureCard = () => (
-  <div className="relative overflow-hidden bg-sky-300 pt-16 pb-32 space-y-24">
+  <div className="relative overflow-hidden bg-gradient-to-b from-white via-sky-300 to-white pt-16 pb-32 space-y-24">
     {/* Feature 1: Image on the left, text on the right */}
     <div className="relative">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
         <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
           <div>
             <div>
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -16,7 +16,7 @@ const FeatureCard = () => (
                   stroke-width="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-8 w-8 text-white"
+                  className="h-8 w-8 text-black"
                 >
                   <path
                     stroke-linecap="round"
@@ -28,10 +28,10 @@ const FeatureCard = () => (
             </div>
 
             <div className="mt-6">
-              <h2 className="text-3xl font-bold tracking-tight text-white">
+              <h2 className="text-3xl font-bold tracking-tight text-black">
                 Sunshine Buddies
               </h2>
-              <p className="mt-4 text-lg text-gray-300">
+              <p className="mt-4 text-lg text-slate-800">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores officia dolore earum nihil laudantium repellendus
                 velit sint quisquam, placeat laborum voluptatibus maiores quos
@@ -39,7 +39,7 @@ const FeatureCard = () => (
               </p>
               <div className="mt-6">
                 <a
-                  className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                  className="inline-flex rounded-lg bg-blue-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700"
                   href="/buddies"
                 >
                   Our Buddies
@@ -70,7 +70,7 @@ const FeatureCard = () => (
         <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
           <div>
             <div>
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -78,7 +78,7 @@ const FeatureCard = () => (
                   stroke-width="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-8 w-8 text-white"
+                  className="h-8 w-8 text-black"
                 >
                   <path
                     stroke-linecap="round"
@@ -89,10 +89,10 @@ const FeatureCard = () => (
               </span>
             </div>
             <div className="mt-6">
-              <h2 className="text-3xl font-bold tracking-tight text-white">
+              <h2 className="text-3xl font-bold tracking-tight text-black">
                 Sunshine Mentors
               </h2>
-              <p className="mt-4 text-lg text-gray-300">
+              <p className="mt-4 text-lg text-slate-800">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laudantium porro dolorum praesentium provident id ab dolore, non
                 vitae ea, modi alias necessitatibus aliquid sapiente! Incidunt
@@ -100,7 +100,7 @@ const FeatureCard = () => (
               </p>
               <div className="mt-6">
                 <a
-                  className="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
+                  className="inline-flex rounded-lg bg-blue-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700"
                   href="/mentors"
                 >
                   Our Mentors

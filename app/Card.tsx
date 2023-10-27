@@ -2,7 +2,7 @@ export default function FeaturesBlocks() {
   return (
     <section className="relative">
       <div
-        className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-white lg:bg-sky-300 pointer-events-none"
+        className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gradient-to-b from-white to-sky-300 bg-white lg:bg-sky-300 pointer-events-none"
         aria-hidden="true"
       ></div>
 

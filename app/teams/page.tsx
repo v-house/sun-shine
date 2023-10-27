@@ -13,11 +13,11 @@ import facultyRepresentatives from "./facultyRepresentatives";
 export default function Teams() {
   const router = useRouter();
   return (
-    <div className="bg-white p-2 pt-4 lg:pt-8 text-center rounded-lg m-1">
+    <div className="bg-white p-2 pt-4 lg:pt-8 text-center">
       <h1 className="text-3xl lg:text-4xl font-extrabold text-slate-950">
         The Sunshine Team
       </h1>
-      <hr className="h-px my-8 mt-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <hr className="h-px my-8 mt-1 border-0 bg-gray-700"></hr>
       <div className="mt-4">
         <div className="flex flex-col space-y-2 px-8 md:px-32 md:flex-row md:space-y-0 md:space-x-2">
           <button

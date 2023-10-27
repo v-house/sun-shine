@@ -89,12 +89,7 @@ export default function Home() {
           </>
         ) : (
           <div className="bg-white overflow-x-hidden">
-            <div
-              className="relative pt-16 pb-32 flex content-center items-center justify-center"
-              style={{
-                minHeight: "92vh",
-              }}
-            >
+            <div className="relative pt-16 pb-32 flex content-center items-center justify-center h-[92vh]">
               <div
                 className="absolute top-0 w-full h-full bg-center bg-cover bg-fixed bg-slide-animation z-0"
                 style={{
@@ -132,7 +127,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-sky-300 p-1 lg:p-2">
+            <div className="bg-sky-300">
               <Gallery />
             </div>
 
@@ -142,7 +137,7 @@ export default function Home() {
             <FeaturesBlocks />
 
             <MyComponent />
-            <div className="bg-gradient-to-b from-sky-300 to-blue-600 pt-2 px-2 lg:pt-4 lg:px-4">
+            <div className="bg-gradient-to-bl from-sky-300 via-sky-300 to-blue-700 pt-2 pl-2 lg:pt-4 lg:pl-4">
               <AboutApp />
             </div>
 
