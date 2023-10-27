@@ -38,7 +38,7 @@ const MyComponent = () => {
         <div className="absolute inset-0 bg-gradient-to-l from-gray-900 via-gray-900/40"></div>
         <aside
           ref={sidebarRef}
-          className="absolute top-0 right-0 w-1/4 lg:w-1/5 h-full pr-12 flex flex-col justify-center items-end text-xl lg:text-4xl font-bold opacity-0 transition-transform duration-500"
+          className="absolute top-0 right-0 w-1/4 lg:w-1/5 h-full pr-3 md:pr-6 lg:pr-12 flex flex-col justify-center items-end text-xl lg:text-4xl font-bold opacity-0 transition-transform duration-500"
           style={{
             transform: "translateY(-100%)",
           }}
