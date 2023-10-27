@@ -20,7 +20,7 @@ export default function Photos(props: { event: any }) {
     <div className="mx-auto max-w-4xl h-4xl">
       <div className="bg-blue-900 p-4 rounded-lg text-white">
         <img
-          className="mx-auto h-96 object-cover"
+          className="mx-auto h-96 object-contain md:object-cover"
           src={currentImage}
           alt="Image"
         />
