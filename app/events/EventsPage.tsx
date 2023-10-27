@@ -99,12 +99,11 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
   }
   function DisplayEntry(post:any,index:number){
     const isSmallScreen=CheckScreen();
-    console.log(isSmallScreen);
     if(isSmallScreen===true){
         return (
           <RevealOnScroll key={post.slug}>
           <div className="relative container mx-auto px-6 flex flex-col space-y-8 ">
-            <div className="absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-2 md:mx-auto md:right-0 md:left-0">
+            <div className="absolute z-0 w-2 h-full bg-sky-100 shadow-md inset-0 left-2 md:mx-auto md:right-0 md:left-0">
             </div>
             <div className={`absolute z-10 h-8 w-8 left-0 object-cover rounded-full shadow-md border-4 bg-blue-400 border-white md:mx-auto md:left-0 md:right-0 `} >
                 </div>
@@ -150,9 +149,9 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
         <RevealOnScroll key={post.slug}>
           <AppearOnHover>
         <div className="relative container mx-auto px-6 flex flex-col space-y-8 ">
-          <div className="absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-2 md:mx-auto md:right-0 md:left-0">
+          <div className="absolute z-0 w-2 h-full bg-sky-100 shadow-md inset-0 left-2 md:mx-auto md:right-0 md:left-0">
           </div>
-          <div className={`absolute z-10 h-8 w-8 left-0 object-cover rounded-full shadow-md border-4 bg-blue-400 border-white md:mx-auto md:left-0 md:right-0 `} >
+          <div className="absolute z-10 h-8 w-8 left-0 object-cover rounded-full shadow-md border-4 bg-blue-400 border-white md:mx-auto md:left-0 md:right-0" >
               </div>
           <div className="relative z-0 pb-4">                          
               <div className='flex flex-row flex-wrap items-start'>
@@ -197,7 +196,7 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
           <RevealOnScroll key={post.slug}>
             <AppearOnHover>
           <div className="relative container mx-auto px-6 flex flex-col space-y-8" >
-            <div className="absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-2 md:mx-auto md:right-0 md:left-0">
+            <div className="absolute z-0 w-2 h-full bg-sky-100 shadow-md inset-0 left-2 md:mx-auto md:right-0 md:left-0">
             </div>
             <div className='absolute z-10 h-8 w-8 left-0 object-cover rounded-full shadow-md border-4 bg-blue-400 border-white md:mx-auto md:left-0 md:right-0'>
               </div>
@@ -219,7 +218,7 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
                         </div>
                     </div>
                   </div>                
-                  <div className="relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 md:ml-0 md:pl-16">
+                  <div className="relative pt-2 md:w-1/2 md:ml-0 md:pl-16">
                   <div className='w-full '>
                       <img
                       src={post.images[0]}
@@ -237,17 +236,11 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
             
 }
   const isSmallScreen=CheckScreen();
-  console.log(isSmallScreen);
   if(isSmallScreen===true){
     return (
-      <div>
-        <p className=" text-md md:text-2xl font-medium text-gray-700 mt-4 text-center pb-8 pt-8 animate-fade-left animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
-            Scroll down to find the Amazing Events we held!!
-          </p>
         <div className="antialiased bg-blue-400 text-gray-800">  
         {posts.map((post, index) => DisplayEntry(post, index))}    
         </div>
-      </div>
     );
   }
   else{
