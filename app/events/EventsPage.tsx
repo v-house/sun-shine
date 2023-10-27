@@ -85,7 +85,7 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
           return () =>{
               window.removeEventListener('resize',detectSize)
           }
-      },[smallScreen])
+      },[smallScreen,detectSize])
       return smallScreen;
     }
   }
