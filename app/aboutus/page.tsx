@@ -8,7 +8,7 @@ const AboutUsPage = () => {
       <h1 className="text-3xl font-bold text-gray-800 mb-4">
         About Sunshine Counselling Cell
       </h1>
-      <hr className="h-px my-8 mt-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <hr className="h-px my-4 mt-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
       <GalleryCarousel />
       <Count />
       <p className="text-gray-600 mb-6">
