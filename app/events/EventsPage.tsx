@@ -69,9 +69,8 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
       </div> 
     ); 
   };
-  function SmallScreensize(){
-    if(typeof window!==undefined){
-      const [smallScreen,detectChange] = useState(false)
+  function IsSmallScreen(){
+    const [smallScreen,detectChange] = useState(false)
       const detectSize = () =>{
         if(window.innerWidth<768){
           detectChange(true)
@@ -87,11 +86,18 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
           }
       },[smallScreen,detectSize])
       return smallScreen;
+  }
+  function CheckScreen(){
+    if(typeof window!==undefined){
+      return IsSmallScreen();
+    }
+    else{
+      return false;
     }
   }
   function DisplayEntry(post:any,index:number){
-    const isSmallScreen=SmallScreensize();
-    if(index%2==0 || isSmallScreen){
+    const isSmallScreen=CheckScreen();
+    if(index%2==0 || isSmallScreen===true){
         return (
           <RevealOnScroll key={post.slug}>
             <AppearOnHover>
