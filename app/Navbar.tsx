@@ -86,7 +86,7 @@ const Navbar: FC = () => {
           </div>
           <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img className="h-8 w-auto" src="/logo.png" alt="Your Company" />
+              <img className="h-8 w-auto" src="/yellow.png" alt="Your Company" />
             </div>
             <div className="hidden md:ml-6 md:block">
               <div className="flex space-x-4">
