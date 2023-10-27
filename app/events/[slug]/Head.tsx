@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Banner(props: { date: any; title: any; source: any }) {
+export default function Banner(props: { date: any; title: any }) {
   return (
     <div className="relative">
       <div

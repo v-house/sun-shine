@@ -7,15 +7,20 @@ import {
   Image,
   Button,
 } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 
 export default function App() {
+  const router = useRouter();
+  const handleEventsClick = () => {
+    router.push("/events");
+  };
   return (
     <>
       <h1 className="text-2xl lg:text-4xl font-extrabold text-center text-gray-900 mb-10 animate-fade-up">
-        Recent Sunshine Events
+        Sunshine Events
       </h1>
       <div className="gap-2 grid grid-cols-12 grid-rows-2 px-4 mx-auto mb-5">
-        <Card className="col-span-12 sm:col-span-4 h-[300px] hidden md:block">
+        <Card className="col-span-12 sm:col-span-4 h-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">
               Regular
@@ -31,7 +36,7 @@ export default function App() {
             src="./homepage/8.jpg"
           />
         </Card>
-        <Card className="col-span-12 sm:col-span-4 h-[300px] hidden md:block">
+        <Card className="col-span-12 sm:col-span-4 h-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <p className="text-tiny text-slate-900 uppercase font-bold">
               Special
@@ -47,7 +52,7 @@ export default function App() {
             src="./homepage/9.jpg"
           />
         </Card>
-        <Card className="col-span-12 sm:col-span-4 h-[300px] hidden md:block">
+        <Card className="col-span-12 sm:col-span-4 h-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <p className="text-tiny text-blue-700 uppercase font-bold">
               Necessary
@@ -108,7 +113,7 @@ export default function App() {
                 <p className="text-tiny text-white/60">So Many Events</p>
               </div>
             </div>
-            <Button radius="full" size="sm">
+            <Button onClick={handleEventsClick} radius="full" size="sm">
               View Events
             </Button>
           </CardFooter>

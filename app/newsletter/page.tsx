@@ -1,23 +1,27 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const magazineLinks = [
   {
     id: 1,
     title: "Volume 1",
     minidescription: "Description for Volume 1",
+    cover: "/app1.png",
     link: "https://iith.ac.in/academics/assets/files/calendars/BTech%20&%20BDes%20_%202023%20_Academic%20Calendar%20_%20for%20approval%20-%20Academic%20Office%20(3).pdf",
   },
   {
     id: 2,
     title: "Volume 2",
     minidescription: "Description for Volume 2",
+    cover: "/app1.png",
     link: "https://iith.ac.in/academics/assets/files/calendars/BTech%20&%20BDes%20_%202023%20_Academic%20Calendar%20_%20for%20approval%20-%20Academic%20Office%20(3).pdf",
   },
   {
     id: 3,
     title: "Volume 3",
     minidescription: "Description for Volume 3",
+    cover: "/app1.png",
     link: "https://iith.ac.in/academics/assets/files/calendars/BTech%20&%20BDes%20_%202023%20_Academic%20Calendar%20_%20for%20approval%20-%20Academic%20Office%20(3).pdf",
   },
 ];
@@ -40,7 +44,7 @@ const NewsletterPage = () => {
   const totalPages = magazineLinks.length;
 
   return (
-    <div className="text-center bg-white p-4 lg:p-16 rounded-lg m-1">
+    <div className="text-center bg-white p-4 lg:p-16">
       <span className="text-xl lg:text-3xl font-bold text-slate-950 p-1 text-left">
         Sunshine Newsletters
       </span>
@@ -76,17 +80,21 @@ const NewsletterPage = () => {
           title={`Magazine Volume ${currentMagazine + 1}`}
         ></iframe>
       </div>
-      <div className="h-72 text-center my-4 lg:hidden flex flex-col justify-center rounded-md">
-        <p className="text-red-800 text-xl font-extrabold mb-4">
-          Preview Unavailable
-        </p>
+      <div className="text-center my-4 lg:hidden flex flex-col justify-center rounded-md">
+        <Image
+          src={magazineLinks[currentMagazine].cover}
+          alt="Cover Photo"
+          width={100}
+          height={400}
+          className="w-full"
+        />
         <a
           href={magazineLinks[currentMagazine].link}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-blue-500 text-white py-3 px-6 text-lg hover:bg-blue-600 transform hover:scale-105 transition-transform duration-300"
+          className="bg-blue-500 text-white py-3 px-6 text-lg hover:bg-blue-600 transform hover:scale-105 transition-transform duration-300 rounded-lg my-2"
         >
-          Download Now
+          View on Drive
         </a>
       </div>
 
