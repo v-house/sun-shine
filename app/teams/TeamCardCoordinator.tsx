@@ -14,7 +14,7 @@ const TeamCard = (props: {
         className="rounded-lg w-48 h-48 mx-auto mt-4 shadow-lg object-cover hover:scale-105 overflow-hidden transition-transform duration-400"
       />
       <div className="mt-4">
-        <p className="text-xl font-semibold text-black">{props.name}</p>
+        <p className="text-lg font-semibold text-black">{props.name}</p>
         <p className="text-gray-500">{props.email}</p>
         <p className="text-gray-500">{props.department}</p>
       </div>

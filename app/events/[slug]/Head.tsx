@@ -16,7 +16,7 @@ export default function Banner(props: { date: any; title: any; source: any }) {
         ></span>
       </div>
       <main className="profile-page text-black relative z-1">
-        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-blueGray-200 relative z-1">
+        <section className="pt-8 sm:pt-12 md:pt-16 lg:pt-20 bg-blueGray-200 relative z-1">
           <div className="container mx-auto px-4">
             <div className="relative flex flex-col min-w-0 break-words bg-sky-200 w-full mb-6 shadow-xl rounded-lg -mt-36 sm:-mt-48 md:-mt-36 lg:-mt-48">
               <div className="px-6 m-8 md:m-16">

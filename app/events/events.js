@@ -7,11 +7,13 @@ const events = [
     description:
       "Join us for an introduction to React and its core concepts.afsdfsdaf fdsfsdfadsfsdfsdfasdf",
     images: [
-      "https://picsum.photos/500",
-      "https://picsum.photos/700",
-      "https://picsum.photos/800",
-      "https://picsum.photos/200",
-      "https://picsum.photos/200",
+      "/homepage/1.jpg",
+      "/homepage/2.jpg",
+      "/homepage/3.jpg",
+      "/homepage/4.jpg",
+      "/homepage/5.jpg",
+      "/homepage/6.jpg",
+      "/homepage/7.jpg",
     ],
   },
   {
