@@ -3,17 +3,17 @@ import Count from "./Count";
 
 const SunshineWhyChooseUs: React.FC = () => {
   return (
-    <div className="bg-blue-100 text-blue-900">
+    <div className="bg-gradient-to-b from-white to-sky-300 text-blue-900">
       <section
         id="features"
         className="relative block px-6 py-10 md:py-20 md:px-10"
       >
         <div className="relative mx-auto max-w-5xl text-center">
           <span className="text-blue-500 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
-            Why choose us
+            THE COUNCELLING CELL OF IIT HYDERABAD
           </span>
           <h2 className="block w-full font-bold text-3xl sm:text-4xl text-blue-900">
-            Build a Website That Your Customers Love
+            Sunshine
           </h2>
           <p className="mx-auto my-4 w-full max-w-xl text-center font-medium leading-relaxed tracking-wide text-blue-700">
             Our templates allow for maximum customization. No technical skills
@@ -127,24 +127,6 @@ const SunshineWhyChooseUs: React.FC = () => {
             </p>
           </div>
         </div>
-
-        <div
-          className="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"
-          style={{
-            background:
-              "linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%)",
-            borderColor: "rgba(92, 79, 240, 0.2)",
-          }}
-        ></div>
-        <div
-          className="absolute bottom-0 right-0 z-0 h-1/3 w-full"
-          style={{
-            background:
-              "linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%)",
-            borderColor: "rgba(92, 79, 240, 0.2)",
-          }}
-        ></div>
-        <Count />
       </section>
     </div>
   );

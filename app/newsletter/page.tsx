@@ -5,29 +5,31 @@ import Image from "next/image";
 const magazineLinks = [
   {
     id: 1,
-    title: "Volume 1",
+    title: "The First Edition",
     minidescription: "Description for Volume 1",
-    cover: "/app1.png",
-    link: "https://iith.ac.in/academics/assets/files/calendars/BTech%20&%20BDes%20_%202023%20_Academic%20Calendar%20_%20for%20approval%20-%20Academic%20Office%20(3).pdf",
+    cover: "/newsletter/Volume1cover.png",
+    link: "./newsletter/Pulse-Volume-1.pdf",
   },
   {
     id: 2,
-    title: "Volume 2",
-    minidescription: "Description for Volume 2",
-    cover: "/app1.png",
-    link: "https://iith.ac.in/academics/assets/files/calendars/BTech%20&%20BDes%20_%202023%20_Academic%20Calendar%20_%20for%20approval%20-%20Academic%20Office%20(3).pdf",
+    title: "It's Second Edition",
+    minidescription:
+      "'Happiness lies in walking the success path chosen by you' focused on the importance of joy and happiness, an essential part of any human's life. In an ideal situation, the fulfillment of personal goals and desires makes one happy. It is an integral part of our life and without it, there is no point in living.",
+    cover: "/newsletter/Volume2cover.png",
+    link: "./newsletter/Pulse-Volume-2.pdf",
   },
   {
     id: 3,
-    title: "Volume 3",
-    minidescription: "Description for Volume 3",
-    cover: "/app1.png",
-    link: "https://iith.ac.in/academics/assets/files/calendars/BTech%20&%20BDes%20_%202023%20_Academic%20Calendar%20_%20for%20approval%20-%20Academic%20Office%20(3).pdf",
+    title: "The third edition of 'Pulse'",
+    minidescription:
+      "'Mental health is Important for all'. It created awareness of the importance of mental health for everyone , about the stigma in society about 'depression' and different types of help available for people suffering from mental health problems.",
+    cover: "/newsletter/Volume3cover.png",
+    link: "./newsletter/Pulse-Volume-3.pdf",
   },
 ];
 
 const NewsletterPage = () => {
-  const [currentMagazine, setCurrentMagazine] = useState(0);
+  const [currentMagazine, setCurrentMagazine] = useState(2);
 
   const navigateMagazine = (direction: string) => {
     if (direction === "next") {
@@ -44,11 +46,20 @@ const NewsletterPage = () => {
   const totalPages = magazineLinks.length;
 
   return (
-    <div className="text-center bg-white p-4 lg:p-16">
+    <div className="text-center bg-white p-4 lg:p-10">
       <span className="text-xl lg:text-3xl font-bold text-slate-950 p-1 text-left">
         Sunshine Newsletters
       </span>
       <hr className="h-px my-8 mt-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <p className="text-black mb-4">
+        &ldquo;Pulse&rdquo; is Sunshine&apos;s (the counseling cell of IITH)
+        newsletter, released every year on October 10th, on the World Mental
+        Health Day. It features a collection of poems, artwork, and write-ups
+        centered around mental health and well-being. This creative platform
+        aims to raise awareness and provide support to the college community,
+        fostering a positive and understanding atmosphere surrounding mental
+        health.
+      </p>
       <div className="hidden lg:block">
         {magazineLinks.map((_, index) => (
           <button
@@ -76,7 +87,7 @@ const NewsletterPage = () => {
         <iframe
           src={magazineLinks[currentMagazine].link}
           width="100%"
-          height="900px"
+          height="700px"
           title={`Magazine Volume ${currentMagazine + 1}`}
         ></iframe>
       </div>

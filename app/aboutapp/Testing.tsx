@@ -15,6 +15,12 @@ export default function App() {
       content:
         "Book a slot for a meet with counsellors. Let the counsellors help you even more effectively.",
     },
+    {
+      id: "Bot",
+      label: "Chat Bot",
+      content:
+        "Get to know about Sunshine, IITH and its culture with even more ease.",
+    },
   ];
 
   return (
