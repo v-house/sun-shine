@@ -52,12 +52,13 @@ const NewsletterPage = () => {
       </span>
       <hr className="h-px my-8 mt-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
       <p className="text-black mb-4">
-        "Pulse" is Sunshine&apos;s (the counseling cell of IITH) newsletter,
-        released every year on October 10th, on the World Mental Health Day. It
-        features a collection of poems, artwork, and write-ups centered around
-        mental health and well-being. This creative platform aims to raise
-        awareness and provide support to the college community, fostering a
-        positive and understanding atmosphere surrounding mental health.
+        &ldquo;Pulse&rdquo; is Sunshine&apos;s (the counseling cell of IITH)
+        newsletter, released every year on October 10th, on the World Mental
+        Health Day. It features a collection of poems, artwork, and write-ups
+        centered around mental health and well-being. This creative platform
+        aims to raise awareness and provide support to the college community,
+        fostering a positive and understanding atmosphere surrounding mental
+        health.
       </p>
       <div className="hidden lg:block">
         {magazineLinks.map((_, index) => (
