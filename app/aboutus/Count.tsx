@@ -12,53 +12,57 @@ import {
 const AboutPage = () => {
   const categories = [
     {
-      icon: <FaUser size={64} />,
-      value: "1 Faculty Incharge",
+      value: "1",
+      position: "Faculty Incharge",
+      role: "To take care of the students",
     },
     {
-      icon: <FaUserMd size={64} />,
-      value: "3 Psychological Counsellors",
+      value: "3",
+      position: "Psychollogical Counsellors",
+      role: "To take care of the students",
     },
     {
-      icon: <FaChalkboardTeacher size={64} />,
-      value: "19 Faculty Representatives",
+      value: "19",
+      position: "Faculty Representatives",
+      role: "To take care of the students",
     },
     {
-      icon: <FaUsers size={64} />,
-      value: "12 Student Heads",
+      value: "12",
+      position: "Student Heads",
+      role: "To take care of the students",
     },
     {
-      icon: <FaBusinessTime size={64} />,
-      value: "33 Management Team Members",
+      value: "33",
+      position: "Management Members",
+      role: "To take care of the students",
     },
     {
-      icon: <FaUsersCog size={64} />,
-      value: "81 Mentors",
+      value: "23",
+      position: "Buddies",
+      role: "To take care of the students",
     },
     {
-      icon: <FaUserFriends size={64} />,
-      value: "23 Buddies",
+      value: "81",
+      position: "Mentors",
+      role: "To take care of the students",
     },
   ];
 
   return (
-    <section className="text-gray-700 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap -m-4 text-center">
-          {categories.map((category, index) => (
-            <div key={index} className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-                <div className="flex flex-col items-center h-full">
-                  {category.icon}
-                  <h2 className="title-font font-medium text-3xl text-gray-900">
-                    {category.value}
-                  </h2>
-                </div>
-              </div>
-            </div>
-          ))}
+    <section className="flex flex-wrap justify-evenly gap-4 md:gap-16 p-4 md:p-10 bg-gradient-to-b from-sky-300 to-white">
+      {categories.map((category) => (
+        <div key={category.value} className="w-32 md:w-48">
+          <h2>
+            <span className="flex text-slate-900 text-5xl font-extrabold mb-2">
+              {category.value}
+            </span>
+            <span className="inline-flex font-semibold bg-clip-text text-transparent bg-blue-500 mb-2">
+              {category.position}
+            </span>
+          </h2>
+          <p className="text-sm text-slate-500">{category.role}</p>
         </div>
-      </div>
+      ))}
     </section>
   );
 };
