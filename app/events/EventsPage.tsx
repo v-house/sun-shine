@@ -100,6 +100,49 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
   function DisplayEntry(post:any,index:number){
     const isSmallScreen=CheckScreen();
     if(isSmallScreen===true){
+      if(index==0){
+        return(
+          <div className="relative container mx-auto px-6 flex flex-col space-y-8 ">
+            <div className="absolute z-0 w-2 h-full bg-sky-100 shadow-md inset-0 left-2 md:mx-auto md:right-0 md:left-0">
+            </div>
+            <div className={`absolute z-10 h-8 w-8 left-0 object-cover rounded-full shadow-md border-4 bg-blue-400 border-white md:mx-auto md:left-0 md:right-0 `} >
+                </div>
+            <div className="relative z-0 pb-4">                          
+                <div className='flex flex-row flex-wrap items-start'>
+                <div className="relative pt-2  md:w-1/2 md:ml-0 md:mr-0 md:pl-0 md:pr-16">                
+                <div className='w-full'>
+                  <img
+                  src={post.images[0]}
+                  alt={post.title}
+                  className='rounded-lg h-auto w-full md:max-h-96  object-cover border-4 border-sky-100 shadow-md'/> 
+                  </div>
+                </div>                
+                <div className="relative pt-2  md:w-1/2 md:ml-0 md:pl-16">
+                    <div className="bg-white p-6 rounded-md shadow-md">
+                        <span
+                            className="font-bold text-xs md:text-md text-indigo-600 tracking-wide" >{post.date}</span>
+                        <h1 className="text-lg md:text-2xl font-bold pt-1">
+                        {post.title} 
+                        </h1>
+                        <p className="pt-4 text-sm md:text-md">
+                        {post.summary}
+                        </p>
+                        <div className=" pt-4 flex items-center flex-wrap">
+                        <a 
+                          className="relative rounded px-5 py-2.5 overflow-hidden group bg-blue-500 relative hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-blue-400 transition-all ease-out duration-300" 
+                          onClick={() => router.push(`/events/${post.slug}`)}
+                          style={{ cursor: 'pointer' }}>
+                          <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                          <span className="relative">View Gallery</span>
+                          </a>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+        )
+      }
         return (
           <RevealOnScroll key={post.slug}>
           <div className="relative container mx-auto px-6 flex flex-col space-y-8 ">
