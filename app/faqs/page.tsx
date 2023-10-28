@@ -40,10 +40,7 @@ const faqItems = [
 ];
 
 function FAQPage() {
-  return (
-  <div className="bg-white">
-  <FAQ faqItems={faqItems} />
-  </div>);
+  return <FAQ faqItems={faqItems} />;
 }
 
 export default FAQPage;
