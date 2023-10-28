@@ -120,7 +120,7 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
                 <div className="relative pt-2  md:w-1/2 md:ml-0 md:pl-16">
                     <div className="bg-white p-6 rounded-md shadow-md">
                         <span
-                            className="font-bold text-xs md:text-md text-indigo-600 tracking-wide" >{post.date}</span>
+                            className="font-bold text-xs md:text-md text-indigo-600 tracking-wide uppercase" >{post.date}</span>
                         <h1 className="text-lg md:text-2xl font-bold pt-1">
                         {post.title} 
                         </h1>
@@ -163,7 +163,7 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
                 <div className="relative pt-2  md:w-1/2 md:ml-0 md:pl-16">
                     <div className="bg-white p-6 rounded-md shadow-md">
                         <span
-                            className="font-bold text-xs md:text-md text-indigo-600 tracking-wide" >{post.date}</span>
+                            className="font-bold text-xs md:text-md text-indigo-600 tracking-wide uppercase" >{post.date}</span>
                         <h1 className="text-lg md:text-2xl font-bold pt-1">
                         {post.title} 
                         </h1>
@@ -209,7 +209,7 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
               <div className="relative pt-2  md:w-1/2 md:ml-0 md:pl-16">
                   <div className="bg-white p-6 rounded-md shadow-md">
                       <span
-                          className="font-bold text-xs md:text-md text-indigo-600 tracking-wide" >{post.date}</span>
+                          className="font-bold text-xs md:text-md text-indigo-600 tracking-wide uppercase" >{post.date}</span>
                       <h1 className="text-lg md:text-2xl font-bold pt-1">
                       {post.title} 
                       </h1>
@@ -247,7 +247,7 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
                 <div className='flex flex-row flex-wrap items-start'>
                   <div className="relative pt-2 md:w-1/2 md:ml-0 md:mr-0 md:pl-0 md:pr-16">                
                     <div className="bg-white p-6 rounded-md shadow-md">
-                      <span className="font-bold text-xs md:text-md text-indigo-600 tracking-wide" >{post.date}</span>
+                      <span className="font-bold text-xs md:text-md text-indigo-600 tracking-wide uppercase" >{post.date}</span>
                       <h1 className=" text-lg md:text-2xl font-bold pt-1">{post.title} </h1>
                       <p className="pt-4 text-sm md:text-md">{post.summary}</p>
                       <div className=" pt-4 flex items-center flex-wrap">

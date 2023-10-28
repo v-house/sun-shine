@@ -11,8 +11,7 @@ interface FAQProps {
 
 const FAQ: FC<FAQProps> = ({ faqItems }) => {
   return (
-    <div className="p-2">
-      <div className="bg-white p-4 rounded-lg shadow-xl py-8">
+      <div className="bg-white">
         <h4 className="text-4xl font-bold text-gray-800 tracking-widest uppercase text-center">
           FAQ
         </h4>
@@ -43,7 +42,6 @@ const FAQ: FC<FAQProps> = ({ faqItems }) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

@@ -97,7 +97,7 @@ const events = [
   },
   {
     slug: "DepartmentalOrientation",
-    date: "SEPTEMBER 14, 2023",
+    date: "September 14, 2023",
     title: "Event 1:Departmental Orientations ",
     summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque dapibus dui sit amet molestie. Nam dignissim augue purus, in finibus eros commodo vitae. Donec convallis ex ut risus bibendum maximus. Proin aliquet sollicitudin dui, sed finibus ex lacinia quis. In vel mollis dolor. Fusce in magna eu sapien ornare pulvinar a in nulla. Nam rhoncus massa ut eros vulputate porta. In sagittis pellentesque tempor. Vestibulum bibendum lectus vel dolor eleifend consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec est et sem porta pulvinar.",
     description: "Join us for an introduction to React and its core concepts.",
