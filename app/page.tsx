@@ -9,6 +9,7 @@ import FeaturesBlocks from "./Card";
 import FeatureCard from "./BuddyMentor";
 import Experiences from "./ExperienceBar";
 import Testimonial from "./Testimonials";
+import WelcomeNote from "./WelcomeNote";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -130,6 +131,7 @@ export default function Home() {
             <div className="bg-sky-300">
               <Gallery />
             </div>
+            <WelcomeNote />
 
             {/* Cards for mentor and buddy program */}
             <FeatureCard />

@@ -2,7 +2,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="relative overflow-hidden flex flex-col justify-evenly items-center py-10 lg:py-12 h-screen">
+    <div className="relative overflow-hidden flex flex-col justify-evenly items-center py-10 lg:py-12 h-[120vh]">
       <div className="absolute -bottom-1 w-full z-0">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -42,9 +42,8 @@ const HomePage = () => {
             className="w-full h-44 lg:w-96 lg:h-60 rounded-lg object-cover"
           />
         </div>
-        <p className="text-sm lg:text-lg text-center text-gray-600 mt-8 px-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, and some
-          more.
+        <p className="font-extrabold text-center text-black mt-8 px-4 text-md lg:text-xl">
+          We are Sunshine, your companion to reach out to in need.
         </p>
       </div>
     </div>
