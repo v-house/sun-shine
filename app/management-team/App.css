@@ -56,3 +56,38 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+.side-button{
+    display: none;
+}
+.active-side-nav-item{
+    background-color: #dbeafe;
+}
+@media (max-width: 1023px) {
+    .side-button{
+        display: block;
+    }
+    .side-nav{
+        margin-left: 0px;
+        display: static;
+        position: absolute;
+        left: 0px;
+        top: 65px;
+        bottom: 0;
+        z-index: 100;
+        background-color: white;
+        width: 100vw;
+        height: fit-content;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .show-nav{
+        transform: translateX(0%);
+    }
+    .show-nav-details{
+        display: none;
+    }
+    .details{
+        margin-left: 0px;
+        transform: translateY(0px);
+    }
+}
