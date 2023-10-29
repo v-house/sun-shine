@@ -6,7 +6,8 @@ const magazineLinks = [
   {
     id: 1,
     title: "The First Edition",
-    minidescription: "Description for Volume 1",
+    minidescription:
+      "'Move for Mental Health - Let's invest'. The cover story was based on the college experience of a student in IITH, his placement journey, dealing with his FRs, etc. to which most student even in the present can relate. Along with this, quotes, stories, art, etc spreading the same message as the theme was published in the newsletter.",
     cover: "/newsletter/Volume1cover.png",
     link: "./newsletter/Pulse-Volume-1.pdf",
   },
@@ -105,7 +106,7 @@ const NewsletterPage = () => {
           rel="noopener noreferrer"
           className="bg-blue-500 text-white py-3 px-6 text-lg hover:bg-blue-600 transform hover:scale-105 transition-transform duration-300 rounded-lg my-2"
         >
-          View on Drive
+          Download
         </a>
       </div>
 
