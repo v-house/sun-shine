@@ -131,7 +131,6 @@ export default function Home() {
             <div className="bg-sky-300">
               <Gallery />
             </div>
-            <WelcomeNote />
 
             {/* Cards for mentor and buddy program */}
             <FeatureCard />

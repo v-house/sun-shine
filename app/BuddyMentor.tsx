@@ -1,7 +1,7 @@
 import React from "react";
 
 const FeatureCard = () => (
-  <div className="relative overflow-hidden bg-gradient-to-b from-sky-300 to-white pt-16 pb-32 space-y-24">
+  <div className="relative overflow-hidden bg-gradient-to-b from-white via-sky-300 to-white pt-16 pb-32 space-y-24">
     {/* Feature 1: Image on the left, text on the right */}
     <div className="relative">
       <div className="container mx-auto px-4 py-16 lg:grid lg:grid-cols-2 lg:gap-24 lg:px-8">
