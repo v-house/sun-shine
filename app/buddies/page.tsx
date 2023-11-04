@@ -46,7 +46,7 @@ const Page: React.FC = () => {
           <div key={team.id} className="my-2 mx-4 lg:m-4">
             <a
               id={`button-${team.id}`}
-              className="pr-4 text-blue-500 font-extrabold rounded-full active:scale-95 hover:cursor-pointer transition-transform duration-300 ease-in-out relative"
+              className="pr-4 text-blue-500 font-extrabold rounded-full active:scale-95 hover:cursor-pointer transition-transform duration-300 ease-in-out relative text-xs lg:text-lg"
             >
               {team.teamName}
               <span className="absolute right-0 top-1/2 transform -translate-y-1/2">

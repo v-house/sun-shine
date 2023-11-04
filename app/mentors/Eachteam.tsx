@@ -29,7 +29,7 @@ const EachTeam: React.FC<EachTeamProps> = ({
 }) => {
   return (
     <div className="bg-blue-400 mb-8">
-      <section id={id} className="py-2 lg:py-4">
+      <section id={id} className="py-2 lg:py-4 lg:pt-6">
         <div className="mb-8 px-4 rounded-lg">
           <div className="mb-4 text-center">
             <div className="relative inline-flex items-center">
