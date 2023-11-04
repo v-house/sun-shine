@@ -18,7 +18,7 @@ const MyComponent = () => {
     router.push("/teams");
   };
   const handleManagementClick = () => {
-    router.push("/teams");
+    router.push("/management-team");
   };
   const handleBuddiesClick = () => {
     router.push("/buddies");
