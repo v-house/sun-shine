@@ -15,11 +15,12 @@ const FeatureCard = () => (
               />
             </div>
             <h2 className="text-3xl font-bold text-black">Sunshine Buddies</h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Asperiores officia dolore earum nihil laudantium repellendus velit
-              sint quisquam, placeat laborum voluptatibus maiores quos obcaecati
-              atque minima nostrum? Rerum, officia cumque.
+            <p className="mt-4 text-md text-gray-600">
+              Sunshine mentors are students who help freshers adjust to the
+              social, academic, and emotional expectations that come with
+              college life. In this program, we have students from all
+              departments apply for mentorship roles to make it easier for other
+              students to approach and relate to them.
             </p>
             <div className="mt-6">
               <a
@@ -65,11 +66,12 @@ const FeatureCard = () => (
               <h2 className="text-3xl font-bold tracking-tight text-black">
                 Sunshine Mentors
               </h2>
-              <p className="mt-4 text-lg text-slate-800">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium porro dolorum praesentium provident id ab dolore, non
-                vitae ea, modi alias necessitatibus aliquid sapiente! Incidunt
-                distinctio officia eveniet quia veniam!
+              <p className="mt-4 text-md text-slate-800">
+                Our Buddies are fellow students from various academic
+                backgrounds who volunteer to be your go-to contact for any
+                assistance you may need. They are approachable and ready to lend
+                an empathetic ear, offering help on social, mental, or academic
+                fronts.
               </p>
               <div className="mt-6">
                 <a
