@@ -65,26 +65,7 @@ export default function Teams() {
         </div>
       </div>
 
-      <div className="mt-8">
-        <h2 className="text-2xl font-bold text-slate-800">
-          Professional Counsellors
-        </h2>
-        <div className={`flex flex-wrap justify-center mt-4`}>
-          {professionalCounselors.map((member, index) => (
-            <div key={index} className="w-80">
-              <TeamCardCounsellors
-                name={member.name}
-                email={member.email}
-                phone={member.phone}
-                image={member.image}
-                designation={member.designation}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="mt-8">
+      <div className="mt-2">
         <h2 className="text-2xl font-bold text-slate-800">
           Faculty Representatives
         </h2>
