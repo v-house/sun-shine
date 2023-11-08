@@ -1,6 +1,4 @@
 import React from "react";
-import GalleryCarousel from "./Gallery";
-import Count from "./Count";
 
 const AboutUsPage = () => {
   return (
@@ -57,9 +55,9 @@ const AboutUsPage = () => {
                 When college life gets a bit twisted, the Sunshine Buddy Program
                 is here to help you untangle those mental knots. We are a team
                 of compassionate individuals who understand the challenges of
-                college life. Whether you're navigating the social scene,
+                college life. Whether you&apos;re navigating the social scene,
                 dealing with academic pressures, or just need someone to talk
-                to, we've got your back.
+                to, we&apos;ve got your back.
               </p>
             </div>
 
@@ -86,9 +84,9 @@ const AboutUsPage = () => {
                 </h3>
                 <p className="text-gray-600">
                   There are times when you might need more than a friendly chat,
-                  and that's okay. We have trained counsellors available for
-                  one-on-one and group counselling sessions. They're here to
-                  offer professional support when you need it.
+                  and that&apos;s okay. We have trained counsellors available
+                  for one-on-one and group counselling sessions. They&apos;re
+                  here to offer professional support when you need it.
                 </p>
               </div>
             </div>
@@ -100,10 +98,10 @@ const AboutUsPage = () => {
             </h2>
             <p className="text-gray-600">
               Feeling stressed in college is entirely normal. We all go through
-              it, and it's a natural response to the challenges we face. The
-              Sunshine Buddy Program cares about how you're feeling and wants to
-              make sure you have the support you need. Don't hesitate to reach
-              out; we're here for you.
+              it, and it&apos;s a natural response to the challenges we face.
+              The Sunshine Buddy Program cares about how you&apos;re feeling and
+              wants to make sure you have the support you need. Don&apos;t
+              hesitate to reach out; we&apos;re here for you.
             </p>
           </div>
 
@@ -120,13 +118,13 @@ const AboutUsPage = () => {
                 Supportive Meetups
               </h3>
               <p className="text-gray-600">
-                Once you're matched with your Sunshine Buddy, you have the
+                Once you&apos;re matched with your Sunshine Buddy, you have the
                 freedom to arrange meetups. These Buddy Meets are a cornerstone
                 of the program, and they can be tailored to your needs. Whether
-                it's a casual conversation over coffee, assistance with academic
-                challenges, a walk in the park, or simply a friendly chat over
-                the phone, these meetups are all about building strong,
-                supportive relationships.
+                it&apos;s a casual conversation over coffee, assistance with
+                academic challenges, a walk in the park, or simply a friendly
+                chat over the phone, these meetups are all about building
+                strong, supportive relationships.
               </p>
             </div>
             <div>
@@ -138,7 +136,8 @@ const AboutUsPage = () => {
                 and engaging events that provide opportunities to socialize,
                 learn, and have a great time. These events range from themed
                 parties, workshops, and outdoor adventures to movie nights and
-                more. It's all about fostering a sense of community and joy.
+                more. It&apos;s all about fostering a sense of community and
+                joy.
               </p>
             </div>
           </div>
@@ -199,8 +198,8 @@ const AboutUsPage = () => {
                     self-confidence.
                   </li>
                   <li>
-                    Be recognized as the "Mentor of the Month" in the Mentor
-                    Spotlight.
+                    Be recognized as the &quot;Mentor of the Month&quot; in the
+                    Mentor Spotlight.
                   </li>
                 </ul>
               </div>
