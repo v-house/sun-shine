@@ -4,7 +4,7 @@ const FeatureCard = () => (
   <div className="relative overflow-hidden bg-gradient-to-b from-white via-sky-300 to-white pt-16 pb-32 space-y-24">
     {/* Feature 1: Image on the left, text on the right */}
     <div className="relative">
-      <div className="container mx-auto px-4 py-16 lg:grid lg:grid-cols-2 lg:gap-24 lg:px-8">
+      <div className="container mx-auto px-2 py-16 lg:grid lg:grid-cols-2 lg:gap-24 lg:px-8">
         <div className="max-w-lg mx-auto lg:max-w-none lg:py-16 lg:px-0">
           <div className="text-center lg:text-left">
             <div className="mb-6 lg:mb-8">
@@ -28,6 +28,26 @@ const FeatureCard = () => (
                 href="/buddies"
               >
                 Our Buddies
+              </a>
+              <a
+                className="ml-2 inline-flex rounded-lg bg-green-600 px-4 py-2 text-base font-semibold text-white shadow-md hover:bg-green-700"
+                href="/aboutus#about-buddies"
+              >
+                Read More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -79,6 +99,26 @@ const FeatureCard = () => (
                   href="/mentors"
                 >
                   Our Mentors
+                </a>
+                <a
+                  className="ml-2 inline-flex rounded-lg bg-green-600 px-4 py-2 text-base font-semibold text-white shadow-md hover:bg-green-700"
+                  href="/aboutus#about-mentor"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
                 </a>
               </div>
             </div>
