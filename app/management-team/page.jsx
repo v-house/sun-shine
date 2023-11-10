@@ -63,7 +63,7 @@ export default function App() {
           provident at rerum ducimus eaque, dolorem velit quo vitae quam magni.
         </p>
         <h2 className="text-2xl font-semibold mt-1 mb-1">Members</h2>
-        <div className="member-cards">
+        <div className="member-cards flex">
           {teamMembers[currentMember].map((member, index) => (
             <TeamCard key={index} {...member} />
           ))}

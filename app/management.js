@@ -392,6 +392,16 @@ const management = {
       about:
         "On most days I try engineering enzymes as a part of my work. If not working in the lab, you can find me reading, writing, or probably playing badminton. I am committed to Mental Health Awareness and I see Sunshine as an ideal platform for this cause. Sunshine has always been a place where I felt heard and appreciated. This year, as a team member, my goal is to ensure a safe environment for everyone where they feel valued and acknowledged at all times. ",
     },
+    {
+      name: "Bhanu Ganesh ",
+      photoUrl:
+        "/team-2023/management/Your Photo (File responses)/WhatsApp Image 2023-10-28 at 11.45.31.jpeg",
+      email: "ee21resch11010@iith.ac.in",
+      phone: "9030435668",
+      department: "Electrical Engineering ",
+      about:
+        "I like to help people facing difficulties with a calm and empathetic approach. I believe in the power of active listening and providing a safe, non-judgmental space for open conversations. My goal is to empower them to find inner strength and resilience, promoting overall well-being.",
+    },
   ],
 };
 export default management;
