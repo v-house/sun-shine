@@ -14,7 +14,7 @@
     }
 */
 const management = {
-  "Finance Team Member": [
+  "Finance Team": [
     {
       name: "Madhurima chundu",
       photoUrl:
@@ -46,7 +46,7 @@ const management = {
         "I am Rishab, a PhD student in the department of Entrepreneurship and Management. I have been part of sunshine from 2022 as a mentor and finance team member. I like swimming, badminton and finance ",
     },
   ],
-  "Photography Team Member": [
+  "Photography Team": [
     {
       name: "ARJUN",
       photoUrl:
@@ -87,7 +87,7 @@ const management = {
       about: "  ",
     },
   ],
-  "Logistics Team Member": [
+  "Logistics Team": [
     {
       name: "Aashrita Venishetty",
       photoUrl:
@@ -119,7 +119,7 @@ const management = {
         "I am a great communicator and a quick thinker. I like playing squash and watching movies. I believe in the goal of sunshine and want to help promote a healthy environment on campus. I knew that I'm not understanding enough to become a buddy so I wanted to help this cause in any way I could so I decided to become a management coordinator.",
     },
   ],
-  "Content Team Member": [
+  "Content Team": [
     {
       name: "Pravalika Namburi ",
       photoUrl:
@@ -160,7 +160,7 @@ const management = {
       about: "I love watching Films, Listening to music, Singing and writing. ",
     },
   ],
-  "Publicity Team Member": [
+  "Publicity Team": [
     {
       name: "Parth Brahmbhatt ",
       photoUrl:
@@ -191,7 +191,7 @@ const management = {
         "I am Himanshu Suthar, a second-year B.Tech student in chemical engineering from Chittorgarh, Rajasthan. Alongside my academics, I have diverse hobbies, including playing cricket, chess, and volleyball and indulging in reading books. I would like to serve for Sunshine, an organization I deeply admire for its impactful work. I am grateful and thrilled to be a part of this team, and I am determined to contribute my utmost to the organization's goals and success.",
     },
   ],
-  "Video Editorial Team Member": [
+  "Video Editorial Team": [
     {
       name: "Naveen",
       photoUrl:
@@ -233,7 +233,7 @@ const management = {
         "I'm Naman and currently my hobby is gym and listening music.My interests include space and entrepreneurship. I want to join sunshine as I really believe in what sunshine is all about , its goal to help students improving mental health.I am really excited to serve it in my best capacity ",
     },
   ],
-  "Web + App development Team Member": [
+  "Web + App development Team": [
     {
       name: "Bhaskar Mandal",
       photoUrl:
@@ -285,7 +285,7 @@ const management = {
         "My hobbies are listening to music, reading books, and browsing and searching for information related to cars, My interests include business, Marketing, and learning new technologies, I had a very good experience working with sunshine as a web development team member and hoping to have a great time ahead, will try my best to update the sunshine website and make it a better one.",
     },
   ],
-  "Design Team Member": [
+  "Design Team": [
     {
       name: "G Sai Keerthi ",
       photoUrl:
@@ -349,7 +349,7 @@ const management = {
         "I am passionate about aviation, but sunshine attracts me, as I was a buddy and a photography team member the previous year. When I started my journey in Sunshine, I didn't know anything about mental health at all. Still, counselors taught us the most meaningful subject of our life that completely changed my perspective towards Sunshine that pushed me to become a head and serve Sunshine for another year.",
     },
   ],
-  "Sunshine Newsletter Team Member": [
+  "Sunshine Newsletter Team": [
     {
       name: "Mehwish Naz",
       photoUrl:
