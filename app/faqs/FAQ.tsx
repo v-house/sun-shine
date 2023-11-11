@@ -36,7 +36,7 @@ const FAQ: FC<FAQProps> = ({ faqItems }) => {
                     <div className="mt-2">
                       {item.answer.map((answer,i)=>(
                       <p>
-                      <span className="text-gray-500">{answer}</span>
+                      <span className="text-gray-500" key={i}>{answer}</span>
                       </p>))}                      
                     </div>
                   </div>
