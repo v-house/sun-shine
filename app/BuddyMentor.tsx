@@ -4,7 +4,7 @@ const FeatureCard = () => (
   <div className="relative overflow-hidden bg-gradient-to-b from-white via-sky-300 to-white pt-16 pb-32 space-y-24">
     {/* Feature 1: Image on the left, text on the right */}
     <div className="relative">
-      <div className="container mx-auto px-4 py-16 lg:grid lg:grid-cols-2 lg:gap-24 lg:px-8">
+      <div className="container mx-auto px-2 py-16 lg:grid lg:grid-cols-2 lg:gap-24 lg:px-8">
         <div className="max-w-lg mx-auto lg:max-w-none lg:py-16 lg:px-0">
           <div className="text-center lg:text-left">
             <div className="mb-6 lg:mb-8">
@@ -15,11 +15,11 @@ const FeatureCard = () => (
               />
             </div>
             <h2 className="text-3xl font-bold text-black">Sunshine Buddies</h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Asperiores officia dolore earum nihil laudantium repellendus velit
-              sint quisquam, placeat laborum voluptatibus maiores quos obcaecati
-              atque minima nostrum? Rerum, officia cumque.
+            <p className="mt-4 text-md text-gray-600">
+              Our Buddies are fellow students from various academic backgrounds
+              who volunteer to be your go-to contact for any assistance you may
+              need. They are approachable and ready to lend an empathetic ear,
+              offering help on social, mental, or academic fronts.
             </p>
             <div className="mt-6">
               <a
@@ -27,6 +27,26 @@ const FeatureCard = () => (
                 href="/buddies"
               >
                 Our Buddies
+              </a>
+              <a
+                className="ml-2 inline-flex rounded-lg bg-green-600 px-4 py-2 text-base font-semibold text-white shadow-md hover:bg-green-700"
+                href="/aboutus#about-buddies"
+              >
+                Read More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -65,11 +85,12 @@ const FeatureCard = () => (
               <h2 className="text-3xl font-bold tracking-tight text-black">
                 Sunshine Mentors
               </h2>
-              <p className="mt-4 text-lg text-slate-800">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laudantium porro dolorum praesentium provident id ab dolore, non
-                vitae ea, modi alias necessitatibus aliquid sapiente! Incidunt
-                distinctio officia eveniet quia veniam!
+              <p className="mt-4 text-md text-slate-800">
+                Sunshine mentors are students who help freshers adjust to the
+                social, academic, and emotional expectations that come with
+                college life. In this program, we have students from all
+                departments apply for mentorship roles to make it easier for
+                other students to approach and relate to them.
               </p>
               <div className="mt-6">
                 <a
@@ -77,6 +98,26 @@ const FeatureCard = () => (
                   href="/mentors"
                 >
                   Our Mentors
+                </a>
+                <a
+                  className="ml-2 inline-flex rounded-lg bg-green-600 px-4 py-2 text-base font-semibold text-white shadow-md hover:bg-green-700"
+                  href="/aboutus#about-mentor"
+                >
+                  Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
                 </a>
               </div>
             </div>

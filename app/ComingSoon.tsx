@@ -1,17 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const ComingSoon = (props: { show: any }) => {
-  const [isVisible, setIsVisible] = useState(props.show);
+export default function Notification(props: { message: any }) {
+  const [visible, setVisible] = useState(true);
 
-  return (
-    <div
-      className={`${
-        isVisible ? "block" : "hidden"
-      } fixed bottom-4 left-4 bg-red-500 text-white py-2 px-4 rounded-lg`}
-    >
-      Coming Soon
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVisible(false);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
+  return visible ? (
+    <div className="fixed bottom-4 left-4 bg-green-500 text-white px-4 py-2 rounded-md shadow-md z-10">
+      {props.message}
     </div>
-  );
-};
-
-export default ComingSoon;
+  ) : null;
+}

@@ -31,7 +31,7 @@ const BackToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-20 right-4 text-blue-500 bg-sky-300 p-2 rounded-full shadow-md transition duration-1000"
+          className="fixed bottom-20 right-4 text-white bg-sky-700 p-2 rounded-full shadow-md transition duration-1000"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

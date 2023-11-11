@@ -41,10 +41,8 @@ export default function Teams() {
         </div>
       </div>
       <div className="mt-8 text-slate-700 px-2 md:px-16">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat amet
-        accusantium consequatur doloremque commodi? Obcaecati delectus rem sequi
-        exercitationem qui maiores iste. Accusamus quidem at illo cupiditate,
-        mollitia voluptatibus asperiores eveniet enim!
+        They act as a bridge between the faculty and the students by
+        representing the views of the students across to the faculty.
       </div>
 
       <div className="mt-8">
