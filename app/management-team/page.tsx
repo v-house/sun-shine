@@ -80,10 +80,12 @@ const Page: React.FC = () => {
     element?.classList.toggle("-translate-x-full");
     document.querySelector(".page-body")?.classList.toggle("hidden");
   };
+  // var height = " mb-0 bg-blue-400 p-2 lg:pl-24 w-full flex flex-col justify-center lg:-translate-y-[calc("+document.querySelector("side-nav")?.clientHeight+"px)]" ;
+  // console.log(height);
   return (
     <>
       <div
-        className="hidden lg:flex side-nav z-10 bg-gray-900 [transition:width_0.2s_ease-in-out] sticky top-0 side-bar w-max pl-6 pr-6 h-screen  flex-col justify-center  overflow-x-hidden"
+        className="hidden lg:flex side-nav z-10 bg-gray-900 [transition:width_0.2s_ease-in-out] sticky top-0 side-bar w-max p-6 min-h-screen h-fit  flex-col justify-center  overflow-x-hidden"
         style={{ transition: "width 0.2s ease-in-out" }}
         onMouseEnter={(e) => {
           showSideNav(e.target as HTMLElement);
@@ -98,7 +100,7 @@ const Page: React.FC = () => {
             <div key={teamName} className="mb-4">
               <a
                 href={`#${teamName}`}
-                className="text-white text-4xl font-extrabold opacity-60 block "
+                className="text-white text-2xl tall:text-4xl font-extrabold opacity-60 block "
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(teamName);
@@ -189,7 +191,7 @@ const Page: React.FC = () => {
           </div>
           {teamsObject.map(([teamName, teamMembers]) => (
             <div id={teamName} className="team-section w-full" key={teamName}>
-              <h1 className="pt-4 pb-4 bg-inherit text-3xl lg:text-4xl font-extrabold text-white text-center">
+              <h1 className="pt-8 pb-4 bg-inherit text-3xl lg:text-4xl font-extrabold text-white text-center">
                 {teamName}
               </h1>
               <div className="flex flex-wrap justify-center">

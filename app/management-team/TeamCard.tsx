@@ -20,7 +20,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
   let mailto = `mailto:${email}`;
   let tel = `tel:${phone}`;
   return (
-    <div className="group p-2" style={{width: "460px", height:"530px"}}>
+    <div className="group p-2" style={{width: "368px", height:"451px"}}>
       <div className="shadow:0_4px_8px_0_transparent,_0_6px_20px_0_transparent] [transition:box-shadow_0.3s_ease-in-out,_transform_0.8s_ease-in-out] hover:[box-shadow:0_4px_8px_0_rgba(0,_0,_0,_0.6),_0_6px_20px_0_rgba(0,_0,_0,_0.19)] relative group-hover:[transform:rotateY(180deg)] group-hover:cursor-pointer bg-white shadow-md rounded-lg [transform-style:preserve-3d] ">
         <div className=" front-card [backface-visibility:hidden] ">
           <div className="relative">
