@@ -20,8 +20,8 @@ export default function App() {
         Sunshine Events
       </h1>
       <div className="gap-2 grid grid-cols-12 grid-rows-2 px-4 mx-auto mb-5">
-        <Card className="col-span-12 sm:col-span-4 h-[300px]">
-          <CardHeader className="absolute z-10 top-1 flex-col !items-start">
+        <Card className="group col-span-12 sm:col-span-4 h-[300px]">
+          <CardHeader className="absolute z-10 top-1 flex-col !items-start opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
             <p className="text-tiny text-white/60 uppercase font-bold">
               Regular
             </p>
@@ -35,13 +35,14 @@ export default function App() {
             className="z-0 w-full h-full object-cover"
             src="./homepage/8.jpg"
           />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900/25  opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></div>
         </Card>
-        <Card className="col-span-12 sm:col-span-4 h-[300px]">
-          <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-            <p className="text-tiny text-slate-900 uppercase font-bold">
+        <Card className="group col-span-12 sm:col-span-4 h-[300px]">
+          <CardHeader className="absolute z-10 top-1 flex-col !items-start opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+            <p className="text-tiny text-white/60 uppercase font-bold">
               Special
             </p>
-            <h4 className="text-blue-900 font-medium text-large">
+            <h4 className="text-white font-medium text-large">
               Creative Events
             </h4>
           </CardHeader>
@@ -51,13 +52,14 @@ export default function App() {
             className="z-0 w-full h-full object-cover"
             src="./homepage/9.jpg"
           />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900/25  opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></div>
         </Card>
-        <Card className="col-span-12 sm:col-span-4 h-[300px]">
-          <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-            <p className="text-tiny text-blue-700 uppercase font-bold">
+        <Card className="group col-span-12 sm:col-span-4 h-[300px]">
+          <CardHeader className="absolute z-10 top-1 flex-col !items-start opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+            <p className="text-tiny text-white/40 uppercase font-bold">
               Necessary
             </p>
-            <h4 className="text-slate-950 font-medium text-large">
+            <h4 className="text-white font-medium text-large">
               Counselling Sessions
             </h4>
           </CardHeader>
@@ -67,16 +69,12 @@ export default function App() {
             className="z-0 w-full h-full object-cover"
             src="./homepage/10.jpg"
           />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900/25  opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></div>
         </Card>
-        <Card
-          isFooterBlurred
-          className="w-full h-[300px] col-span-12 sm:col-span-5"
-        >
-          <CardHeader className="absolute z-10 top-1 flex-col items-start">
-            <p className="text-tiny text-black uppercase font-bold">Reveals</p>
-            <h4 className="text-white/90 font-medium text-2xl">
-              Untold Stories
-            </h4>
+        <Card className="group w-full h-[300px] col-span-12 sm:col-span-5">
+          <CardHeader className="absolute z-10 top-1 flex-col items-start opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+            <p className="text-tiny text-white uppercase font-bold">Reveals</p>
+            <h4 className="text-white font-medium text-2xl">Untold Stories</h4>
           </CardHeader>
           <Image
             removeWrapper
@@ -84,15 +82,16 @@ export default function App() {
             className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
             src="./homepage/11.jpg"
           />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900/25 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></div>
         </Card>
         <Card
           isFooterBlurred
           className="w-full h-[300px] col-span-12 sm:col-span-7"
         >
-          <CardHeader className="absolute z-10 top-1 flex-col items-start">
+          {/* <CardHeader className="absolute z-10 top-1 flex-col items-start">
             <p className="text-tiny text-blue-800 uppercase font-bold">Fun</p>
             <h4 className="text-black font-medium text-xl">Work Together</h4>
-          </CardHeader>
+          </CardHeader> */}
           <Image
             removeWrapper
             alt="Relaxing app background"

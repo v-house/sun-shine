@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { FiPhoneCall, FiMail, FiInfo } from "react-icons/fi";
+import React from "react";
+import { FiMail, FiInfo } from "react-icons/fi";
 import {
   Modal,
   ModalContent,
@@ -62,22 +62,13 @@ const TeamMember: React.FC<TeamMemberProps> = ({
         </CardHeader>
         <CardBody className="px-3 py-0 text-small text-default-400 h-32">
           <p>{about}</p>
-          <span className="pt-2">
-            {email}
-            <span className="py-2" aria-label="email" role="img">
-              📧
-            </span>
-          </span>
-          <span className="pt-2">
-            {phone}
-            <span className="py-2" aria-label="phone" role="img">
-              📞
-            </span>
-          </span>
         </CardBody>
         <CardFooter className="gap-3">
           <div className="flex gap-1">
             <p className="font-semibold text-default-400 text-small">{email}</p>
+            <span className="" aria-label="email" role="img">
+              📧
+            </span>
           </div>
         </CardFooter>
       </Card>
@@ -101,9 +92,6 @@ const TeamMember: React.FC<TeamMemberProps> = ({
               {department}
             </span>
             <div className="flex space-x-2 mt-2">
-              <button className="bg-blue-500 text-white p-2 rounded-full">
-                <FiPhoneCall />
-              </button>
               <button className="bg-green-500 text-white p-2 rounded-full">
                 <FiMail />
               </button>
@@ -160,24 +148,15 @@ const TeamMember: React.FC<TeamMemberProps> = ({
                   </CardHeader>
                   <CardBody className="px-3 py-0 text-small text-default-400 h-32">
                     <p>{about}</p>
-                    <span className="pt-2">
-                      {email}{" "}
-                      <span className="py-2" aria-label="email" role="img">
-                        📧
-                      </span>
-                    </span>
-                    <span className="pt-2">
-                      {phone}{" "}
-                      <span className="py-2" aria-label="phone" role="img">
-                        📞
-                      </span>
-                    </span>
                   </CardBody>
                   <CardFooter className="">
                     <div className="flex gap-1">
                       <p className="font-semibold text-default-400 text-small">
                         {email}
                       </p>
+                      <span className="" aria-label="email" role="img">
+                        📧
+                      </span>
                     </div>
                   </CardFooter>
                 </Card>
