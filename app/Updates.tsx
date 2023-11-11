@@ -1,7 +1,7 @@
 import { FC, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { FaInstagram, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTwitter, FaWhatsapp, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 interface UpdatesPageProps {
   isOpen: boolean;
@@ -130,6 +130,32 @@ const UpdatesPage: FC<UpdatesPageProps> = ({ isOpen, onClose }) => {
                   <div className="border-t border-gray-200 px-4 py-4 sm:px-6">
                     <div className="flex justify-center space-x-4">
                       <a
+                        href="https://www.linkedin.com/company/sunshine-iith/"
+                        className="flex bg-white text-sky-700 hover:text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                      >
+                        <FaLinkedin size={24} />
+                      </a>
+                      <a
+                        href="https://www.facebook.com/sunshineiith"
+                        className="flex bg-white text-blue-500 hover:text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                      >
+                        <FaFacebookSquare size={24} />
+                      </a>
+                      <a
+                        href="https://www.instagram.com/sunshine_iith/"
+                        className="flex bg-white text-pink-400 hover:text-pink-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                      >
+                        <FaInstagram size={24} />
+                      </a>
+                      <a
+                        href={`https://wa.me/918331036053`}
+                        className="flex bg-white text-green-500 hover:text-green-700 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                      >
+                        <FaWhatsapp size={24} />
+                      </a>
+                    </div>
+                    {/* <div className="flex justify-center space-x-4">
+                      <a
                         href="#"
                         className="flex items-center justify-center rounded-full border border-transparent bg-indigo-600 px-3 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                       >
@@ -153,7 +179,7 @@ const UpdatesPage: FC<UpdatesPageProps> = ({ isOpen, onClose }) => {
                       >
                         <FaTwitter className="w-5 h-5" />
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </Dialog.Panel>
