@@ -42,9 +42,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <Code size="lg">K Vivek Kumar</Code>
                   </h2>
                   <span className="block text-xs font-semibold uppercase text-blue-400 mb-1 mx-auto">
-                    <Code size="sm">
-                      Btech in Computer Science, 2021-25 Batch
-                    </Code>
+                    <Code size="sm">Btech in Computer Science, 2021-25</Code>
                   </span>
                 </div>
                 <div className="mt-4 flex justify-center items-center space-x-4">
@@ -102,9 +100,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <Code size="lg">K Vivek Kumar</Code>
                   </h2>
                   <span className="block text-xs font-semibold uppercase text-blue-400 mb-1 mx-auto">
-                    <Code size="sm">
-                      Btech in Computer Science, 2021-25 Batch
-                    </Code>
+                    <Code size="sm">Btech in Computer Science, 2021-25</Code>
                   </span>
                 </div>
                 <div className="mt-4 flex justify-center items-center space-x-4">
@@ -162,9 +158,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <Code size="lg">K Vivek Kumar</Code>
                   </h2>
                   <span className="block text-xs font-semibold uppercase text-blue-400 mb-1 mx-auto">
-                    <Code size="sm">
-                      Btech in Computer Science, 2021-25 Batch
-                    </Code>
+                    <Code size="sm">Btech in Computer Science, 2021-25</Code>
                   </span>
                 </div>
                 <div className="mt-4 flex justify-center items-center space-x-4">
@@ -222,9 +216,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <Code size="lg">K Vivek Kumar</Code>
                   </h2>
                   <span className="block text-xs font-semibold uppercase text-blue-400 mb-1 mx-auto">
-                    <Code size="sm">
-                      Btech in Computer Science, 2021-25 Batch
-                    </Code>
+                    <Code size="sm">Btech in Computer Science, 2021-25</Code>
                   </span>
                 </div>
                 <div className="mt-4 flex justify-center items-center space-x-4">
