@@ -61,16 +61,18 @@ const Page: React.FC = () => {
   const showSideNav = (element: HTMLElement) => {
     element.classList.remove("bg-gray-900");
     element.classList.add(
-      "bg-[linear-gradient(to_right,_rgba(17,24,39,1),_rgba(17,24,39,0.5))]"
+      "bg-[linear-gradient(to_right,_rgba(17,24,39,1),_rgba(17,24,39,0))]"
     );
+    element.classList.add("pr-16");
     console.log(element.classList);
     setSideDisplay(teamsObject.map(([teamName]) => teamName));
   };
   const removeSideNav = (element: HTMLElement) => {
     setSideDisplay(teamsObject.map(([teamName]) => teamName[0]));
     element.classList.remove(
-      "bg-[linear-gradient(to_right,_rgba(17,24,39,1),_rgba(17,24,39,0.5))]"
+      "bg-[linear-gradient(to_right,_rgba(17,24,39,1),_rgba(17,24,39,0))]"
     );
+    element.classList.remove("pr-16");
     element.classList.add("bg-gray-900");
   };
   const toggleSlideNav = () => {
@@ -100,6 +102,20 @@ const Page: React.FC = () => {
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(teamName);
+                }}
+                onMouseOver={(e) => {
+                  console.log((e.target as HTMLElement).style.opacity);
+                  if (
+                    (e.target as HTMLElement).style &&
+                    (e.target as HTMLElement).style.opacity == "0.6"
+                  ) {
+                    (e.target as HTMLElement).style.opacity = "0.8";
+                  }
+                }}
+                onMouseOut={(e) => {
+                  if ((e.target as HTMLElement).style.opacity == "0.8") {
+                    (e.target as HTMLElement).style.opacity = "0.6";
+                  }
                 }}
               >
                 {sideDisplay[index]}
