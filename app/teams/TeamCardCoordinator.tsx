@@ -15,8 +15,8 @@ const TeamCard = (props: {
       />
       <div className="mt-4">
         <p className="text-lg font-semibold text-black">{props.name}</p>
-        <p className="text-gray-500">{props.email}</p>
         <p className="text-gray-500">{props.department}</p>
+        <p className="text-gray-500">{props.email}</p>
       </div>
     </div>
   );
