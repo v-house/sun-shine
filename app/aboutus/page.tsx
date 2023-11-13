@@ -78,9 +78,9 @@ const AboutUsPage = () => {
             </h2>
             <p className="text-gray-600 mt-4">
               There are times when you might need more than a friendly chat, and
-              that's okay. We have trained counsellors available for one-on-one
-              and group counselling sessions. They're here to offer professional
-              support when you need it.
+              that&apos;s okay. We have trained counsellors available for
+              one-on-one and group counselling sessions. They&apos;re here to
+              offer professional support when you need it.
             </p>
           </div>
         </div>
@@ -169,7 +169,8 @@ const AboutUsPage = () => {
                   and engaging events that provide opportunities to socialize,
                   learn, and have a great time. These events range from themed
                   parties, workshops, and outdoor adventures to movie nights and
-                  more. It's all about fostering a sense of community and joy.
+                  more. It&apos;s all about fostering a sense of community and
+                  joy.
                 </p>
               </div>
             </div>
@@ -179,13 +180,13 @@ const AboutUsPage = () => {
                 Supportive Meetups
               </h2>
               <p className="text-gray-600">
-                Once you're matched with your Sunshine Buddy, you have the
+                Once you&apos;re matched with your Sunshine Buddy, you have the
                 freedom to arrange meetups. These Buddy Meets are a cornerstone
                 of the program, and they can be tailored to your needs. Whether
-                it's a casual conversation over coffee, assistance with academic
-                challenges, a walk in the park, or simply a friendly chat over
-                the phone, these meetups are all about building strong,
-                supportive relationships.
+                it&apos;s a casual conversation over coffee, assistance with
+                academic challenges, a walk in the park, or simply a friendly
+                chat over the phone, these meetups are all about building
+                strong, supportive relationships.
               </p>
             </div>
           </div>
