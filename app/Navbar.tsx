@@ -4,6 +4,8 @@ import { FC, useEffect, useState } from "react";
 import UpdatesPage from "./Updates";
 import { MdOutlineContactSupport } from "react-icons/md";
 
+import Image from "next/image";
+
 interface MenuItem {
   label: string;
   href: string;
@@ -86,7 +88,14 @@ const Navbar: FC = () => {
           </div>
           <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img className="h-8 w-auto" src="/yellow.png" alt="Your Company" />
+              <Image
+                src="/yellow.png"
+                alt="Sunshine"
+                width={100}
+                height={100}
+                className="h-8 w-auto"
+                priority
+              />
             </div>
             <div className="hidden md:ml-6 md:block">
               <div className="flex space-x-4">

@@ -82,7 +82,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
           <img
             src={photoUrl}
             alt={name}
-            className="w-full md:h-80 object-cover rounded-t-lg lg:hover:scale-105 overflow-y-auto transition-transform duration-500"
+            className="w-full h-80 object-cover rounded-t-lg lg:hover:scale-105 overflow-y-auto transition-transform duration-500"
           />
         </div>
         <div className="p-4 relative">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const FeatureCard = () => (
@@ -8,10 +9,13 @@ const FeatureCard = () => (
         <div className="max-w-lg mx-auto lg:max-w-none lg:py-16 lg:px-0">
           <div className="text-center lg:text-left">
             <div className="mb-6 lg:mb-8">
-              <img
-                src="./homepage/buddies.png"
+              <Image
+                width={600}
+                height={600}
+                src="/homepage/buddies.png"
                 alt="Sunshine Buddies"
                 className="w-48 mx-auto lg:mx-0"
+                priority
               />
             </div>
             <h2 className="text-3xl font-bold text-black">Sunshine Buddies</h2>
@@ -53,14 +57,14 @@ const FeatureCard = () => (
         </div>
         <div className="mt-12 sm:mt-16 lg:mt-0">
           <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-            <img
-              loading="lazy"
-              width="647"
-              height="486"
+            <Image
+              width={647}
+              height={486}
               className="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
               style={{ color: "transparent" }}
-              src="./homepage/6.jpg"
-              alt="NLP Image"
+              src="/homepage/6.jpg"
+              alt="Buddies"
+              priority
             />
           </div>
         </div>
@@ -74,10 +78,13 @@ const FeatureCard = () => (
           <div className="text-center lg:text-left">
             <div>
               <div className="mb-6 lg:mb-8">
-                <img
-                  src="./homepage/mentors.png"
+                <Image
+                  width={1000}
+                  height={1000}
+                  src="/homepage/mentors.png"
                   alt="Sunshine Buddies"
                   className="w-48 mx-auto lg:mx-0"
+                  priority
                 />
               </div>
             </div>
@@ -125,14 +132,14 @@ const FeatureCard = () => (
         </div>
         <div className="mt-12 sm:mt-16 lg:mt-0">
           <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-            <img
+            <Image
               alt="Inbox user interface"
-              loading="lazy"
-              width="647"
-              height="486"
+              width={647}
+              height={486}
               className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
               style={{ color: "transparent" }}
-              src="./homepage/7.jpg"
+              src="/homepage/7.jpg"
+              priority
             />
           </div>
         </div>

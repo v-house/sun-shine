@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const HomePage = () => {
@@ -21,25 +22,37 @@ const HomePage = () => {
           Welcomes You !!
         </h1>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 lg:gap-4 p-2 lg:p-4">
-          <img
-            src="./homepage/1.jpg"
+          <Image
+            width={500}
+            height={500}
+            src="/homepage/1.jpg"
             alt="Image 1"
             className="w-full h-44 lg:w-96 lg:h-60 rounded-lg object-cover"
+            priority
           />
-          <img
-            src="./homepage/2.jpg"
+          <Image
+            width={500}
+            height={500}
+            src="/homepage/2.jpg"
             alt="Image 1"
             className="w-full h-44 lg:w-96 lg:h-60 rounded-lg object-cover"
+            priority
           />
-          <img
-            src="./homepage/3.jpg"
+          <Image
+            width={500}
+            height={500}
+            src="/homepage/3.jpg"
             alt="Image 1"
             className="w-full h-44 lg:w-96 lg:h-60 rounded-lg object-cover"
+            priority
           />
-          <img
-            src="./homepage/4.jpg"
+          <Image
+            width={500}
+            height={500}
+            src="/homepage/4.jpg"
             alt="Image 1"
             className="w-full h-44 lg:w-96 lg:h-60 rounded-lg object-cover"
+            priority
           />
         </div>
         <p className="font-extrabold text-center text-black mt-8 px-4 text-md lg:text-xl">

@@ -1,7 +1,12 @@
 import { FC, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { FaInstagram, FaFacebook, FaTwitter, FaWhatsapp, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaWhatsapp,
+  FaFacebookSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 
 interface UpdatesPageProps {
   isOpen: boolean;
@@ -12,31 +17,7 @@ const updates = [
   {
     id: 1,
     name: "New Sunshine",
-    href: "/",
-    description:
-      "The launch of the Sunshine's new website is being done today at 14th September 2023. We are happy to announce this",
-    date: "August 25, 2023",
-  },
-  {
-    id: 2,
-    name: "New Sunshine Website Launch",
-    href: "/",
-    description:
-      "The launch of the Sunshine's new website is being done today at 14th September 2023. We are happy to announce this",
-    date: "August 25, 2023",
-  },
-  {
-    id: 3,
-    name: "New Sunshine Website Launch",
-    href: "/",
-    description:
-      "The launch of the Sunshine's new website is being done today at 14th September 2023. We are happy to announce this",
-    date: "August 25, 2023",
-  },
-  {
-    id: 4,
-    name: "New Sunshine Website Launch",
-    href: "/",
+    href: "/developers",
     description:
       "The launch of the Sunshine's new website is being done today at 14th September 2023. We are happy to announce this",
     date: "August 25, 2023",
