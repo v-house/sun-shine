@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const MyComponent = () => {
   const router = useRouter();
@@ -30,10 +31,13 @@ const MyComponent = () => {
   return (
     <div className="relative p-2 lg:p-4 bg-sky-300">
       <div className="relative overflow-hidden rounded-lg">
-        <img
-          src="./homepage/5.jpg"
+        <Image
+          width={1000}
+          height={1000}
+          src="/homepage/5.jpg"
           alt="Team 2023"
           className="w-full h-auto transition-transform duration-500 transform hover:scale-105"
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-l from-gray-900 via-gray-900/40"></div>
         <aside

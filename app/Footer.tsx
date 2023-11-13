@@ -1,11 +1,10 @@
+import Image from "next/image";
 import React from "react";
 import {
-  FaTwitter,
   FaFacebookSquare,
-  FaDribbble,
-  FaGithub,
   FaInstagram,
   FaWhatsapp,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const Footer: React.FC = () => {
@@ -14,34 +13,39 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
-            <img src="./logo.png" alt="Sunshine" className="w-24" />
-            <h4 className="text-3xl font-semibold text-blueGray-700">
-              Sunshine
-            </h4>
-            <h5 className="text-sm mt-0 mb-2 text-blueGray-600">
+            <Image
+              width={100}
+              height={100}
+              src="/logo.png"
+              alt="Sunshine"
+              className="w-24"
+              priority
+            />
+            <h4 className="text-3xl font-semibold text-white">Sunshine</h4>
+            <h5 className="text-sm mt-0 mb-2 text-gray-300">
               The Counselling Cell of IIT Hyderabad
             </h5>
             <div className="mt-6 lg:mb-0 mb-6 flex">
               <a
-                href="/twitter"
+                href="https://www.linkedin.com/company/sunshine-iith/"
                 className="flex bg-white text-blue-400 hover:text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               >
-                <FaTwitter size={24} />
+                <FaLinkedin size={24} />
               </a>
               <a
-                href="/facebook"
+                href="https://www.facebook.com/sunshineiith"
                 className="flex bg-white text-blue-400 hover:text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               >
                 <FaFacebookSquare size={24} />
               </a>
               <a
-                href="/dribbble"
+                href="https://www.instagram.com/sunshine_iith/"
                 className="flex bg-white text-pink-400 hover:text-pink-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               >
                 <FaInstagram size={24} />
               </a>
               <a
-                href="/github"
+                href={`https://wa.me/918331036053`}
                 className="flex bg-white text-green-500 hover:text-green-700 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               >
                 <FaWhatsapp size={24} />
@@ -140,11 +144,22 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <hr className="my-6 border-blueGray-300" />
-        <div className="flex flex-wrap items-center md:justify-between justify-center">
+        <div className="flex flex-wrap items-center md:justify-between justify-center mt-6">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-blueGray-500 font-semibold py-1">
+            <div className="text-sm text-cyan-300 font-semibold py-1">
               Copyright © <span id="get-current-year">2023</span> Sunshine, IIT
               Hyderabad
+            </div>
+          </div>
+
+          <div className="w-full md:w-4/12 px-4 mx-auto text-center mt-4 md:mt-0">
+            <div className="flex justify-center space-x-4">
+              <a
+                href="/developers"
+                className="text-cyan-300 hover:text-white font-semibold text-sm"
+              >
+                Developers Team
+              </a>
             </div>
           </div>
         </div>

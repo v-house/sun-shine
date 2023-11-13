@@ -49,7 +49,7 @@ export default function FeaturesBlocks() {
             {/* Items */}
             <div className="max-w-sm mx-auto grid gap-12 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-4xl">
               {/* 1st item */}
-              <div className="relative flex flex-col items-center bg-white rounded shadow-xl border border-gray-300">
+              <div className="relative flex flex-col items-center">
                 <div className="w-72 h-80 relative overflow-hidden group">
                   <img
                     src="./homepage/mariaMorris.jpg"
@@ -111,7 +111,7 @@ export default function FeaturesBlocks() {
               </div>
 
               {/* 2nd item */}
-              <div className="relative flex flex-col items-center bg-white rounded shadow-xl border border-gray-300">
+              <div className="relative flex flex-col items-center">
                 <div className="w-72 h-80 relative overflow-hidden group">
                   <img
                     src="https://sunshine.iith.ac.in/images/faculty/IMG_1257%20-%20Yukti%20Rastogi.JPG"
@@ -173,7 +173,7 @@ export default function FeaturesBlocks() {
               </div>
 
               {/* 3rd item */}
-              <div className="relative flex flex-col items-center bg-white rounded shadow-xl border border-gray-300">
+              <div className="relative flex flex-col items-center">
                 <div className="w-72 h-80 relative overflow-hidden group">
                   <img
                     src="https://sunshine.iith.ac.in/images/faculty/phani.jpeg"

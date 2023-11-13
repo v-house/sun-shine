@@ -9,7 +9,6 @@ import FeaturesBlocks from "./Card";
 import FeatureCard from "./BuddyMentor";
 import Experiences from "./ExperienceBar";
 import Testimonial from "./Testimonials";
-import WelcomeNote from "./WelcomeNote";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -74,19 +73,27 @@ export default function Home() {
     };
   }, [currentBackgroundIndex]);
 
+  const handleImageLoad = () => {
+    setIsLoading(false);
+  };
+
   return (
     <>
       <div>
+        {backgroundImages.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Image ${index + 1}`}
+            width={500}
+            height={300}
+            onLoad={handleImageLoad}
+            style={{ display: "none" }}
+          />
+        ))}
         {isLoading ? (
           <>
             <Loading />
-            <div
-              className="hidden h-0"
-              style={{
-                backgroundImage: backgroundImages[currentBackgroundIndex],
-                transition: "background-image 2s",
-              }}
-            ></div>
           </>
         ) : (
           <div className="bg-white overflow-x-hidden">
@@ -113,6 +120,7 @@ export default function Home() {
                         className="w-24 md:w-32 lg:w-56"
                         height={108}
                         width={108}
+                        priority
                       />
                     </div>
                     <div className="ml-4">

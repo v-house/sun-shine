@@ -45,7 +45,7 @@ export default function BookAportalButton() {
         }
 
         const { name, email, date, time } = bookingDetails;
-        const message = `Dear ${greeting}, I was wondering if I could meet you for an ${selectedMode} session on ${date} at ${time}.%0D%0AName: ${name} %0D%0AEmail: ${email} %0D%0AThank you`;
+        const message = `Dear ${greeting}, I was wondering if I could meet you for an ${selectedMode} session on ${date} at ${time}. Name: ${name} Email: ${email} Thank you`;
 
         // WhatsApp URL
         // const whatsappLink = `whatsapp://send?phone=${phoned}&text=${encodeURIComponent(
