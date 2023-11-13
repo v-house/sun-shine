@@ -247,7 +247,7 @@ const management = {
     {
       name: "Rishitha Surineni ",
       photoUrl:
-        "/team-2023/management/Your Photo (File responses)/IMG20230219104724 - Rishitha Surineni.jpg",
+        "/team-2023/management/Your Photo (File responses)/WhatsApp Image 2023-11-13 at 22.19.01.jpeg",
       email: "cs22btech11050@iith.ac.in",
       phone: "8008246935",
       department: "Computer science and engineering ",
