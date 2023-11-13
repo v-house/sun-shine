@@ -37,15 +37,15 @@ export default function BookAportalButton() {
 
         if (selectedCounselor == "phani.bhushan@admin.iith.ac.in") {
           greeting = "sir";
-          setPhoned("918331036082");
+          setPhoned("8331036082");
         } else if (selectedCounselor == "maria.morris@admin.iith.ac.in") {
-          setPhoned("918331036081");
+          setPhoned("8331036081");
         } else if (selectedCounselor == "yukti.rastogi@admin.iith.ac.in") {
-          setPhoned("918331036080");
+          setPhoned("8331036080");
         }
 
         const { name, email, date, time } = bookingDetails;
-        const message = `Dear ${greeting}, I was wondering if I could meet you for an ${selectedMode} session on ${date} at ${time}.%0D%0AName: ${name} %0D%0AEmail: ${email} %0D%0AThank you`;
+        const message = `Dear ${greeting}, I was wondering if I could meet you for an ${selectedMode} session on ${date} at ${time}. Name: ${name} Email: ${email} Thank you`;
 
         // WhatsApp URL
         // const whatsappLink = `whatsapp://send?phone=${phoned}&text=${encodeURIComponent(
