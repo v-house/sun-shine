@@ -1,10 +1,10 @@
 const facultyCoordinators = [
   {
-    name: "Nancy Jewel McDonie",
-    email: "nancymomoland.com",
-    department: "Computer Science",
+    name: "Dr. Somnath Maji",
+    email: "fic.sunshine@iith.ac.in",
+    department: "Chemistry",
     image:
-      "https://pict-b.sindonews.net/dyn/620/pena/news/2021/01/11/187/297428/foto-nancy-momoland-ganti-baju-ramai-di-medsos-pelakunya-diduga-staf-agensi-pit.jpg",
+    "/../../FacultyImages/SOMNATH_MAJI.jpg",
   },
 ];
 

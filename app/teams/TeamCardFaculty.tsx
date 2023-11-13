@@ -7,12 +7,7 @@ const TeamCardFaculty = (props: {
   department: string;
 }) => {
   return (
-    <div className="bg-white p-4 pb-8 text-center mx-4 mb-8">
-      <div className="mt-1">
-        <p className="text-md font-semibold text-blue-600">
-          {props.department}
-        </p>
-      </div>
+    <div className="bg-white p-4 pb-8 text-center mx-4 mb-8">      
       <img
         src={props.image}
         alt={props.name}
@@ -20,6 +15,9 @@ const TeamCardFaculty = (props: {
       />
       <div className="mt-4">
         <p className="text-lg font-semibold text-black">{props.name}</p>
+        <p className="text-gray-500">
+          {props.department} 
+        </p>
         <p className="text-gray-500">{props.email}</p>
       </div>
     </div>
