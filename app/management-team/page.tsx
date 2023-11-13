@@ -2,13 +2,52 @@
 import React, { useEffect, useState } from "react";
 import teams from "../management";
 import TeamCard from "./TeamCard";
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>;
+
 import { Button, ButtonGroup, toggle } from "@nextui-org/react";
+import { MdAccountBalance } from "react-icons/md";
+import { AiFillCode } from "react-icons/ai";
+import { TfiWrite } from "react-icons/tfi";
+import { ImNewspaper } from "react-icons/im";
+import { RiMegaphoneFill } from "react-icons/ri";
+import { PiVideoFill } from "react-icons/pi";
+import { FaCameraRetro } from "react-icons/fa";
+import { GrUserManager } from "react-icons/gr";
+import { ImFileOpenoffice } from "react-icons/im";
+import { ImCogs } from "react-icons/im";
+
+// ...
 
 const Page: React.FC = () => {
   let teamsObject = Object.entries(teams);
-  const [sideDisplay, setSideDisplay] = useState(
-    teamsObject.map(([teamName]) => teamName[0])
-  );
+  const sideShow = [
+    <span><GrUserManager size={20} className="inline mr-8"  /><span className="text-[28px]">UG Heads</span></span>,
+    <span><GrUserManager size={20} className="inline mr-8" /><span className="text-[28px]">PG/PhD Heads</span></span>,
+    <span><AiFillCode size={20} className="inline mr-8" /><span className="text-[28px]">Web App</span></span>,
+    <span><MdAccountBalance size={20} className="inline mr-8" /><span className="text-[28px]">Finance</span></span>,
+    <span><TfiWrite size={20} className="inline mr-8" /><span className="text-[28px]">Content</span></span>,
+    <span><ImFileOpenoffice size={20} className="inline mr-8" /><span className="text-[28px]">Design</span></span>,
+    <span><ImCogs size={20} className="inline mr-8" /><span className="text-[28px]">Logistics</span></span>,
+    <span><ImNewspaper size={20} className="inline mr-8" /><span className="text-[28px]">Newsletter</span></span>,
+    <span><RiMegaphoneFill size={20} className="inline mr-8" /><span className="text-[28px]">Publicity</span></span>,
+    <span><FaCameraRetro size={20} className="inline mr-8" /><span className="text-[28px]">Photography</span></span>,
+    <span><PiVideoFill size={20} className="inline mr-8" /><span className="text-[28px]">Videography</span></span>,
+  ];
+  const iconMap = [
+    <GrUserManager size={20} className="inline"   />,
+    <GrUserManager size={20} className="inline"  />,
+    <AiFillCode size={20} className="inline"  />,
+    <MdAccountBalance size={20} className="inline"  />,
+    <TfiWrite size={20} className="inline"  />,
+    <ImFileOpenoffice size={20} className="inline"  />,
+    <ImCogs size={20} className="inline"  />,
+    <ImNewspaper size={20} className="inline"  />,
+    <RiMegaphoneFill size={20} className="inline"  />,
+    <FaCameraRetro size={20} className="inline"  />,
+    <PiVideoFill size={20} className="inline"  />,
+  ];
+
+  const [sideDisplay, setSideDisplay] = useState(iconMap);
   const activateElement = (id: string) => {
     const elements = document.querySelectorAll(".side-nav a");
     elements.forEach((element) => {
@@ -65,10 +104,10 @@ const Page: React.FC = () => {
     );
     element.classList.add("pr-16");
     console.log(element.classList);
-    setSideDisplay(teamsObject.map(([teamName]) => teamName));
+    setSideDisplay(sideShow);
   };
   const removeSideNav = (element: HTMLElement) => {
-    setSideDisplay(teamsObject.map(([teamName]) => teamName[0]));
+    setSideDisplay(iconMap);
     element.classList.remove(
       "bg-[linear-gradient(to_right,_rgba(17,24,39,1),_rgba(17,24,39,0))]"
     );
@@ -85,7 +124,7 @@ const Page: React.FC = () => {
   return (
     <>
       <div
-        className="hidden lg:flex side-nav z-10 bg-gray-900 [transition:width_0.2s_ease-in-out] sticky top-0 side-bar w-max p-6 min-h-screen h-fit  flex-col justify-center  overflow-x-hidden"
+        className="hidden lg:flex side-nav z-10 bg-gray-900 [transition:width_0.2s_ease-in-out] sticky top-0 side-bar w-max p-5 min-h-screen h-fit  flex-col justify-center  overflow-x-hidden"
         style={{ transition: "width 0.2s ease-in-out" }}
         onMouseEnter={(e) => {
           showSideNav(e.target as HTMLElement);
@@ -94,13 +133,16 @@ const Page: React.FC = () => {
           removeSideNav(e.target as HTMLElement);
         }}
       >
+        <span className="hidden lg:inline-block pt-0 pb-0 translate-y-[-15px] tall:translate-u-[-20px] !m-auto translate-x-[-10px] font-extrabold text-2xl align-start">
+          Teams
+        </span>
         {teamsObject.map(([teamName], index) => {
           // var a=0;
           return (
-            <div key={teamName} className="mb-4">
+            <div key={teamName} className="mb-1">
               <a
                 href={`#${teamName}`}
-                className="text-white text-2xl tall:text-4xl font-extrabold opacity-60 block "
+                className="text-white text-[28px] font-extrabold opacity-60 block "
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(teamName);
@@ -169,7 +211,7 @@ const Page: React.FC = () => {
             );
           })}
         </div>
-        <div className="page-body">
+        <div className="page-body pl-10">
           <h1 className=" lg:mt-6 mb-10 lg:text-6xl text-4xl font-extrabold text-white text-center ">
             Sunshine Management{" "}
           </h1>
@@ -194,7 +236,7 @@ const Page: React.FC = () => {
               <h1 className="pt-8 pb-4 bg-inherit text-3xl lg:text-4xl font-extrabold text-white text-center">
                 {teamName}
               </h1>
-              <div className="flex flex-wrap justify-center">
+              <div className="flex flex-wrap justify-evenly">
                 {teamMembers.map((member, index) => (
                   <TeamCard
                     key={index}
