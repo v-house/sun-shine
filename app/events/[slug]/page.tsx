@@ -21,7 +21,7 @@ const GalleryPage = ({ params }: { params: { slug: string } }) => {
       <Banner date={event.date} title={event.title} />
 
       <div className="container mx-auto p-3 md:p-6 relative">
-        <p className="text-black">{event.description}</p>
+        <p className="text-black">{event.summary}</p>
         <hr className="my-6 border-t-2 border-gray-300 dark:border-gray-700" />
         <Photos event={event} />
       </div>

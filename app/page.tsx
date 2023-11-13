@@ -9,7 +9,6 @@ import FeaturesBlocks from "./Card";
 import FeatureCard from "./BuddyMentor";
 import Experiences from "./ExperienceBar";
 import Testimonial from "./Testimonials";
-import WelcomeNote from "./WelcomeNote";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
