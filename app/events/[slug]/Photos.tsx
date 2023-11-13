@@ -21,9 +21,7 @@ export default function Photos(props: { event: any }) {
   return (
     <div className="mx-auto h-6xl flex flex-col items-center">
       <div className="bg-blue-900 w-full p-4 rounded-lg text-white mb-4">
-        <Image
-          width={1000}
-          height={1000}
+        <img
           className="mx-auto w-full h-96 object-contain"
           src={currentImage}
           alt="Image"
@@ -40,9 +38,7 @@ export default function Photos(props: { event: any }) {
             }`}
             onClick={() => setCurrentImageIndex(index)}
           >
-            <Image
-              width={100}
-              height={100}
+            <img
               className="w-full h-full object-cover"
               src={image}
               alt={`Image ${index + 1}`}
