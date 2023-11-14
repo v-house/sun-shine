@@ -37,7 +37,7 @@ const EachTeam: React.FC<EachTeamProps> = ({
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0">
+          {/* <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0">
             <div className="w-full lg:w-1/2 mb-4 lg:mb-0">
               <img
                 src={teamPhotoUrl}
@@ -48,7 +48,7 @@ const EachTeam: React.FC<EachTeamProps> = ({
             <div className="w-full lg:w-1/2 lg:pl-8 text-white">
               <p className="text-sm lg:text-lg">{teamDescription}</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-wrap justify-center">
