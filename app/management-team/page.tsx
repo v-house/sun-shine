@@ -33,17 +33,17 @@ const Page: React.FC = () => {
     <span key={10}><PiVideoFill size={20} className="inline mr-8" /><span className="text-[28px]">Videography</span></span>,
   ];
   const iconMap = [
-    <GrUserManager size={20} className="inline"   />,
-    <GrUserManager size={20} className="inline"  />,
-    <AiFillCode size={20} className="inline"  />,
-    <MdAccountBalance size={20} className="inline"  />,
-    <TfiWrite size={20} className="inline"  />,
-    <ImFileOpenoffice size={20} className="inline"  />,
-    <ImCogs size={20} className="inline"  />,
-    <ImNewspaper size={20} className="inline"  />,
-    <RiMegaphoneFill size={20} className="inline"  />,
-    <FaCameraRetro size={20} className="inline"  />,
-    <PiVideoFill size={20} className="inline"  />,
+    <GrUserManager key={0} size={20} className="inline"   />,
+    <GrUserManager key={1} size={20} className="inline"  />,
+    <AiFillCode key={2} size={20} className="inline"  />,
+    <MdAccountBalance key={3} size={20} className="inline"  />,
+    <TfiWrite key={4} size={20} className="inline"  />,
+    <ImFileOpenoffice key={5} size={20} className="inline"  />,
+    <ImCogs key={6} size={20} className="inline"  />,
+    <ImNewspaper key={7} size={20} className="inline"  />,
+    <RiMegaphoneFill key={8} size={20} className="inline"  />,
+    <FaCameraRetro key={9} size={20} className="inline"  />,
+    <PiVideoFill key={10} size={20} className="inline"  />,
   ];
 
   const [sideDisplay, setSideDisplay] = useState(iconMap);

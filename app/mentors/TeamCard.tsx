@@ -92,7 +92,12 @@ const TeamMember: React.FC<TeamMemberProps> = ({
               {department}
             </span>
             <div className="flex space-x-2 mt-2">
-              <button className="bg-green-500 text-white p-2 rounded-full">
+              <button
+                className="bg-green-500 text-white p-2 rounded-full"
+                onClick={() => {
+                  window.open(`mailto:${email}`, "_blank");
+                }}
+              >
                 <FiMail />
               </button>
               <Popover

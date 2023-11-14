@@ -81,7 +81,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="https://media.licdn.com/dms/image/D5603AQGbZ7Itnw3MzQ/profile-displayphoto-shrink_400_400/0/1694713181862?e=1704931200&v=beta&t=jgniOCaEyA8wQLsfFeaisXJtxUgcgNXldJL6XJvDQ7g"
+                      src="https://media.licdn.com/dms/image/D4E03AQHzmIhJjJ-qKQ/profile-displayphoto-shrink_400_400/0/1699903163867?e=1705536000&v=beta&t=jNd3X47tCTszD8wdpADDn3DJhje7EBoTEOXsNEEqwv4"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
@@ -89,15 +89,15 @@ const DevelopersTeamPage: React.FC = () => {
                 </div>
                 <div className="flex justify-center flex-col">
                   <h2 className="text-lg font-bold leading-9 mb-3 mx-auto">
-                    <Code size="lg">K Vivek Kumar</Code>
+                    <Code size="lg">Rishitha Surineni</Code>
                   </h2>
                   <span className="block text-xs font-semibold uppercase text-blue-400 mb-1 mx-auto">
-                    <Code size="sm">Btech in Computer Science, 2021-25</Code>
+                    <Code size="sm">Btech in Computer Science, 2022-26</Code>
                   </span>
                 </div>
                 <div className="mt-4 flex justify-center items-center space-x-4">
                   <a
-                    href="https://www.linkedin.com/in/k-vivek-kumar/"
+                    href="https://www.linkedin.com/in/rishitha-surineni-6a821829b/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:text-blue-300"
