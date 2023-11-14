@@ -15,23 +15,22 @@ import { FaCameraRetro } from "react-icons/fa";
 import { GrUserManager } from "react-icons/gr";
 import { ImFileOpenoffice } from "react-icons/im";
 import { ImCogs } from "react-icons/im";
-
 // ...
 
 const Page: React.FC = () => {
   let teamsObject = Object.entries(teams);
   const sideShow = [
-    <span><GrUserManager size={20} className="inline mr-8"  /><span className="text-[28px]">UG Heads</span></span>,
-    <span><GrUserManager size={20} className="inline mr-8" /><span className="text-[28px]">PG/PhD Heads</span></span>,
-    <span><AiFillCode size={20} className="inline mr-8" /><span className="text-[28px]">Web App</span></span>,
-    <span><MdAccountBalance size={20} className="inline mr-8" /><span className="text-[28px]">Finance</span></span>,
-    <span><TfiWrite size={20} className="inline mr-8" /><span className="text-[28px]">Content</span></span>,
-    <span><ImFileOpenoffice size={20} className="inline mr-8" /><span className="text-[28px]">Design</span></span>,
-    <span><ImCogs size={20} className="inline mr-8" /><span className="text-[28px]">Logistics</span></span>,
-    <span><ImNewspaper size={20} className="inline mr-8" /><span className="text-[28px]">Newsletter</span></span>,
-    <span><RiMegaphoneFill size={20} className="inline mr-8" /><span className="text-[28px]">Publicity</span></span>,
-    <span><FaCameraRetro size={20} className="inline mr-8" /><span className="text-[28px]">Photography</span></span>,
-    <span><PiVideoFill size={20} className="inline mr-8" /><span className="text-[28px]">Videography</span></span>,
+    <span key={0}><GrUserManager size={20} className="inline mr-8"  /><span className="text-[28px]">UG Heads</span></span>,
+    <span key={1}><GrUserManager size={20} className="inline mr-8" /><span className="text-[28px]">PG/PhD Heads</span></span>,
+    <span key={2}><AiFillCode size={20} className="inline mr-8" /><span className="text-[28px]">Web App</span></span>,
+    <span key={3}><MdAccountBalance size={20} className="inline mr-8" /><span className="text-[28px]">Finance</span></span>,
+    <span key={4}><TfiWrite size={20} className="inline mr-8" /><span className="text-[28px]">Content</span></span>,
+    <span key={5}><ImFileOpenoffice size={20} className="inline mr-8" /><span className="text-[28px]">Design</span></span>,
+    <span key={6}><ImCogs size={20} className="inline mr-8" /><span className="text-[28px]">Logistics</span></span>,
+    <span key={7}><ImNewspaper size={20} className="inline mr-8" /><span className="text-[28px]">Newsletter</span></span>,
+    <span key={8}><RiMegaphoneFill size={20} className="inline mr-8" /><span className="text-[28px]">Publicity</span></span>,
+    <span key={9}><FaCameraRetro size={20} className="inline mr-8" /><span className="text-[28px]">Photography</span></span>,
+    <span key={10}><PiVideoFill size={20} className="inline mr-8" /><span className="text-[28px]">Videography</span></span>,
   ];
   const iconMap = [
     <GrUserManager size={20} className="inline"   />,
