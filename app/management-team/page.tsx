@@ -19,48 +19,54 @@ const Page: React.FC = () => {
   let teamsObject = Object.entries(teams);
   const sideShow = [
     <span key={0} className="">
-      <FaUserCog size={20} className="inline mr-6" />
-      <span className="text-lg">UG Heads</span>
+      <FaUserCog size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">UG Heads</span>
     </span>,
     <span key={1}>
-      <FaUserCog size={20} className="inline mr-6" />
-      <span className="text-lg">PG/PhD Heads</span>
+      <FaUserCog size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">
+        PG/PhD Heads
+      </span>
     </span>,
     <span key={2}>
-      <FaCode size={20} className="inline mr-6" />
-      <span className="text-lg">Web App</span>
+      <FaCode size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">Web App</span>
     </span>,
     <span key={3}>
-      <MdAccountBalance size={20} className="inline mr-6" />
-      <span className="text-lg">Finance</span>
+      <MdAccountBalance size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">Finance</span>
     </span>,
     <span key={4}>
-      <TfiWrite size={20} className="inline mr-6" />
-      <span className="text-lg">Content</span>
+      <TfiWrite size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">Content</span>
     </span>,
     <span key={5}>
-      <ImFileOpenoffice size={20} className="inline mr-6" />
-      <span className="text-lg">Design</span>
+      <ImFileOpenoffice size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">Design</span>
     </span>,
     <span key={6}>
-      <ImCogs size={20} className="inline mr-6" />
-      <span className="text-lg">Logistics</span>
+      <ImCogs size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">Logistics</span>
     </span>,
     <span key={7}>
-      <ImNewspaper size={20} className="inline mr-6" />
-      <span className="text-lg">Newsletter</span>
+      <ImNewspaper size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">Newsletter</span>
     </span>,
     <span key={8}>
-      <RiMegaphoneFill size={20} className="inline mr-6" />
-      <span className="text-lg">Publicity</span>
+      <RiMegaphoneFill size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">Publicity</span>
     </span>,
     <span key={9}>
-      <FaCameraRetro size={20} className="inline mr-6" />
-      <span className="text-lg">Photography</span>
+      <FaCameraRetro size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">
+        Photography
+      </span>
     </span>,
     <span key={10}>
-      <PiVideoFill size={20} className="inline mr-6" />
-      <span className="text-lg">Videography</span>
+      <PiVideoFill size={20} className="inline mr-6 text-white" />
+      <span className="text-lg text-gray-300 hover:text-white">
+        Videography
+      </span>
     </span>,
   ];
   const iconMap = [
@@ -79,47 +85,34 @@ const Page: React.FC = () => {
 
   const [sideDisplay, setSideDisplay] = useState(iconMap);
 
-  // const activateElement = (id: string) => {
-  //   const elements = document.querySelectorAll(".side-nav a");
-  //   elements.forEach((element) => {
-  //     if (element.getAttribute("href") === `#${id}`) {
-  //       (element as HTMLElement).style.opacity = "100%";
-  //     } else {
-  //       (element as HTMLElement).style.opacity = "60%";
-  //     }
-  //   });
-  //   elements.forEach((element) => {
-  //     if (element.getAttribute("href") === `#${id}`) {
-  //       element.classList.add("active");
-  //     } else {
-  //       element.classList.remove("active");
-  //     }
-  //   });
-  // };
+  const [activeElement, setActiveElement] = useState<string | null>(null);
+  const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActiveElement(entry.target.id);
+      }
+    });
+  };
 
-  // useEffect(() => {
-  //   const options = {
-  //     rootMargin: "-50px",
-  //     threshold: 0.5,
-  //   };
+  useEffect(() => {
+    const options = {
+      rootMargin: "-50px",
+      threshold: 0.5,
+    };
 
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         activateElement(entry.target.id);
-  //       }
-  //     });
-  //   }, options);
+    const observer = new IntersectionObserver(handleIntersection, options);
 
-  //   const elements = document.querySelectorAll(".team-section");
-  //   elements.forEach((element) => {
-  //     observer.observe(element);
-  //   });
+    const elements = document.querySelectorAll(".team-section");
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
 
-  //   return () => {
-  //     observer.disconnect();
-  //   };
-  // }, []);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const [isSideNavVisible, setIsSideNavVisible] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -156,49 +149,43 @@ const Page: React.FC = () => {
     <>
       <div className="bg-blue-400">
         <div
-          className="hidden lg:flex side-nav z-10 bg-gray-900 top-0 side-bar w-max p-3 min-h-screen sticky flex-col justify-between overflow-x-hidden"
+          className={`hidden lg:flex side-nav z-10 top-0 side-bar w-max p-3 min-h-screen sticky flex-col justify-between overflow-x-hidden ${
+            isSideNavVisible
+              ? "bg-gradient-to-r from-gray-900 pr-16"
+              : "bg-gray-900"
+          } transition-all duration-1000`}
           style={{ transition: "width 0.2s ease-in-out" }}
-          onMouseEnter={(e) => {
-            showSideNav(e.target as HTMLElement);
+          onMouseEnter={() => {
+            setIsSideNavVisible(true);
+            setSideDisplay(sideShow);
           }}
-          onMouseLeave={(e) => {
-            removeSideNav(e.target as HTMLElement);
+          onMouseLeave={() => {
+            setIsSideNavVisible(false);
+            setSideDisplay(iconMap);
           }}
         >
-          <span className="hidden lg:inline-block pt-0 pb-0 font-extrabold text-2xl align-start">
+          <span className="hidden lg:inline-block pt-0 pb-0 font-extrabold text-2xl align-start text-white">
             Teams
           </span>
-          {teamsObject.map(([teamName], index) => {
-            // var a=0;
-            return (
-              <div key={teamName} className="mb-1 ml-1">
-                <a
-                  href={`#${teamName}`}
-                  className="text-lg font-bold bg-transparent"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(teamName);
-                  }}
-                  // onMouseOver={(e) => {
-                  //   console.log((e.target as HTMLElement).style.opacity);
-                  //   if (
-                  //     (e.target as HTMLElement).style &&
-                  //     (e.target as HTMLElement).style.opacity == "0.6"
-                  //   ) {
-                  //     (e.target as HTMLElement).style.opacity = "0.6";
-                  //   }
-                  // }}
-                  // onMouseOut={(e) => {
-                  //   if ((e.target as HTMLElement).style.opacity == "0.6") {
-                  //     (e.target as HTMLElement).style.opacity = "0.6";
-                  //   }
-                  // }}
-                >
-                  {sideDisplay[index]}
-                </a>
-              </div>
-            );
-          })}
+          {teamsObject.map(([teamName], index) => (
+            <div
+              key={teamName}
+              className="mb-1 ml-1 hover:translate-x-1 transition-transform duration-300"
+            >
+              <a
+                href={`#${teamName}`}
+                className={`text-lg font-bold ${
+                  activeElement === teamName ? "ml-1" : ""
+                } transition-transform duration-300`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(teamName);
+                }}
+              >
+                {sideDisplay[index]}
+              </a>
+            </div>
+          ))}
         </div>
 
         <div
@@ -245,7 +232,7 @@ const Page: React.FC = () => {
             })}
           </div> */}
           <div className="page-body mb-0">
-            <h1 className=" lg:mt-6 mb-10 lg:text-4xl text-2xl font-extrabold text-white text-center ">
+            <h1 className="mt-4 lg:mt-6 mb-10 lg:text-4xl text-2xl font-extrabold text-white text-center">
               Sunshine Management
             </h1>
             <div className="mb-10 flex flex-col lg:flex-row space-y-4 justify-around">
