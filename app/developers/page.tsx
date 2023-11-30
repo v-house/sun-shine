@@ -31,7 +31,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="https://media.licdn.com/dms/image/C4E03AQGpVXUVLFUksQ/profile-displayphoto-shrink_800_800/0/1655722648837?e=1706745600&v=beta&t=eT00ZXRqEUQN0RRgAD3s23RGf9gx4d1Qo2G_pPGm5lE"
+                      src="/team-2023/management/Your Photo (File responses)/Charan_Teja_Jeripothula - JERIPOTHULA CHARAN TEJA.jpg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
