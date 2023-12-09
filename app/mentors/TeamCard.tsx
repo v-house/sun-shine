@@ -108,7 +108,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
                 backdrop="blur"
               >
                 <PopoverTrigger>
-                  <button className="text-white bg-gray-600 p-2 rounded-full hidden lg:block">
+                  <button className="text-white bg-gray-600 p-2 rounded-full hidden lg:block z-0">
                     <FiInfo />
                   </button>
                 </PopoverTrigger>
