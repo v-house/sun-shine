@@ -9,6 +9,7 @@ import FeaturesBlocks from "./Card";
 import FeatureCard from "./BuddyMentor";
 import Experiences from "./ExperienceBar";
 import Testimonial from "./Testimonials";
+import Notification from "@/components/Anniversary";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -79,6 +80,20 @@ export default function Home() {
 
   return (
     <>
+      {/* <section className="fixed max-w-md p-4 mx-auto bg-white border border-gray-200 dark:bg-gray-800 left-2 bottom-4 dark:border-gray-700 rounded-2xl z-[1000]">
+        <h2 className="font-semibold text-gray-800 dark:text-white">
+          🍪 Cookie Notice
+        </h2>
+        <div className="flex items-center justify-between mt-4 gap-x-4 shrink-0">
+          <button className="text-xs text-gray-800 underline transition-colors duration-300 dark:text-white dark:hover:text-gray-400 hover:text-gray-600 focus:outline-none">
+            Manage your preferences
+          </button>
+
+          <button className=" text-xs bg-gray-900 font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+            Accept
+          </button>
+        </div>
+      </section> */}
       <div>
         {backgroundImages.map((image, index) => (
           <img
@@ -96,63 +111,66 @@ export default function Home() {
             <Loading />
           </>
         ) : (
-          <div className="bg-white overflow-x-hidden">
-            <div className="relative pt-16 pb-32 flex content-center items-center justify-center h-[92vh]">
-              <div
-                className="absolute top-0 w-full h-full bg-center bg-cover bg-fixed bg-slide-animation z-0"
-                style={{
-                  backgroundImage: backgroundImages[currentBackgroundIndex],
-                  transition: "background-image 2s",
-                }}
-              >
-                <span
-                  id="blackOverlay"
-                  className="w-full h-full absolute opacity-60 bg-black"
-                ></span>
-              </div>
-              <div className="container relative mx-auto">
-                <div className="items-center flex flex-wrap">
-                  <div className="w-full px-4 ml-auto mr-auto text-center flex flex-col justify-center items-center">
-                    <div className="logo relative transform transition-transform duration-1000">
-                      <Image
-                        src="/logo.png"
-                        alt="Sunshine IITH logo"
-                        className="w-24 md:w-32 lg:w-56"
-                        height={108}
-                        width={108}
-                        priority
-                      />
-                    </div>
-                    <div className="ml-4">
-                      <h1 className="text-4xl lg:text-8xl font-bold text-white heading animate-fade-right animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
-                        Sunshine
-                      </h1>
-                      <h3 className="text-sm lg:text-lg text-gray-200 subheading animate-fade-left animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
-                        The Counselling Cell of IIT Hyderabad
-                      </h3>
+          <>
+            <Notification />
+            <div className="bg-white overflow-x-hidden">
+              <div className="relative pt-16 pb-32 flex content-center items-center justify-center h-[92vh]">
+                <div
+                  className="absolute top-0 w-full h-full bg-center bg-cover bg-fixed bg-slide-animation z-0"
+                  style={{
+                    backgroundImage: backgroundImages[currentBackgroundIndex],
+                    transition: "background-image 2s",
+                  }}
+                >
+                  <span
+                    id="blackOverlay"
+                    className="w-full h-full absolute opacity-60 bg-black"
+                  ></span>
+                </div>
+                <div className="container relative mx-auto">
+                  <div className="items-center flex flex-wrap">
+                    <div className="w-full px-4 ml-auto mr-auto text-center flex flex-col justify-center items-center">
+                      <div className="logo relative transform transition-transform duration-1000">
+                        <Image
+                          src="/logo.png"
+                          alt="Sunshine IITH logo"
+                          className="w-24 md:w-32 lg:w-56"
+                          height={108}
+                          width={108}
+                          priority
+                        />
+                      </div>
+                      <div className="ml-4">
+                        <h1 className="text-4xl lg:text-8xl font-bold text-white heading animate-fade-right animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
+                          Sunshine
+                        </h1>
+                        <h3 className="text-sm lg:text-lg text-gray-200 subheading animate-fade-left animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
+                          The Counselling Cell of IIT Hyderabad
+                        </h3>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <div className="bg-sky-300">
+                <Gallery />
+              </div>
+
+              {/* Cards for mentor and buddy program */}
+              <FeatureCard />
+
+              <FeaturesBlocks />
+
+              <MyComponent />
+              <div className="bg-gradient-to-bl from-sky-300 via-sky-300 to-blue-700 pt-2 pl-2 lg:pt-4 lg:pl-4">
+                <AboutApp />
+              </div>
+
+              <Testimonial />
+              <Experiences />
             </div>
-
-            <div className="bg-sky-300">
-              <Gallery />
-            </div>
-
-            {/* Cards for mentor and buddy program */}
-            <FeatureCard />
-
-            <FeaturesBlocks />
-
-            <MyComponent />
-            <div className="bg-gradient-to-bl from-sky-300 via-sky-300 to-blue-700 pt-2 pl-2 lg:pt-4 lg:pl-4">
-              <AboutApp />
-            </div>
-
-            <Testimonial />
-            <Experiences />
-          </div>
+          </>
         )}
       </div>
     </>

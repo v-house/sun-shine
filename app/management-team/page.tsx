@@ -13,7 +13,6 @@ import { FaCameraRetro, FaCode, FaUserCog } from "react-icons/fa";
 import { GrUserManager } from "react-icons/gr";
 import { ImFileOpenoffice } from "react-icons/im";
 import { ImCogs } from "react-icons/im";
-// ...
 
 const Page: React.FC = () => {
   let teamsObject = Object.entries(teams);
@@ -143,15 +142,13 @@ const Page: React.FC = () => {
     element?.classList.toggle("-translate-x-full");
     document.querySelector(".page-body")?.classList.toggle("hidden");
   };
-  // var height = " mb-0 bg-blue-400 p-2 lg:pl-24 w-full flex flex-col justify-center lg:-translate-y-[calc("+document.querySelector("side-nav")?.clientHeight+"px)]" ;
-  // console.log(height);
   return (
     <>
       <div className="bg-blue-400">
         <div
           className={`hidden lg:flex side-nav z-10 top-0 side-bar w-max p-3 min-h-screen sticky flex-col justify-between overflow-x-hidden ${
             isSideNavVisible
-              ? "bg-gradient-to-r from-gray-900 pr-16"
+              ? "bg-gradient-to-r from-gray-900 to-transparent pr-16"
               : "bg-gray-900"
           } transition-all duration-1000`}
           style={{ transition: "width 0.2s ease-in-out" }}
@@ -203,34 +200,6 @@ const Page: React.FC = () => {
               View Teams
             </Button>
           </div>
-          {/* <div
-            className="bg-blue-400 slide-nav flex side-nav z-10 bg-grey-900  -translate-x-full [transition:translate_0.4s_ease-in-out] absolute top-0 left-0 side-bar w-screen pl-6 pt-6 pr-6 min-h-screen  flex-col justify-center  overflow-x-hidden"
-            // onMouseEnter={(e) => {
-            // showSideNav(e.target as HTMLElement);
-            // }}
-            // onMouseLeave={(e) => {
-            //   removeSideNav(e.target as HTMLElement);
-            // }}
-          >
-            {teamsObject.map(([teamName], index) => {
-              return (
-                <div key={teamName} className="mb-4 ">
-                  <a
-                    href={`#${teamName}`}
-                    className="text-white text-2xl !opacity-100 font-extrabold block "
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // toggleSlideNav();
-                      scrollToSection(teamName);
-                    }}
-                  >
-                    {teamName}
-                  </a>
-                  <hr className="pt-1"></hr>
-                </div>
-              );
-            })}
-          </div> */}
           <div className="page-body mb-0">
             <h1 className="mt-4 lg:mt-6 mb-10 lg:text-4xl text-2xl font-extrabold text-white text-center">
               Sunshine Management
