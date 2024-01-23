@@ -144,9 +144,9 @@ const Page: React.FC = () => {
   };
   return (
     <>
-      <div className="bg-blue-400">
+      <div className="flex bg-blue-400">
         <div
-          className={`sticky hidden lg:flex z-10 top-0 w-max p-3 min-h-screen flex-col justify-between overflow-x-hidden transition-bg transition-all duration-1000 ${
+          className={`hidden lg:flex side-nav z-10 top-0 side-bar min-w-max p-3 h-screen sticky flex-col justify-between overflow-x-hidden ${
             isSideNavVisible
               ? "bg-gradient-to-r from-gray-900 to-transparent"
               : "bg-gray-900"
@@ -167,7 +167,7 @@ const Page: React.FC = () => {
           {teamsObject.map(([teamName], index) => (
             <div
               key={teamName}
-              className="mb-1 ml-1 hover:translate-x-1 transition-transform duration-1000"
+              className="mb-1 min-w-max ml-1 hover:translate-x-1 transition-transform duration-300"
             >
               <a
                 href={`#${teamName}`}
@@ -186,7 +186,7 @@ const Page: React.FC = () => {
         </div>
 
         <div
-          className="mb-0 bg-blue-400 p-2 lg:pl-32 w-full flex flex-col justify-center lg:-translate-y-[calc(100vh)] "
+          className="mb-0 bg-blue-400 p-2 lg:pl-32 w-full flex flex-col justify-center "
           style={{ transition: "all 0.2s ease-in-out" }}
         >
           {/* <div className="mt-8 ml-4 hidden side-button">
