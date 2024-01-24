@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Loading from "./loading";
+import Loading from "../components/loading";
 import Image from "next/image";
 import MyComponent from "./Team";
 import Gallery from "./Gallery";

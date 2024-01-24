@@ -64,7 +64,7 @@ const management = {
         "/team-2023/management/Your Photo (File responses)/IMG_20230726_135056 - Bhaskar Mandal.jpg",
       email: "ms22btech11010@iith.ac.in",
       phone: "9647598624",
-      department: "MSME",
+      department: "Material Science and Metallurgical Engineering",
       about:
         "I am an enthusiastic individual with a passion for app-web development and a strong interest in tech and finance. My hobbies include watching movies, cricket, and coding. I am excited to contribute my skills and serve the Sunshine community. ",
     },
@@ -98,16 +98,16 @@ const management = {
       about:
         "As an impassioned coder and developer, I derive immense joy from exploring novel ideas and translating them into reality through innovative projects. My unwavering dedication to coding fuels my creativity and constant pursuit of learning and growth. Collaborating with Sunshine instills confidence that together, we will cultivate a stimulating academic atmosphere on campus. With diligence and collective commitment, we aspire to foster a realm of knowledge and technological prowess that positively impacts our educational community.",
     },
-    {
-      name: "Palthi Bhargav ",
-      photoUrl:
-        "/team-2023/management/Your Photo (File responses)/hospitality_Palthi Bhargav - Palthi Bhargav.jpg",
-      email: "bm21btech11017@iith.ac.in",
-      phone: "9959912411",
-      department: "Biomedical engineering ",
-      about:
-        "My hobbies are listening to music, reading books, and browsing and searching for information related to cars, My interests include business, Marketing, and learning new technologies, I had a very good experience working with sunshine as a web development team member and hoping to have a great time ahead, will try my best to update the sunshine website and make it a better one.",
-    },
+    // {
+    //   name: "Palthi Bhargav ",
+    //   photoUrl:
+    //     "/team-2023/management/Your Photo (File responses)/hospitality_Palthi Bhargav - Palthi Bhargav.jpg",
+    //   email: "bm21btech11017@iith.ac.in",
+    //   phone: "9959912411",
+    //   department: "Biomedical engineering ",
+    //   about:
+    //     "My hobbies are listening to music, reading books, and browsing and searching for information related to cars, My interests include business, Marketing, and learning new technologies, I had a very good experience working with sunshine as a web development team member and hoping to have a great time ahead, will try my best to update the sunshine website and make it a better one.",
+    // },
   ],
   "Finance Team": [
     {
@@ -355,7 +355,7 @@ const management = {
     {
       name: "E.saikumar ",
       photoUrl:
-        "/team-2023/management/Your Photo (File responses)/IMG_4721 - Erraram Saikumar.heic",
+        "/team-2023/management/Your Photo (File responses)/IMG_4721_-_Erraram_Saikumar.jpg",
       email: "ms22btech11012@iith.ac.in",
       phone: "7382678737",
       department: "Msme",

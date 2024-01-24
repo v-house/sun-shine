@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import teams from "../management";
+import teams from "./management";
 import TeamCard from "./TeamCard";
 import { Button, ButtonGroup, toggle } from "@nextui-org/react";
 import { MdAccountBalance } from "react-icons/md";
@@ -146,12 +146,12 @@ const Page: React.FC = () => {
     <>
       <div className="bg-blue-400">
         <div
-          className={`hidden lg:flex side-nav z-10 top-0 side-bar w-max p-3 min-h-screen sticky flex-col justify-between overflow-x-hidden ${
+          className={`sticky hidden lg:flex z-10 top-0 w-max p-3 min-h-screen flex-col justify-between overflow-x-hidden transition-bg transition-all duration-1000 ${
             isSideNavVisible
-              ? "bg-gradient-to-r from-gray-900 to-transparent pr-16"
+              ? "bg-gradient-to-r from-gray-900 to-transparent"
               : "bg-gray-900"
-          } transition-all duration-1000`}
-          style={{ transition: "width 0.2s ease-in-out" }}
+          }`}
+          style={{ transition: "width 1s ease-in-out" }}
           onMouseEnter={() => {
             setIsSideNavVisible(true);
             setSideDisplay(sideShow);
@@ -161,19 +161,19 @@ const Page: React.FC = () => {
             setSideDisplay(iconMap);
           }}
         >
-          <span className="hidden lg:inline-block pt-0 pb-0 font-extrabold text-2xl align-start text-white">
+          <span className="pt-0 pb-0 font-extrabold text-2xl align-start text-white">
             Teams
           </span>
           {teamsObject.map(([teamName], index) => (
             <div
               key={teamName}
-              className="mb-1 ml-1 hover:translate-x-1 transition-transform duration-300"
+              className="mb-1 ml-1 hover:translate-x-1 transition-transform duration-1000"
             >
               <a
                 href={`#${teamName}`}
                 className={`text-lg font-bold ${
                   activeElement === teamName ? "ml-1" : ""
-                } transition-transform duration-300`}
+                } transition-transform duration-1000`}
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(teamName);
@@ -189,7 +189,7 @@ const Page: React.FC = () => {
           className="mb-0 bg-blue-400 p-2 lg:pl-32 w-full flex flex-col justify-center lg:-translate-y-[calc(100vh)] "
           style={{ transition: "all 0.2s ease-in-out" }}
         >
-          <div className="mt-8 ml-4 hidden side-button">
+          {/* <div className="mt-8 ml-4 hidden side-button">
             <Button
               color="primary"
               onPress={() => {
@@ -199,28 +199,11 @@ const Page: React.FC = () => {
             >
               View Teams
             </Button>
-          </div>
-          <div className="page-body mb-0">
+          </div> */}
+          <div className="">
             <h1 className="mt-4 lg:mt-6 mb-10 lg:text-4xl text-2xl font-extrabold text-white text-center">
-              Sunshine Management
+              Sunshine Management Team
             </h1>
-            <div className="mb-10 flex flex-col lg:flex-row space-y-4 justify-around">
-              <img
-                src="https://sunshine.iith.ac.in/images/about-slider/3.JPG"
-                alt=""
-                className="lg:w-2/5 mb-4 lg:mb-0 float-left w-full h-auto mx-auto rounded-lg object-cover shadow-lg"
-              />
-              <div className="text-sm lg:text-sm inline-block pl-4 basis-full lg:w-2/5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
-                ipsum. Aut veritatis, repellendus quidem nisi ipsa mollitia eum
-                delectus? Exercitationem, dolore enim libero ea provident nulla
-                vitae minima esse tempora! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Veniam aliquid, est eligendi vel
-                quasi nostrum natus repellendus, accusantium ducimus dignissimos
-                ad nihil tempore doloremque assumenda ipsam magnam itaque sit
-                ipsa!
-              </div>
-            </div>
             <div className="">
               {teamsObject.map(([teamName, teamMembers]) => (
                 <section
