@@ -192,7 +192,7 @@ const non_management = {
             "about": "I am Guguloth Srinivas. I am studying second year from the department of Mechanical and Aerospace engineering.My hobbies are playing games, watching movies, dancing and browsing internet.I am a self motivater and Hard worker. I am interested in National cadet corps(NCC).I experienced with sunshine participating in departmental catch up sessions and  games.I passion to serve Sunshine.I will a point of contact of fellow batchmates and academics, social and Emotional help.Co ordinate departmental catch up sessions,fun meeting and games.Help sunshine reaches out to peers conduct departmental group sessions and activities."
         },
     ],
-    
+
     "UG Mentor": [
         {
             "name": "Edara Yaswanth Balaji",
@@ -239,7 +239,7 @@ const non_management = {
             "photoUrl": "/team-2023/non-management/Your photo (File responses)/IMG-20230817-WA0009 - Dasari Ram Vasanth.jpg",
             "email": "ms22btech11011@iith.ac.in",
             "phone": "8310397068",
-            "department": "Materials Science and Metallurical Engineering",
+            "department": "Materials Science and Metallurgical Engineering",
             "about": "I am a sophomore, always  looking forward to learn new things. My friend group is my strength. Chess and cricket interests me and I love to watch movies and interacting with people. I have a one year experience in sunshine as a buddy. My passion to serve sunshine is I like helping people."
         },
         {
@@ -832,7 +832,7 @@ const non_management = {
             "photoUrl": "/team-2023/non-management/Your photo (File responses)/IMG_20231008_194322_201 - Krushna Devkar.jpg",
             "email": "op23mtech11003@iith.ac.in",
             "phone": "8669841647",
-            "department": "Center for interdisciplinary department",
+            "department": "Center for Interdisciplinary Department",
             "about": "Hello this is Krushna from Maharashtra pursuing mtech 1st year in ophthalmic engineering. I like to read books and playing cricket. I really love to interact with people. I'm also a gym freak. I love the idea of sunshine where people are standing for others who are in need and it is a Nobel cause as mental health is concerning topic this days. I am happy to be a part of the sunshine family and looking forward to have a great experience.",
         },
         {
@@ -848,7 +848,7 @@ const non_management = {
             "photoUrl": "/team-2023/non-management/Your photo (File responses)/20230301_140405 - Manu Sebastian.jpg",
             "email": "me22mtech12002@iith.ac.in",
             "phone": "9526088787",
-            "department": "Mechanical and Aerospace Engineering Department ",
+            "department": "Mechanical and Aerospace Engineering ",
             "about": "-"
         },
         {
@@ -888,7 +888,7 @@ const non_management = {
             "photoUrl": "/team-2023/non-management/Your photo (File responses)/20230819_211033 - Swarnali Bose.jpg",
             "email": "cy23mscst11033@iith.ac.in",
             "phone": "9142778361",
-            "department": "CHEMISTRY ",
+            "department": "Chemistry ",
             "about": "I am Swarnali Bose here from department chemistry .  The main motive behind joining the Sunshine club is to not let any fellow mates to battle difficulties and challenges alone . I believe in together growing up so looking forward to a great journey with everyone around. Everyone has some uniqueness , so mine is forgiveness and I am interested in music and art. I believe that I am a compatible person and I have compassion for other people. I will try my level best to fulfill my responsibilities and will work with dedication for this club."
         },
         {
@@ -936,7 +936,7 @@ const non_management = {
             "photoUrl": "/team-2023/non-management/Your photo (File responses)/Screenshot_20231027-155949-441 - Sudar Oli M (3).png",
             "email": "op23mtech11005@iith.ac.in",
             "phone": "8428090141",
-            "department": "Ophthalmic engineering ",
+            "department": "Ophthalmic Engineering ",
             "about": "My hobbies includes reading books, making crafts, sewing and crochet. I'm easily adaptable to any situation and to the people which I consider as my unique quality. It's really a good experience to work with many people in sunshine. Looking forward to do have a great time with the team"
         },
         {
@@ -976,7 +976,7 @@ const non_management = {
             "photoUrl": "/team-2023/non-management/Your photo (File responses)/manas here cropped - Manas Ranjan Tete.jpeg",
             "email": "cy22mscst11002@iith.ac.in",
             "phone": "7735287626",
-            "department": "CHEMISTRY ",
+            "department": "Chemistry ",
             "about": "Hey, myself Manas ,Msc Chemistry 2nd year student. I am very grateful to be the part of sunshine team where I learn a lot even though the day would be heptic but in the end we feel relaxed when we are engaged with some activities. It helps us great to built up my personality as well. As being a part of sunshine we together shine little little everyday."
         },
     ],
