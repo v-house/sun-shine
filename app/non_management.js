@@ -88,14 +88,6 @@ const non_management = {
           "about": "Hii, I'm. Nikhil deshmukh. And I'll be working as sunshine buddy . And reason why I choose buddy position is that i just love interact with people. "
       },
       {
-          "name": "Parepalli Santosh ",
-          "photoUrl": "/team-2023/non-management/Your photo (File responses)/IMG20230815092212 - Parepalli Santosh.jpg",
-          "email": "ce21btech11030@iith.ac.in",
-          "phone": "7989766278",
-          "department": "Civil engineering ",
-          "about": "I have a friendly personality and enjoy interacting with others. I am genuine, and people can see that I am authentic and honest. I am a hard worker and am always putting in the extra effort to achieve my goals. I am innovative and always looking for new ways to improve current systems or processes."
-      },
-      {
           "name": "Meghana Gyadari ",
           "photoUrl": "/team-2023/non-management/Your photo (File responses)/IMG_20230408_162804_852 - Meghana Gyadari.jpg",
           "email": "ep22btech11015@iith.ac.in",
@@ -208,14 +200,6 @@ const non_management = {
           "phone": "9144333999",
           "department": "Engineering Physics ",
           "about": "I like to play Guitar , cricket and I love watching series and also reading manhwa/manga.I am a sunshine mentor and I like to interact with people and help them in any way I can "
-      },
-      {
-          "name": "Pravalika namburi ",
-          "photoUrl": "/team-2023/non-management/Your photo (File responses)/InShot_20221227_185621103 - Namburi Pravalika.jpg",
-          "email": "ic22btech11006@iith.ac.in",
-          "phone": "9182078029",
-          "department": "Industrial chemistry ",
-          "about": " \"\"Salutations, fellow explorers of the human experience! I'm pravalika Namburi, a self-proclaimed enthusiast of all things creative, a connoisseur of obscure facts, and an unapologetic advocate for embracing life's quirks. By day, you might find me navigating the intricate world of data analysis, and by night, I transform into a culinary adventurer, concocting fusion recipes that bridge the gap between cultures. If you're up for thought-provoking conversations, spontaneous dance-offs, or embarking on impromptu journeys of discovery, then I'm your co-pilot on this exhilarating ride through existence!\"\""
       },
       {
           "name": "Chandra Prakash",
