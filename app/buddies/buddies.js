@@ -2,7 +2,7 @@ import teamMembers from "../non_management";
 const teams = [
   {
     id: "ug-buddies",
-    section: "UG Mentors",
+    section: "UG Buddies",
     teamName: "UG Buddies",
     teamPhotoUrl: "https://sunshine.iith.ac.in/images/about-slider/3.JPG",
     teamDescription:

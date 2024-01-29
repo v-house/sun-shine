@@ -242,7 +242,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <Code size="lg">Bhaskar Mandal</Code>
                   </h2>
                   <span className="block text-xs font-semibold uppercase text-blue-400 mb-1 mx-auto">
-                    <Code size="sm">Btech in Material Science, 2022-26</Code>
+                    <Code size="sm">Btech in Materials Science, 2022-26</Code>
                   </span>
                 </div>
                 <div className="mt-4 flex justify-center items-center space-x-4">
