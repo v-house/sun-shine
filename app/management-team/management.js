@@ -64,7 +64,7 @@ const management = {
         "/team-2023/management/Your Photo (File responses)/IMG_20230726_135056 - Bhaskar Mandal.jpg",
       email: "ms22btech11010@iith.ac.in",
       phone: "9647598624",
-      department: "Material Science and Metallurgical Engineering",
+      department: "Materials Science and Metallurgical Engineering",
       about:
         "I am an enthusiastic individual with a passion for app-web development and a strong interest in tech and finance. My hobbies include watching movies, cricket, and coding. I am excited to contribute my skills and serve the Sunshine community. ",
     },
