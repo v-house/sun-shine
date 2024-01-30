@@ -85,8 +85,7 @@ const management = {
       email: "cs21btech11026@iith.ac.in",
       phone: "8125865096",
       department: "Computer Science and Engineering",
-      about:
-        "In the art of drawing, I find a canvas to express myself. Dancing is my joyful escape, a cherished passion. One task at a time, I devote focus and dedication, for multitasking isn't my forte. Whether it's sports or Esports, both bring equal delight, relieving the burdens of the mind. I believe in embracing the present, a gift from the divine, living each moment to the fullest, allowing life to beautifully shine.",
+      about: "",
     },
     {
       name: "Advait Jain ",

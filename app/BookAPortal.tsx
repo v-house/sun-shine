@@ -122,7 +122,29 @@ export default function BookAportalButton() {
 
   return (
     <>
-      <Tooltip
+      <div className="group relative inline-block">
+        <button className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg shadow-md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+            />
+          </svg>
+        </button>
+        <div className="text-center w-24 tooltip-content opacity-0 group-hover:opacity-100 transform -translate-x-full bg-blue-500 text-white rounded-md absolute -left-2 top-0 p-1 mt-1 transition-all duration-500">
+          {"Book a Slot"}
+        </div>
+      </div>
+
+      {/* <Tooltip
         placement="left"
         showArrow={true}
         content="Book a Meeting"
@@ -146,8 +168,7 @@ export default function BookAportalButton() {
             </svg>
           </div>
         </button>
-      </Tooltip>
-
+      </Tooltip> */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog
           as="div"

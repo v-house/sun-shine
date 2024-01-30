@@ -77,11 +77,31 @@ const AboutUsPage = () => {
               Professional Counsellors
             </h2>
             <p className="text-gray-600 mt-4">
-              There are times when you might need more than a friendly chat, and
-              that&apos;s okay. We have trained counsellors available for
-              one-on-one and group counselling sessions. They&apos;re here to
-              offer professional support when you need it.
+              We have trained counsellors who offer professional support in
+              times of need. During a counselling session, you can talk about
+              your problem of any kind and the counsellors would help you
+              explore the options available to heal yourself. In all
+              overwhelming situations that require support, be it academic,
+              personal, or social, Sunshine Counsellors are here for you to help
+              you make right choices.
             </p>
+            <h3 className="text-2xl font-semibold text-gray-800 my-4">
+              Roles and Responsibilities
+            </h3>
+            <ul className="list-disc list-inside text-gray-600">
+              <li>
+                Provide one on one and group counselling sessions to deal with
+                stressful situations
+              </li>
+              <li>
+                Form and select Sunshine Student team to conduct Sunshine events
+                successfully
+              </li>
+              <li>
+                Carry out events for IITH student community to provide right
+                guidance and cordial environment
+              </li>
+            </ul>
           </div>
         </div>
       </section>
