@@ -7,8 +7,8 @@ const events = [
       'The Art Therapy Workshop, hosted by Sunshine, the Counseling Cell of IITH, was a resounding success. Participants engaged in a series of creative activities, including "Pass It Around", which promoted unity and diverse perspectives. The "Guided Imagery Technique" provided a unique opportunity to relax and reflect using the power of imagination, while "Mindful Eating" allowed attendees to connect with their senses and improve their relationship with food.This event, held on 19th October 2023, not only provided moments of tranquility and stress relief but also facilitated community connections within our diverse IITH community. No prior artistic talent was necessary for participation. Stay tuned for more enriching events with Sunshine. For inquiries, feel free to reach out to us.',
     images: [
       "/../../EventsImages/ArtTherapy/IMG_8381.jpg",
-      "/../../EventsImages/ArtTherapy/IMG_8376.jpg",
-      "/../../EventsImages/ArtTherapy/IMG_8365.jpg",
+      "/../../EventsImages/ArtTherapy/IMG_8376 (1).jpg",
+      "/../../EventsImages/ArtTherapy/IMG_8365 (1).jpg",
       "/../../EventsImages/ArtTherapy/IMG_8382.jpg",
       "/../../EventsImages/ArtTherapy/IMG_8391.jpg",
       "/../../EventsImages/ArtTherapy/IMG_8393.jpg",
@@ -65,25 +65,16 @@ const events = [
       "/../../EventsImages/RandomActOfKindness/IMG_8442.jpg",
     ],
   },
-  {
+  /*{
     slug: "SunshineWorldMentalHealthDay",
     date: "October 10, 2023",
     title: "Sunshine's World Mental Health Day Program",
     summary:
       'Our World Mental Health Day Program, hosted by Sunshine - The Counseling Cell, was a resounding success. The event took place on October 10th, featuring an insightful program to raise awareness and understanding about mental health within our community. Attendees witnessed a compelling video presentation that delved into character strengths, memento distribution to honor speakers from the "Heal Out Loud" event, a thought-provoking address by our Director, and a heartwarming high tea. This event united our community in support of mental health. Stay tuned for more enriching experiences with Sunshine',
     images: [
-      "/../../EventsImages/UGReality/IMG_6444.JPG",
-      "/../../EventsImages/UGReality/IMG_6468.JPG",
-      "/../../EventsImages/UGReality/IMG_6470.JPG",
-      "/../../EventsImages/UGReality/IMG_6485.JPG",
-      "/../../EventsImages/UGReality/IMG_6519.JPG",
-      "/../../EventsImages/UGReality/IMG_6537.JPG",
-      "/../../EventsImages/UGReality/IMG_6543.JPG",
-      "/../../EventsImages/UGReality/IMG_6552.JPG",
-      "/../../EventsImages/UGReality/IMG_6578.JPG",
-      "/../../EventsImages/UGReality/IMG_6590.JPG",
+      
     ],
-  },
+  },*/
   {
     slug: "SuicidePreventionWeekTrainingSession",
     date: "September 15, 2023",
@@ -103,7 +94,7 @@ const events = [
       "/../../EventsImages/SuicidePreventionWeekTrainingSession/IMG_6424.jpg",
       "/../../EventsImages/SuicidePreventionWeekTrainingSession/IMG_6425.jpg",
       "/../../EventsImages/SuicidePreventionWeekTrainingSession/IMG_6428.jpg",
-      "/../../EventsImages/SuicidePreventionWeekTrainingSession/IMG_6432.jpg",      
+      "/../../EventsImages/SuicidePreventionWeekTrainingSession/IMG_6432.jpg",
     ],
   },
   {
@@ -112,18 +103,7 @@ const events = [
     title: '"Wonder" Movie Screening - Mental Health Awareness Night',
     summary:
       'Sunshine, the Counseling and Mental Health Club at IIT Hyderabad, successfully hosted a special movie screening event on September 13th, 2023. The film, "Wonder," provided a heartwarming and thought-provoking cinematic experience, aimed at promoting mental health awareness and fostering a supportive community. Attendees enjoyed the movie and engaged in a meaningful post-screening discussion, creating a safe space for open dialogue on mental well-being. It was a wonderful opportunity to take a break, connect with others, and reflect on the importance of mental health in our fast-paced lives. Stay tuned for more events like this with Sunshine.',
-    images: [
-      "/../../EventsImages/UGReality/IMG_6444.JPG",
-      "/../../EventsImages/UGReality/IMG_6468.JPG",
-      "/../../EventsImages/UGReality/IMG_6470.JPG",
-      "/../../EventsImages/UGReality/IMG_6485.JPG",
-      "/../../EventsImages/UGReality/IMG_6519.JPG",
-      "/../../EventsImages/UGReality/IMG_6537.JPG",
-      "/../../EventsImages/UGReality/IMG_6543.JPG",
-      "/../../EventsImages/UGReality/IMG_6552.JPG",
-      "/../../EventsImages/UGReality/IMG_6578.JPG",
-      "/../../EventsImages/UGReality/IMG_6590.JPG",
-    ],
+    images: ["/../../EventsImages/Wonder/Sunshine Movie Night.png"],
   },
   {
     slug: "DiscoverThePowerWithin",
@@ -131,18 +111,7 @@ const events = [
     title: '"Discover the Power Within" Interview',
     summary:
       '"Discover the Power Within" was an exceptional interview that celebrated the extraordinary qualities and strengths of our IITH community. From September 12th to September 17th, participants had the opportunity to hear personal stories of triumph, uncover their inner superpowers, gain inspirational insights, and engage in interactive Q&A sessions. The event celebrated the diverse strengths that make our IITH community special and aimed to inspire each other to tap into their inner power. As Mahatma Gandhi once said, "Strength does not come from physical capacity. It comes from an indomitable will." This event was a heartwarming journey of self-discovery and community celebration. Stay tuned for more inspiring events with us!',
-    images: [
-      "/../../EventsImages/UGReality/IMG_6444.JPG",
-      "/../../EventsImages/UGReality/IMG_6468.JPG",
-      "/../../EventsImages/UGReality/IMG_6470.JPG",
-      "/../../EventsImages/UGReality/IMG_6485.JPG",
-      "/../../EventsImages/UGReality/IMG_6519.JPG",
-      "/../../EventsImages/UGReality/IMG_6537.JPG",
-      "/../../EventsImages/UGReality/IMG_6543.JPG",
-      "/../../EventsImages/UGReality/IMG_6552.JPG",
-      "/../../EventsImages/UGReality/IMG_6578.JPG",
-      "/../../EventsImages/UGReality/IMG_6590.JPG",
-    ],
+    images: ["/../../EventsImages/DiscoverThePowerWithin/image.png"],
   },
   {
     slug: "HealOutLoud",
@@ -162,27 +131,18 @@ const events = [
       "/../../EventsImages/HealOutLoud/IMG_3328.JPG",
       "/../../EventsImages/HealOutLoud/IMG_3320.JPG",
       "/../../EventsImages/HealOutLoud/IMG_3330.JPG",
-      "/../../EventsImages/HealOutLoud/IMG_3270.JPG",      
+      "/../../EventsImages/HealOutLoud/IMG_3270.JPG",
     ],
   },
   {
     slug: "ThePassionPalette",
     date: "August-September , 2023",
     title: "The Passion Palette",
-    summary: "'The Passion Palette' was an event that celebrated the diverse talents and creativity within our community. It encouraged participants to showcase their unique talents through video, audio, artwork, or write-ups. By sharing their creative passions, attendees found an outlet for self-expression, experienced a sense of accomplishment, and gained stress management skills. The event highlighted the positive impact of talent expression on mental health, happiness, self-confidence, and resilience. Entries were submitted, and the best ones were featured on Sunshine's social media platforms. Stay tuned for more opportunities to express your individuality and creativity with us.",
-    description: "'The Passion Palette' was an event that celebrated the diverse talents and creativity within our community. It encouraged participants to showcase their unique talents through video, audio, artwork, or write-ups. By sharing their creative passions, attendees found an outlet for self-expression, experienced a sense of accomplishment, and gained stress management skills. The event highlighted the positive impact of talent expression on mental health, happiness, self-confidence, and resilience. Entries were submitted, and the best ones were featured on Sunshine's social media platforms. Stay tuned for more opportunities to express your individuality and creativity with us.",
-    images: [
-      "/../../EventsImages/UGReality/IMG_6444.JPG",
-      "/../../EventsImages/UGReality/IMG_6468.JPG",
-      "/../../EventsImages/UGReality/IMG_6470.JPG",
-      "/../../EventsImages/UGReality/IMG_6485.JPG",
-      "/../../EventsImages/UGReality/IMG_6519.JPG",
-      "/../../EventsImages/UGReality/IMG_6537.JPG",
-      "/../../EventsImages/UGReality/IMG_6543.JPG",
-      "/../../EventsImages/UGReality/IMG_6552.JPG",
-      "/../../EventsImages/UGReality/IMG_6578.JPG",
-      "/../../EventsImages/UGReality/IMG_6590.JPG",
-    ],
+    summary:
+      "'The Passion Palette' was an event that celebrated the diverse talents and creativity within our community. It encouraged participants to showcase their unique talents through video, audio, artwork, or write-ups. By sharing their creative passions, attendees found an outlet for self-expression, experienced a sense of accomplishment, and gained stress management skills. The event highlighted the positive impact of talent expression on mental health, happiness, self-confidence, and resilience. Entries were submitted, and the best ones were featured on Sunshine's social media platforms. Stay tuned for more opportunities to express your individuality and creativity with us.",
+    description:
+      "'The Passion Palette' was an event that celebrated the diverse talents and creativity within our community. It encouraged participants to showcase their unique talents through video, audio, artwork, or write-ups. By sharing their creative passions, attendees found an outlet for self-expression, experienced a sense of accomplishment, and gained stress management skills. The event highlighted the positive impact of talent expression on mental health, happiness, self-confidence, and resilience. Entries were submitted, and the best ones were featured on Sunshine's social media platforms. Stay tuned for more opportunities to express your individuality and creativity with us.",
+    images: ["/../../EventsImages/ThePassionPalette/IMG-20230819-WA0072.jpg"],
   },
   {
     slug: "RealityShow",
@@ -203,7 +163,7 @@ const events = [
       "/../../EventsImages/UGReality/IMG_6590.JPG",
     ],
   },
-  {
+  /*{
     slug: "MHAweekevent",
     date: "SEPTEMBER 14, 2023",
     title: "Event 1: MHA week event",
@@ -219,8 +179,8 @@ const events = [
       "/../../EventsImages/MHAweekevent/WhatsApp Image 2022-12-05 at 10.49.53.jpeg",
       "/../../EventsImages/MHAweekevent/WhatsApp Image 2022-12-05 at 10.49.55.jpeg",
     ],
-  },
-  {
+  },*/
+  /*{
     slug: "SuicidePreventionDay",
     date: "SEPTEMBER 14, 2023",
     title: "Event 1: Suicide Prevention Day",
@@ -238,8 +198,8 @@ const events = [
       "/../../EventsImages/SuicidePreventionDay/DSC09968.jpg",
       "/../../EventsImages/SuicidePreventionDay/DSC09988.jpg",
     ],
-  },
-  {
+  },*/
+  /*{
     slug: "painting",
     date: "SEPTEMBER 14, 2023",
     title: "Event 1: Painting",
@@ -253,34 +213,31 @@ const events = [
       "/../../EventsImages/Painting/p2e2.JPG",
       "/../../EventsImages/Painting/p1e.JPG",
     ],
-  },
-  {
+  },*/
+  /*{
     slug: "PGPHDEvents",
     date: "September 14, 2023",
     title: "Event 1: PG-PHD Events",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque dapibus dui sit amet molestie. Nam dignissim augue purus, in finibus eros commodo vitae. Donec convallis ex ut risus bibendum maximus. Proin aliquet sollicitudin dui, sed finibus ex lacinia quis. In vel mollis dolor. Fusce in magna eu sapien ornare pulvinar a in nulla. Nam rhoncus massa ut eros vulputate porta. In sagittis pellentesque tempor. Vestibulum bibendum lectus vel dolor eleifend consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec est et sem porta pulvinar.",
     images: [
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_191301.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_193453.jpg",
-      "/../../EventsImages/PGPhdEvents/DSC00754.JPG",
-      "/../../EventsImages/PGPhdEvents/DSC00817.JPG",
-      "/../../EventsImages/PGPhdEvents/IMG_20220925_182257.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20220925_184849.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_191341.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_191707.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_191752.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_191853.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_192006.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_192046.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_192527.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_193336.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_193425.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_193545.jpg",
-      "/../../EventsImages/PGPhdEvents/IMG_20230930_193615.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8631.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8616.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8511.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8525.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8531.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8540.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8556.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8557.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8579.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8594.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8594.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8630.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8639.jpg",
+      "/../../EventsImages/PGPhdEvents/IMG_8697.jpg",      
     ],
-  },
-  {
+  },*/
+  /*{
     slug: "DepartmentalOrientation",
     date: "September 14, 2023",
     title: "Event 1:Departmental Orientations ",
@@ -299,7 +256,7 @@ const events = [
       "/../../EventsImages/DepartmentalOrientation/EE/IMG20221109193317.jpg",
       "/../../EventsImages/DepartmentalOrientation/AI/20221111_164926.jpg",
     ],
-  },
+  },*/
 ];
 
 export default events;
