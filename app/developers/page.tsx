@@ -31,7 +31,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="/team-2023/management/Your Photo (File responses)/Charan_Teja_Jeripothula - JERIPOTHULA CHARAN TEJA.jpg"
+                      src="/developers/Charan_Teja_Jeripothula - JERIPOTHULA CHARAN TEJA.jpg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
@@ -81,7 +81,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="/team-2023/management/Your Photo (File responses)/myphoto - K Vivek Kumar.jpg"
+                      src="/developers/myphoto - K Vivek Kumar.jpg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
@@ -131,7 +131,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="/team-2023/management/Your Photo (File responses)/WhatsApp Image 2023-11-13 at 22.19.01 - Rishitha Surineni.jpeg"
+                      src="/developers/WhatsApp Image 2023-11-13 at 22.19.01 - Rishitha Surineni.jpeg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
@@ -181,7 +181,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="/team-2023/management/Your Photo (File responses)/IMG-20221124-WA0014 - Advait Jain.jpg"
+                      src="/developers/IMG-20221124-WA0014 - Advait Jain.jpg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
@@ -231,7 +231,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="/team-2023/management/Your Photo (File responses)/IMG_20230726_135056 - Bhaskar Mandal.jpg"
+                      src="/developers/IMG_20230726_135056 - Bhaskar Mandal.jpg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
