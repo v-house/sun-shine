@@ -123,7 +123,10 @@ export default function BookAportalButton() {
   return (
     <>
       <div className="group relative inline-block">
-        <button className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg shadow-md">
+        <button
+          onClick={() => setOpen(true)}
+          className="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg shadow-md"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
