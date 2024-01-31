@@ -81,7 +81,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="https://media.licdn.com/dms/image/D5603AQGbZ7Itnw3MzQ/profile-displayphoto-shrink_400_400/0/1694713181862?e=1704931200&v=beta&t=jgniOCaEyA8wQLsfFeaisXJtxUgcgNXldJL6XJvDQ7g"
+                      src="/team-2023/management/Your Photo (File responses)/myphoto - K Vivek Kumar.jpg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
@@ -131,7 +131,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="https://media.licdn.com/dms/image/D4E03AQHzmIhJjJ-qKQ/profile-displayphoto-shrink_400_400/0/1699903163867?e=1705536000&v=beta&t=jNd3X47tCTszD8wdpADDn3DJhje7EBoTEOXsNEEqwv4"
+                      src="/team-2023/management/Your Photo (File responses)/WhatsApp Image 2023-11-13 at 22.19.01 - Rishitha Surineni.jpeg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
@@ -181,7 +181,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="https://media.licdn.com/dms/image/D4D03AQEKraOHYxid9A/profile-displayphoto-shrink_400_400/0/1694021760821?e=1705536000&v=beta&t=h_uoTgJFkULwirktMorW2-Qu2fyB7elGCfwLuoPLVpg"
+                      src="/team-2023/management/Your Photo (File responses)/IMG-20221124-WA0014 - Advait Jain.jpg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>
@@ -231,7 +231,7 @@ const DevelopersTeamPage: React.FC = () => {
                     <div className="absolute w-24 h-24 border-t-4 border-r-4 border-blue-400 -top-4 -right-4"></div>
                     <img
                       className="object-cover w-full h-full"
-                      src="https://media.licdn.com/dms/image/D5603AQEtS89VBOl3og/profile-displayphoto-shrink_400_400/0/1696979700002?e=1705536000&v=beta&t=fzZh1akrhLmuBDRT99hohSF-YKGGrYFLUMF54wrHvDY"
+                      src="/team-2023/management/Your Photo (File responses)/IMG_20230726_135056 - Bhaskar Mandal.jpg"
                       alt=""
                     />
                     <div className="absolute w-24 h-24 border-b-4 border-l-4 border-blue-400 -bottom-4 -left-4"></div>

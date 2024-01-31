@@ -548,7 +548,7 @@ const non_management = {
         },
         {
             "name": "Rishitha Surineni ",
-            "photoUrl": "/team-2023/non-management/Your photo (File responses)/WhatsApp Image 2023-11-13 at 22.23.21.jpeg",
+            "photoUrl": "/team-2023/non-management/Your photo (File responses)/WhatsApp Image 2023-11-13 at 22.19.01 - Rishitha Surineni.jpeg",
             "email": "cs22btech11050@iith.ac.in",
             "phone": "8008246935",
             "department": "Computer science and engineering ",

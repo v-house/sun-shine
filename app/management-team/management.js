@@ -71,7 +71,7 @@ const management = {
     {
       name: "Rishitha Surineni",
       photoUrl:
-        "/team-2023/management/Your Photo (File responses)/WhatsApp Image 2023-11-13 at 22.19.01.jpeg",
+        "/team-2023/management/Your Photo (File responses)/WhatsApp Image 2023-11-13 at 22.19.01 - Rishitha Surineni.jpeg",
       email: "cs22btech11050@iith.ac.in",
       phone: "8008246935",
       department: "Computer Science and Engineering",
@@ -229,7 +229,7 @@ const management = {
     {
       name: "Aashrita Venishetty",
       photoUrl:
-        "/team-2023/management/Your Photo (File responses)/passport photo pink - Venishetty Aashrita.jpg",
+        "/team-2023/management/Your Photo (File responses)/IMG-20221206-WA0077 - Venishetty Aashrita.jpg",
       email: "ch22btech11039@iith.ac.in",
       phone: "7989621724",
       department: "Chemical Engineering",
@@ -239,7 +239,7 @@ const management = {
     {
       name: "Rishitha pallala",
       photoUrl:
-        "/team-2023/management/Your Photo (File responses)/photograph - Pallala Rishitha.jpg",
+        "/team-2023/management/Your Photo (File responses)/IMG_20230217_212249 - Pallala Rishitha.jpg",
       email: "bt22btech11011@iith.ac.in",
       phone: "9390054715",
       department: "Biotechnology and Bioinformatics",
