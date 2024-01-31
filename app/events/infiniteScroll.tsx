@@ -9,7 +9,7 @@ function InfiniteScroll() {
           return (
             <li key={entry.slug}>
               <img
-                src={entry.images[1]}
+                src={entry.images.length<2?entry.images[0]:entry.images[1]}
                 alt={entry.title}
                 className="rounded-lg aspect-video md:max-h-80 md:max-w-96 object-cover border-4 border-sky-100 shadow-md"
               />
@@ -22,7 +22,7 @@ function InfiniteScroll() {
           return (
             <li key={entry.slug}>
               <img
-                src={entry.images[1]}
+                src={entry.images.length<2?entry.images[0]:entry.images[1]}
                 alt={entry.title}
                 className="rounded-lg h-80 w-96 md:max-h-80 md:max-w-96  object-cover border-4 border-sky-100 shadow-md"
               />

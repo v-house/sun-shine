@@ -280,27 +280,22 @@ const EventsPage: FC<EventsPageProps> = ({ posts }) => {
             
 }
   const isSmallScreen=CheckScreen();
-  if(isSmallScreen===true){
-    return (
-        <div className="antialiased bg-blue-400 text-gray-800">  
-        {posts.map((post, index) => DisplayEntry(post, index))}    
-        </div>
-    );
-  }
-  else{
-    return (
-      <div>
-        <InfiniteScroll/>
-        <div className="h-1 w-20 bg-blue-500 mx-auto"></div>
-        <p className=" text-md md:text-2xl font-medium text-gray-700 mt-4 text-center pb-8 pt-8 animate-fade-left animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
-            Scroll down to find the Amazing Events we held!!
-          </p>
-        <div className="antialiased bg-blue-400 text-gray-800">  
-        {posts.map((post, index) => DisplayEntry(post, index))}    
-        </div>
+  return (
+    <div>
+      <div className='hidden md:inline-flex w-full overflow-hidden'>
+      <InfiniteScroll/>
       </div>
-    );
-  }
+      <div className='hidden md:block'>
+      <div className="h-1 w-20 bg-blue-500 mx-auto"></div>
+  <p className=" text-md md:text-2xl font-medium text-gray-700 mt-4 text-center pb-8 pt-8 animate-fade-left animate-once animate-delay-[20ms] animate-ease-in animate-normal animate-fill-backwards">
+      Scroll down to find the Amazing Events we held!!
+    </p>
+    </div>
+      <div className="antialiased bg-blue-400 text-gray-800">  
+      {posts.map((post, index) => DisplayEntry(post, index))}    
+      </div>
+    </div>
+  ); 
   
 };
 
