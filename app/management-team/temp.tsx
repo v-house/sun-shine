@@ -17,107 +17,57 @@ import { ImCogs } from "react-icons/im";
 const Page: React.FC = () => {
   let teamsObject = Object.entries(teams);
   const sideShow = [
-    <span key={0} className="group flex items-center">
+    <span key={0} className="">
       <FaUserCog size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
-        UG Heads
-      </span>
+      <span className="text-lg text-gray-300 hover:text-white">UG Heads</span>
     </span>,
-    <span key={1} className="group flex items-center">
+    <span key={1}>
       <FaUserCog size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
+      <span className="text-lg text-gray-300 hover:text-white">
         PG/PhD Heads
       </span>
     </span>,
-    <span key={2} className="group flex items-center">
+    <span key={2}>
       <FaCode size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
-        Web App
-      </span>
+      <span className="text-lg text-gray-300 hover:text-white">Web App</span>
     </span>,
-    <span key={3} className="group flex items-center">
+    <span key={3}>
       <MdAccountBalance size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
-        Finance
-      </span>
+      <span className="text-lg text-gray-300 hover:text-white">Finance</span>
     </span>,
-    <span key={4} className="group flex items-center">
+    <span key={4}>
       <TfiWrite size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
-        Content
-      </span>
+      <span className="text-lg text-gray-300 hover:text-white">Content</span>
     </span>,
-    <span key={5} className="group flex items-center">
+    <span key={5}>
       <ImFileOpenoffice size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
-        Design
-      </span>
+      <span className="text-lg text-gray-300 hover:text-white">Design</span>
     </span>,
-    <span key={6} className="group flex items-center">
+    <span key={6}>
       <ImCogs size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
-        Logistics
-      </span>
+      <span className="text-lg text-gray-300 hover:text-white">Logistics</span>
     </span>,
-    <span key={7} className="group flex items-center">
+    <span key={7}>
       <ImNewspaper size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
-        Newsletter
-      </span>
+      <span className="text-lg text-gray-300 hover:text-white">Newsletter</span>
     </span>,
-    <span key={8} className="group flex items-center">
+    <span key={8}>
       <RiMegaphoneFill size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
-        Publicity
-      </span>
+      <span className="text-lg text-gray-300 hover:text-white">Publicity</span>
     </span>,
-    <span key={9} className="group flex items-center">
+    <span key={9}>
       <FaCameraRetro size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
+      <span className="text-lg text-gray-300 hover:text-white">
         Photography
       </span>
     </span>,
-    <span key={10} className="group flex items-center">
+    <span key={10}>
       <PiVideoFill size={20} className="inline mr-6 text-white" />
-      <span
-        className="z-50 group-hover:opacity-100 transition-opacity bg-transparent px-1 text-lg text-gray-100 rounded-md absolute left-1/2 
-       opacity-0 m-4 mx-auto w-48"
-      >
+      <span className="text-lg text-gray-300 hover:text-white">
         Videography
       </span>
     </span>,
   ];
-
   const iconMap = [
     <FaUserCog key={0} size={20} className="inline" />,
     <FaUserCog key={1} size={20} className="inline" />,
@@ -169,11 +119,34 @@ const Page: React.FC = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const showSideNav = (element: HTMLElement) => {
+    element.classList.remove("bg-gray-900");
+    element.classList.add("bg-gradient-to-r");
+    element.classList.add("from-gray-900");
+    element.classList.add("to-transparent");
+    element.classList.add("pr-16");
+    console.log(element.classList);
+    setSideDisplay(sideShow);
+  };
+  const removeSideNav = (element: HTMLElement) => {
+    setSideDisplay(iconMap);
+    element.classList.remove("bg-gradient-to-r");
+    element.classList.remove("from-gray-900");
+    element.classList.remove("to-transparent");
+    element.classList.remove("pr-16");
+    element.classList.add("bg-gray-900");
+  };
+  const toggleSlideNav = () => {
+    const element = document.querySelector(".slide-nav");
+    element?.classList.toggle("-translate-x-full");
+    document.querySelector(".page-body")?.classList.toggle("hidden");
+  };
   return (
     <>
-      <div className="flex bg-blue-400">
+      <div className="bg-blue-400">
         <div
-          className={`group hidden lg:flex side-nav z-50 top-0 side-bar min-w-max p-3 h-screen sticky flex-col justify-between ${
+          className={`sticky hidden lg:flex z-10 top-0 w-max p-3 min-h-screen flex-col justify-between overflow-x-hidden transition-bg transition-all duration-1000 ${
             isSideNavVisible
               ? "bg-gradient-to-r from-gray-900 to-transparent"
               : "bg-gray-900"
@@ -194,11 +167,13 @@ const Page: React.FC = () => {
           {teamsObject.map(([teamName], index) => (
             <div
               key={teamName}
-              className="mb-1 min-w-max ml-1 hover:translate-x-1 transition-transform duration-300"
+              className="mb-1 ml-1 hover:translate-x-1 transition-transform duration-1000"
             >
               <a
                 href={`#${teamName}`}
-                className={`text-lg font-bold transition-transform duration-1000`}
+                className={`text-lg font-bold ${
+                  activeElement === teamName ? "ml-1" : ""
+                } transition-transform duration-1000`}
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(teamName);
@@ -211,7 +186,7 @@ const Page: React.FC = () => {
         </div>
 
         <div
-          className="mb-0 bg-blue-400 p-2 w-full flex flex-col justify-center "
+          className="mb-0 bg-blue-400 p-2 lg:pl-32 w-full flex flex-col justify-center lg:-translate-y-[calc(100vh)] "
           style={{ transition: "all 0.2s ease-in-out" }}
         >
           {/* <div className="mt-8 ml-4 hidden side-button">
