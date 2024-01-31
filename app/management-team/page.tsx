@@ -172,7 +172,6 @@ const Page: React.FC = () => {
   return (
     <>
       <div className="flex bg-blue-400">
-      <div className="flex bg-blue-400">
         <div
           className={`group hidden lg:flex side-nav z-50 top-0 side-bar min-w-max p-3 h-screen sticky flex-col justify-between ${
             isSideNavVisible
@@ -195,7 +194,6 @@ const Page: React.FC = () => {
           {teamsObject.map(([teamName], index) => (
             <div
               key={teamName}
-              className="mb-1 min-w-max ml-1 hover:translate-x-1 transition-transform duration-300"
               className="mb-1 min-w-max ml-1 hover:translate-x-1 transition-transform duration-300"
             >
               <a
