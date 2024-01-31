@@ -11,12 +11,13 @@ const AboutUsPage = () => {
 
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <p className="text-gray-600">
-              Since its inception on January 12, 2012, Sunshine - the counseling
-              cell at IIT-H, has been committed to helping the student
-              community. The dedicated team of Sunshine comprises of a Faculty
-              in-Charge, three Psychological Counselors, nineteen faculty
-              representatives, twelve student heads, thirty-three management
-              team members, eighty-one mentors, and twenty-three buddies.
+              Since its inception on January 12, 2012, Sunshine - the
+              counselling cell at IIT-H, has been committed to helping the
+              student community. The dedicated team of Sunshine comprises a
+              Faculty in-Charge, three Psychological Counsellors, nineteen
+              faculty representatives, twelve student heads, thirty-three
+              management team members, eighty-one mentors, and twenty-three
+              buddies.
             </p>
             <p className="text-gray-600 mt-4">
               On the whole, the program aims to provide the incoming students
@@ -29,31 +30,6 @@ const AboutUsPage = () => {
             >
               Have some queries? Visit our FAQ page.
             </a>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-                The Sunshine Mentor Program in Action
-              </h2>
-              <p className="text-gray-600">
-                Sunshine mentors are students who help freshers adjust to the
-                social, academic, and emotional expectations that come with
-                college life. In this program, we have students from all
-                departments apply for mentorship roles to make it easier for
-                other students to approach and relate to them.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-                Mentorship
-              </h2>
-              <p className="text-gray-600">
-                Sunshine mentors are paired with first-year students to provide
-                guidance and support you need to adjust and adapt to the
-                Institute.
-              </p>
-            </div>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg my-6">
             <p className="text-gray-600">
@@ -73,35 +49,44 @@ const AboutUsPage = () => {
               chat with us without reluctance as we at Sunshine believe, for
               times unsparing, you will need some caring too.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-800 my-4">
-              Professional Counsellors
-            </h2>
-            <p className="text-gray-600 mt-4">
-              We have trained counsellors who offer professional support in
-              times of need. During a counselling session, you can talk about
-              your problem of any kind and the counsellors would help you
-              explore the options available to heal yourself. In all
-              overwhelming situations that require support, be it academic,
-              personal, or social, Sunshine Counsellors are here for you to help
-              you make right choices.
-            </p>
-            <h3 className="text-2xl font-semibold text-gray-800 my-4">
-              Roles and Responsibilities
-            </h3>
-            <ul className="list-disc list-inside text-gray-600">
-              <li>
-                Provide one on one and group counselling sessions to deal with
-                stressful situations
-              </li>
-              <li>
-                Form and select Sunshine Student team to conduct Sunshine events
-                successfully
-              </li>
-              <li>
-                Carry out events for IITH student community to provide right
-                guidance and cordial environment
-              </li>
-            </ul>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white text-gray-600 p-6 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                Professional Counsellors
+              </h3>
+              <p className="text-gray-600">
+                We have trained counsellors who offer professional support in
+                times of need. During a counselling session, you can talk about
+                your problem of any kind and the counsellors would help you
+                explore the options available to heal yourself. In overwhelming
+                situations that require support, be it academic, personal, or
+                social, Sunshine Counsellors are here for you to help you make
+                the right choices.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <div className="mb-6">
+                <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+                  Roles and Responsibilities
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 pl-4">
+                  <li>
+                    Provide one on one and group counselling sessions to deal
+                    with stressful situations
+                  </li>
+                  <li>
+                    Form and select Sunshine Student team to conduct Sunshine
+                    events successfully
+                  </li>
+                  <li>
+                    Carry out events for IITH student community to provide right
+                    guidance and cordial environment
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -180,8 +165,8 @@ const AboutUsPage = () => {
                 In addition to our dedicated team, the Sunshine Buddy Program
                 offers a range of services:
               </p>
-              <div className="mt-2">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              <div className="">
+                <h3 className="text-2xl font-semibold text-gray-800 my-4">
                   Fun Meetups and Events
                 </h3>
                 <p className="text-gray-600">
