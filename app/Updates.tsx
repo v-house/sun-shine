@@ -16,11 +16,11 @@ interface UpdatesPageProps {
 const updates = [
   {
     id: 1,
-    name: "New Sunshine",
+    name: "Sunshine's New Website",
     href: "/developers",
     description:
-      "The launch of the Sunshine's new website is being done today at 14th September 2023. We are happy to announce this",
-    date: "August 25, 2023",
+      "We are pleased to announce the completion of Sunshine IITH new website development.",
+    date: "February 1, 2024",
   },
 ];
 
@@ -94,12 +94,14 @@ const UpdatesPage: FC<UpdatesPageProps> = ({ isOpen, onClose }) => {
                                   </p>
                                 </div>
                                 <div className="flex flex-1 items-end justify-between text-sm mt-1">
-                                  <button
-                                    type="button"
+                                  <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href={update.href}
                                     className="font-medium text-indigo-600 hover:text-indigo-500 flex items-center"
                                   >
                                     View &rarr;
-                                  </button>
+                                  </a>
                                 </div>
                               </div>
                             </li>
