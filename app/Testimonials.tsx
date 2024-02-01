@@ -80,7 +80,7 @@ const TestimonialCarousel = () => {
       <div className="absolute z-0 w-full h-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          height="680"
+          // height="680"
           preserveAspectRatio="none"
           viewBox="0 0 1920 880"
         >
