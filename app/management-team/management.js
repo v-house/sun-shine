@@ -66,7 +66,7 @@ const management = {
       phone: "9647598624",
       department: "Materials Science and Metallurgical Engineering",
       about:
-        "I am an enthusiastic individual with a passion for app-web development and a strong interest in tech and finance. My hobbies include watching movies, cricket, and coding. I am excited to contribute my skills and serve the Sunshine community.",
+        "I am an enthusiastic individual with a passion for app-web development and a strong interest in tech and finance. My hobbies include watching movies, cricket, and coding.",
     },
     {
       name: "Rishitha Surineni",
