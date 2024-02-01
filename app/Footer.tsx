@@ -13,14 +13,16 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
-            <Image
-              width={100}
-              height={100}
-              src="/logo.png"
-              alt="Sunshine"
-              className="w-24"
-              priority
-            />
+            <a href="/">
+              <Image
+                width={100}
+                height={100}
+                src="/logo.png"
+                alt="Sunshine"
+                className="w-24"
+                priority
+              />
+            </a>
             <h4 className="text-3xl font-semibold text-white">Sunshine</h4>
             <h5 className="text-sm mt-0 mb-2 text-gray-300">
               The Counselling Cell of IIT Hyderabad
