@@ -57,7 +57,15 @@ const testimonials: string | any[] = [
   },
 ];
 
+const getDeviceWidth = () => {
+  if (typeof window !== 'undefined') {
+    return window.innerWidth;
+  }
+  return null;
+};
+
 const TestimonialCarousel = () => {
+  const width = getDeviceWidth();
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
 
   const handleNext = () => {
@@ -80,7 +88,7 @@ const TestimonialCarousel = () => {
       <div className="absolute z-0 w-full h-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          // height="680"
+          height={width && width < 1350 ? 680 : undefined}
           preserveAspectRatio="none"
           viewBox="0 0 1920 880"
         >

@@ -288,7 +288,7 @@ const non_management = {
         "Hi everyone  this is varshini from Civil department. UG Mentor in Sunshine cell of IITH. My hobbies are dancing, painting, singing, playing  badminton. I have interests in   traveling and exploring  different  places and in case of academics I am interested  in IT sector.I was in the sunshine cell last year as a UG Buddy. Sunshine  is a family  in IITH that takes care of students. I was inspired  by Sunshine  cell and want to help people and my juniors.",
     },
     {
-      name: "Dasari Ram Vasanth ",
+      name: "Dasari Ram Vasanth",
       photoUrl:
         "/team-2023/non-management/Your photo (File responses)/IMG-20230817-WA0009 - Dasari Ram Vasanth.jpg",
       email: "ms22btech11011@iith.ac.in",
@@ -296,6 +296,16 @@ const non_management = {
       department: "Materials Science and Metallurgical Engineering",
       about:
         "I am a sophomore, always  looking forward to learn new things. My friend group is my strength. Chess and cricket interests me and I love to watch movies and interacting with people. I have a one year experience in sunshine as a buddy. My passion to serve sunshine is I like helping people.",
+    },
+    {
+      name: "Vishnu Prasannan",
+      photoUrl:
+        "/team-2023/non-management/Your photo (File responses)/IMG-45 Vishnu Prasannan.jpg",
+      email: "ms22btech11030@iith.ac.in",
+      phone: "7208166680",
+      department: "Materials Science and Metallurgical Engineering",
+      about:
+        "I am a sophomore in the MSME department and a mentor in Sunshine. I love playing music and reading",
     },
     {
       name: "Bogireddy Vishnu Vardhan Reddy",
