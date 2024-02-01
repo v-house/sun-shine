@@ -9,7 +9,7 @@ const BestDealSection: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
           <div className="px-4 md:mr-6 mt-2 animate-jump-in animate-ease-in-out">
           <a
-              href="https://play.google.com/store/apps/details?id=app.iith.sunshine"
+              href="https://play.google.com/store/apps/details?id=com.sunshine.iith"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center px-6 py-2 mb-2 text-white bg-black rounded-lg w-52"
