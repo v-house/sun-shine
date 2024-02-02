@@ -248,16 +248,6 @@ const non_management = {
         "I like to play Guitar , cricket and I love watching series and also reading manhwa/manga.I am a sunshine mentor and I like to interact with people and help them in any way I can ",
     },
     {
-      name: "Pravalika namburi ",
-      photoUrl:
-        "/team-2023/non-management/Your photo (File responses)/InShot_20221227_185621103 - Namburi Pravalika.jpg",
-      email: "ic22btech11006@iith.ac.in",
-      phone: "9182078029",
-      department: "Industrial Chemistry ",
-      about:
-        " \"\"Salutations, fellow explorers of the human experience! I'm pravalika Namburi, a self-proclaimed enthusiast of all things creative, a connoisseur of obscure facts, and an unapologetic advocate for embracing life's quirks. By day, you might find me navigating the intricate world of data analysis, and by night, I transform into a culinary adventurer, concocting fusion recipes that bridge the gap between cultures. If you're up for thought-provoking conversations, spontaneous dance-offs, or embarking on impromptu journeys of discovery, then I'm your co-pilot on this exhilarating ride through existence!\"\"",
-    },
-    {
       name: "Chandra Prakash",
       photoUrl:
         "/team-2023/non-management/Your photo (File responses)/IMG_20230422_213324 - Chandra Prakash.jpg",
